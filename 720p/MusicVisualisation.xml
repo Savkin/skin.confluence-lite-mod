@@ -22,7 +22,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+			<imagepath fallback="special://skin/backgrounds/default.jpg" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 			<aspectratio>keep</aspectratio>
 			<timeperimage>9000</timeperimage>
 			<randomize>true</randomize>

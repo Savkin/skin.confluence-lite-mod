@@ -264,7 +264,10 @@
 	<string name="31991">Stop Background Fanart Animation</string>
 	<string name="31992">Allow Weather Forecast Panel</string>
 	<string name="31993">Enable Permanent Weather Panel</string>
-  
+ 	<string name="31994">Hide Home Panel FanArt</string>
+	<string name="31995">Enable Return Home Button</string>
+	<string name="31996">Enable Kiosk Mode</string>
+ 
  
   <!-- strings 31000 thru 31999 reserved for skins -->
   
