@@ -542,6 +542,13 @@
 						</focusedlayout>
 						<content>
 							<item id="1">
+								<description>Global Home Menu</description>
+								<label>$LOCALIZE[31998]</label>
+								<onclick>-</onclick>
+								<icon>$VAR[DefaultUnSetBackground]</icon>
+								<thumb>$INFO[Skin.String(HomeGlobalBackground)]</thumb>
+							</item>
+							<item id="2">
 								<description>Home Menu Item One</description>
 								<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
 								<onclick>-</onclick>
@@ -549,7 +556,7 @@
 								<thumb>$INFO[Skin.String(HomeItemOneBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemOneAction))</visible>
 							</item>
-							<item id="2">
+							<item id="3">
 								<description>Home Menu Item Two</description>
 								<label>$INFO[Skin.String(HomeItemTwoLabel)]</label>
 								<onclick>-</onclick>
@@ -557,7 +564,7 @@
 								<thumb>$INFO[Skin.String(HomeItemTwoBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemTwoAction))</visible>
 							</item>
-							<item id="3">
+							<item id="4">
 								<description>Home Menu Item Three</description>
 								<label>$INFO[Skin.String(HomeItemThreeLabel)]</label>
 								<onclick>-</onclick>
@@ -565,7 +572,7 @@
 								<thumb>$INFO[Skin.String(HomeItemThreeBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemThreeAction))</visible>
 							</item>
-							<item id="4">
+							<item id="5">
 								<description>Home Menu Item Four</description>
 								<label>$INFO[Skin.String(HomeItemFourLabel)]</label>
 								<onclick>-</onclick>
@@ -573,7 +580,7 @@
 								<thumb>$INFO[Skin.String(HomeItemFourBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemFourAction))</visible>
 							</item>
-							<item id="5">
+							<item id="6">
 								<description>Home Menu Item Five</description>
 								<label>$INFO[Skin.String(HomeItemFiveLabel)]</label>
 								<onclick>-</onclick>
@@ -581,7 +588,7 @@
 								<thumb>$INFO[Skin.String(HomeItemFiveBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemFiveAction))</visible>
 							</item>
-							<item id="6">
+							<item id="7">
 								<description>Home Menu Item Six</description>
 								<label>$INFO[Skin.String(HomeItemSixLabel)]</label>
 								<onclick>-</onclick>
@@ -589,7 +596,7 @@
 								<thumb>$INFO[Skin.String(HomeItemSixBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemSixAction))</visible>
 							</item>
-							<item id="7">
+							<item id="8">
 								<description>Home Menu Item Seven</description>
 								<label>$INFO[Skin.String(HomeItemSevenLabel)]</label>
 								<onclick>-</onclick>
@@ -597,7 +604,7 @@
 								<thumb>$INFO[Skin.String(HomeItemSevenBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemSevenAction))</visible>
 							</item>
-							<item id="8">
+							<item id="9">
 								<description>Home Menu Item Eight</description>
 								<label>$INFO[Skin.String(HomeItemEightLabel)]</label>
 								<onclick>-</onclick>
@@ -605,7 +612,7 @@
 								<thumb>$INFO[Skin.String(HomeItemEightBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemEightAction))</visible>
 							</item>
-							<item id="9">
+							<item id="10">
 								<description>Home Menu Item Nine</description>
 								<label>$INFO[Skin.String(HomeItemNineLabel)]</label>
 								<onclick>-</onclick>
@@ -613,7 +620,7 @@
 								<thumb>$INFO[Skin.String(HomeItemNineBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemNineAction))</visible>
 							</item>
-							<item id="10">
+							<item id="11">
 								<description>Home Menu Item Ten</description>
 								<label>$INFO[Skin.String(HomeItemTenLabel)]</label>
 								<onclick>-</onclick>
@@ -621,7 +628,7 @@
 								<thumb>$INFO[Skin.String(HomeItemTenBackground)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItemTenAction))</visible>
 							</item>
-							<item id="11">
+							<item id="12">
 								<description>Home Menu Settings</description>
 								<label>$LOCALIZE[13000]</label>
 								<onclick>-</onclick>
@@ -643,6 +650,66 @@
 						<posy>110</posy>
 						<control type="group">
 							<visible>Container(9002).HasFocus(1)</visible>
+							<control type="button" id="200">
+								<description>Single Image button</description>
+								<posx>5</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31113</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.SetImage(HomeGlobalBackground)</onclick>
+								<onleft>202</onleft>
+								<onright>201</onright>
+								<onup>204</onup>
+								<ondown>204</ondown>
+							</control>
+							<control type="button" id="201">
+								<description>Multi Image button</description>
+								<posx>190</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>31114</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.SetPath(HomeGlobalBackground)</onclick>
+								<onleft>200</onleft>
+								<onright>202</onright>
+								<onup>204</onup>
+								<ondown>204</ondown>
+							</control>
+							<control type="button" id="202">
+								<description>Default Image button</description>
+								<posx>375</posx>
+								<posy>0</posy>
+								<width>180</width>
+								<height>40</height>
+								<label>571</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(HomeGlobalBackground)</onclick>
+								<onleft>201</onleft>
+								<onright>200</onright>
+								<onup>204</onup>
+								<ondown>204</ondown>
+							</control>
+						</control>						
+						<control type="group">
+							<visible>Container(9002).HasFocus(2)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -702,7 +769,7 @@
 							</control>
 						</control>	
 						<control type="group">
-							<visible>Container(9002).HasFocus(2)</visible>
+							<visible>Container(9002).HasFocus(3)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -762,7 +829,7 @@
 							</control>
 						</control>	
 						<control type="group">
-							<visible>Container(9002).Hasfocus(3)</visible>
+							<visible>Container(9002).Hasfocus(4)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -822,7 +889,7 @@
 							</control>
 						</control>		
 						<control type="group">
-							<visible>Container(9002).HasFocus(4)</visible>
+							<visible>Container(9002).HasFocus(5)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -882,7 +949,7 @@
 							</control>
 						</control>		
 						<control type="group">
-							<visible>Container(9002).HasFocus(5)</visible>
+							<visible>Container(9002).HasFocus(6)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -942,7 +1009,7 @@
 							</control>
 						</control>	
 						<control type="group">
-							<visible>Container(9002).HasFocus(6)</visible>
+							<visible>Container(9002).HasFocus(7)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1002,7 +1069,7 @@
 							</control>
 						</control>	
 						<control type="group">
-							<visible>Container(9002).HasFocus(7)</visible>
+							<visible>Container(9002).HasFocus(8)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1062,7 +1129,7 @@
 							</control>
 						</control>	
 						<control type="group">
-							<visible>Container(9002).HasFocus(8)</visible>
+							<visible>Container(9002).HasFocus(9)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1122,7 +1189,7 @@
 							</control>
 						</control>	
 						<control type="group">
-							<visible>Container(9002).HasFocus(9)</visible>
+							<visible>Container(9002).HasFocus(10)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1182,7 +1249,7 @@
 							</control>
 						</control>		
 						<control type="group">
-							<visible>Container(9002).HasFocus(10)</visible>
+							<visible>Container(9002).HasFocus(11)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
@@ -1242,7 +1309,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>Container(9002).HasFocus(11)</visible>
+							<visible>Container(9002).HasFocus(12)</visible>
 							<control type="button" id="200">
 								<description>Single Image button</description>
 								<posx>5</posx>
