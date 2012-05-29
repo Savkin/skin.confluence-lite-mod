@@ -13,7 +13,7 @@
 		</control>
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
+		<include>MediaViewReturnButtons</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="image">
@@ -44,6 +44,7 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(KioskMode)</visible>
 			<posx>-250</posx>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">
@@ -51,7 +52,8 @@
 				<posy>110</posy>
 				<width>250</width>
 				<height>600</height>
-				<onleft>9000</onleft>
+				<onleft condition="!Skin.HasSetting(HideMediaHomeButton)">8998</onleft>
+				<onleft condition="Skin.HasSetting(HideMediaHomeButton)">9000</onleft>
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
