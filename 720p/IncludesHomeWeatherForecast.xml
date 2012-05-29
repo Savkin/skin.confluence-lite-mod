@@ -93,7 +93,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day0.LowTemp]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -153,7 +153,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day1.LowTemp]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day1.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -213,7 +213,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day2.LowTemp]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day2.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -273,7 +273,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day3.LowTemp]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day3.HighTemp))</visible>
 				</control>
 				<control type="textbox">
