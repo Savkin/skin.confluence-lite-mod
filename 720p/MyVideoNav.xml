@@ -160,7 +160,7 @@
 					<label>$LOCALIZE[31972]</label>
 					<onclick>Skin.ToggleSetting(View724HideCases)</onclick>
 					<selected>Skin.HasSetting(View724HideCases)</selected>
-					<visible>[Control.IsVisible(723) + !Container.Content(Episodes)] | Control.IsVisible(722) | [Control.IsVisible(724) + Container.Content(Movies)] | [Control.IsVisible(725) + Container.Content(Movies)]</visible>
+					<visible>[Control.IsVisible(723) + !Container.Content(Episodes)] | Control.IsVisible(501) | Control.IsVisible(722) | [Control.IsVisible(724) + Container.Content(Movies)] | [Control.IsVisible(725) + Container.Content(Movies)]</visible>
 				</control>
 				<control type="radiobutton" id="98">
 					<description>Show Cases Toggle</description>
