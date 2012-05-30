@@ -113,7 +113,9 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>560</onleft>
-				<onright>8998</onright>
+				<onright condition="!Skin.HasSetting(HideMediaHomeButton)">8998</onright>
+				<onright condition="Skin.HasSetting(HideMediaHomeButton) + !Skin.HasSetting(KioskMode)">9000</onright>
+				<onright condition="Skin.HasSetting(HideMediaHomeButton) + Skin.HasSetting(KioskMode)">560</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(560)</visible>
