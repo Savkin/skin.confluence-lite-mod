@@ -573,13 +573,13 @@
 				<onfocus>Skin.SetString(HomeItemTwoWidget,Pictures)</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeWidget,Videos)</onfocus>
+				<onfocus>Skin.SetString(HomeItemThreeWidget,AddOn)</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourWidget,Music)</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFourAction,ActivateWindow(Music))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFiveLabel,$LOCALIZE[0])</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveWidget,Programs)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemFiveWidget,AddOn)</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFiveAction,ActivateWindow(Programs,Addons,return))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemSixLabel,$LOCALIZE[427])</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixWidget,DiscMedia)</onfocus>	

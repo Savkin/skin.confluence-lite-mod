@@ -1933,9 +1933,9 @@
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
-					<onright>62</onright>
+					<onright>60</onright>
 					<onup>9005</onup>
 					<ondown>9005</ondown>
 					<control type="label" id="500">
@@ -1951,7 +1951,7 @@
 					<control type="button" id="501">
 						<width>750</width>
 						<height>35</height>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$LOCALIZE[31132]</label>
 						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(LyricScript_Path))][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
@@ -1973,7 +1973,7 @@
 					<control type="button" id="503">
 						<width>750</width>
 						<height>35</height>
-						<font>font12</font>
+						<font>font13</font>
 						<label>$LOCALIZE[31133]</label>
 						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(SubtitleScript_Path))][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
@@ -1982,6 +1982,172 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
 					</control>
+					<control type="label" id="504">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>$LOCALIZE[31999]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="button" id="505">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]1[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonOneLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonOne,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonOneLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonOne))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonOneLabel))">Skin.SetString(HomeAddonOneLabel)</onclick>
+					</control>
+					<control type="button" id="506">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]2[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonTwoLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonTwo,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonTwoLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonTwo))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonTwoLabel))">Skin.SetString(HomeAddonTwoLabel)</onclick>
+					</control>
+					<control type="button" id="507">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]3[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonThreeLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonThree,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonThreeLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonThree))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonThreeLabel))">Skin.SetString(HomeAddonThreeLabel)</onclick>
+					</control>
+					<control type="button" id="508">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]4[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonFourLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonFour,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonFourLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonFour))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonFourLabel))">Skin.SetString(HomeAddonFourLabel)</onclick>
+					</control>
+					<control type="button" id="509">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]5[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonFiveLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonFive,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonFiveLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonFive))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonFiveLabel))">Skin.SetString(HomeAddonFiveLabel)</onclick>
+					</control>
+					<control type="button" id="510">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]6[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonSixLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonSix,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonSixLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonSix))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonSixLabel))">Skin.SetString(HomeAddonSixLabel)</onclick>
+					</control>
+					<control type="button" id="511">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]7[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonSevenLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonSeven,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonSevenLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonSeven))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonSevenLabel))">Skin.SetString(HomeAddonSevenLabel)</onclick>
+					</control>
+					<control type="button" id="512">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]8[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonEightLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonEight,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonEightLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonEight))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonEightLabel))">Skin.SetString(HomeAddonEightLabel)</onclick>
+					</control>
+					<control type="button" id="513">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]9[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonNineLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonNine,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonNineLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonNine))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonNineLabel))">Skin.SetString(HomeAddonNineLabel)</onclick>
+					</control>
+					<control type="button" id="514">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] [B]10[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeAddonTenLabel)][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetAddon(HomeAddonButtonTen,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
+						<onclick>Skin.SetString(HomeAddonTenLabel,$INFO[system.addontitle(Skin.String(HomeAddonButtonTen))])</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeAddonTenLabel))">Skin.SetString(HomeAddonTenLabel)</onclick>
+					</control>
+				</control>
+				<control type="scrollbar" id="60">
+					<posx>1060</posx>
+					<posy>60</posy>
+					<width>25</width>
+					<height>530</height>
+					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9005</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Container(9000).Hasfocus(5)</visible>
 				</control>
 			</control>
 		</control>
