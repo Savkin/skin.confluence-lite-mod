@@ -272,6 +272,7 @@
 				</control>
 			</control>
 		</control>
+		<include condition="!Skin.HasSetting(HideHomeStats)">HomeContentPanelStats</include>
 		<include condition="!Skin.HasSetting(HideHomeMediaPanel)">HomeContentPanelInfo</include>
 		<include condition="!Skin.HasSetting(HideHomeWeatherPanel)">HomeWeatherForecast</include>
 		<control type="button" id="9003">
@@ -287,14 +288,14 @@
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<onup>20</onup>
-			<ondown>608</ondown>
+			<ondown>607</ondown>
 			<visible>false</visible>
 		</control>
 		<control type="group">
 			<description>Controls for currently playing media</description>
-			<posx>545r</posx>
+			<posx>580r</posx>
 			<posy>550</posy>
-			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia">conditional</animation>
+			<animation effect="slide" start="0,0" end="405,0" time="300" condition="!Player.HasMedia">conditional</animation>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
 				<effect type="fade" start="0" end="100" time="300" />
@@ -303,6 +304,13 @@
 				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
+			<control type="group" id="600">
+				<posx>180</posx>
+				<onup>9003</onup>
+				<ondown>9000</ondown>
+				<defaultcontrol>-</defaultcontrol>
+				<enable>Player.HasMedia</enable>
+				
 			<control type="image">
 				<description>Background End image</description>
 				<posx>0</posx>
@@ -312,41 +320,11 @@
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
 			</control>
-			<control type="radiobutton" id="608">
-				<colordiffuse>CCFFFFFF</colordiffuse>
-				<description>Global Search</description>
-				<posx>35</posx>
-				<posy>0</posy>
-				<height>35</height>
-				<width>145</width>
-				<textwidth>150</textwidth>
-				<textoffsetx>10</textoffsetx>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus flipy="true" border="5">HomeSubFO.png</texturefocus>
-				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
-				<pulseonselect>false</pulseonselect>
-				<label>137</label>
-				<onclick>RunScript(script.globalsearch)</onclick>
-				<textureradiofocus>icon_search.png</textureradiofocus>
-				<textureradionofocus>icon_search.png</textureradionofocus>
-				<onleft>607</onleft>
-				<onright>601</onright>
-				<onup>9003</onup>
-				<ondown>9000</ondown>
-			</control>
-			<control type="group" id="600">
-				<posx>180</posx>
-				<onup>9003</onup>
-				<ondown>9000</ondown>
-				<defaultcontrol>-</defaultcontrol>
-				<enable>Player.HasMedia</enable>
+				
+				
 				<control type="image">
 					<description>Background image</description>
-					<posx>0</posx>
+					<posx>35</posx>
 					<posy>0</posy>
 					<width>205</width>
 					<height>35</height>
@@ -354,21 +332,21 @@
 					<colordiffuse>CCFFFFFF</colordiffuse>
 				</control>
 				<control type="button" id="601">
-					<posx>10</posx>
+					<posx>45</posx>
 					<posy>2</posy>
 					<width>30</width>
 					<height>30</height>
 					<label>-</label>
 					<texturefocus>OSDPrevTrackFO.png</texturefocus>
 					<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
-					<onleft>608</onleft>
+					<onleft>607</onleft>
 					<onright>602</onright>
 					<onup>9003</onup>
 					<ondown>9000</ondown>
 					<onclick>XBMC.PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button" id="602">
-					<posx>40</posx>
+					<posx>75</posx>
 					<posy>2</posy>
 					<width>30</width>
 					<height>30</height>
@@ -382,7 +360,7 @@
 					<onclick>XBMC.PlayerControl(Rewind)</onclick>
 				</control>
 				<control type="togglebutton" id="603">
-					<posx>70</posx>
+					<posx>105</posx>
 					<posy>2</posy>
 					<width>30</width>
 					<height>30</height>
@@ -399,7 +377,7 @@
 					<onclick>XBMC.PlayerControl(Play)</onclick>
 				</control>
 				<control type="button" id="604">
-					<posx>100</posx>
+					<posx>135</posx>
 					<posy>2</posy>
 					<width>30</width>
 					<height>30</height>
@@ -414,7 +392,7 @@
 					<onclick>XBMC.PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button" id="605">
-					<posx>130</posx>
+					<posx>165</posx>
 					<posy>2</posy>
 					<width>30</width>
 					<height>30</height>
@@ -428,7 +406,7 @@
 					<onclick>XBMC.PlayerControl(Forward)</onclick>
 				</control>
 				<control type="button" id="606">
-					<posx>160</posx>
+					<posx>195</posx>
 					<posy>2</posy>
 					<width>30</width>
 					<height>30</height>
@@ -445,7 +423,7 @@
 			<control type="radiobutton" id="607">
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<description>Go to fullscreen Playback</description>
-				<posx>385</posx>
+				<posx>420</posx>
 				<posy>0</posy>
 				<height>35</height>
 				<width>160</width>
@@ -464,7 +442,7 @@
 				<textureradiofocus>GoFullscreen.png</textureradiofocus>
 				<textureradionofocus>GoFullscreen.png</textureradionofocus>
 				<onleft>606</onleft>
-				<onright>608</onright>
+				<onright>601</onright>
 				<onup>9003</onup>
 				<ondown>9000</ondown>
 				<enable>Player.HasMedia</enable>
@@ -617,7 +595,7 @@
 				<height>60</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<onup>608</onup>
+				<onup>607</onup>
 				<ondown>9001</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
@@ -826,10 +804,10 @@
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
 				<description>RSS feed</description>
-				<posx>100</posx>
+				<posx>160</posx>
 				<posy>0</posy>
 				<height>30</height>
-				<width>1145</width>
+				<width>1085</width>
 				<font>font12</font>
 				<urlset>1</urlset>
 				<textcolor>blue</textcolor>
@@ -844,62 +822,69 @@
 				<height>24</height>
 				<texture>icon-rss.png</texture>
 			</control>
+			<control type="image">
+				<description>RSS background</description>
+				<posx>156</posx>
+				<posy>2</posy>
+				<width>24</width>
+				<height>24</height>
+				<texture flipx="true">icon-rss.png</texture>
+			</control>
 		</control>
 		<control type="group" id="10">
-			<posx>20</posx>
-			<posy>55r</posy>
+			<posx>5</posx>
+			<posy>65r</posy>
 			<include>Window_OpenClose_Animation</include>
-			<control type="button" id="20">
-				<description>Power push button</description>
-				<posx>55</posx>
+			<control type="button" id="22">
+				<description>Search button</description>
+				<posx>0</posx>
 				<posy>0</posy>
-				<width>45</width>
-				<height>45</height>
-				<label>31003</label>
+				<width>50</width>
+				<height>50</height>
 				<font>-</font>
 				<aligny>-</aligny>
-				<onclick>ActivateWindow(ShutdownMenu)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>21</onleft>
+				<label>137</label>
+				<onclick>RunScript(script.globalsearch)</onclick>
+				<texturefocus border="5">search-FO.png</texturefocus>
+				<texturenofocus border="5">search.png</texturenofocus>
+				<onleft>20</onleft>
 				<onright>21</onright>
 				<onup>9001</onup>				
 				<ondown>9003</ondown>
 			</control>
-			<control type="image">
-				<description>Power Icon</description>
-				<posx>60</posx>
-				<posy>5</posy>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_power.png</texture>
-			</control>
 			<control type="button" id="21">
 				<description>Favourites push button</description>
-				<posx>0</posx>
+				<posx>50</posx>
 				<posy>0</posy>
-				<width>45</width>
-				<height>45</height>
+				<width>50</width>
+				<height>50</height>
 				<label>1036</label>
 				<font>-</font>
 				<aligny>-</aligny>
 				<onclick>ActivateWindow(Favourites)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>20</onleft>
+				<texturefocus border="5">home-favourites-FO.png</texturefocus>
+				<texturenofocus border="5">home-favourites.png</texturenofocus>
+				<onleft>22</onleft>
 				<onright>20</onright>
 				<onup>9001</onup>				
 				<ondown>9003</ondown>
 			</control>
-			<control type="image">
-				<description>Favourites Icon</description>
-				<posx>5</posx>
-				<posy>5</posy>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_favourites.png</texture>
+			<control type="button" id="20">
+				<description>Power push button</description>
+				<posx>100</posx>
+				<posy>0</posy>
+				<width>50</width>
+				<height>50</height>
+				<label>31003</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>ActivateWindow(ShutdownMenu)</onclick>
+				<texturefocus border="5">home-power-FO.png</texturefocus>
+				<texturenofocus border="5">home-power.png</texturenofocus>
+				<onleft>21</onleft>
+				<onright>22</onright>
+				<onup>9001</onup>				
+				<ondown>9003</ondown>
 			</control>
 		</control>
 		<control type="group">

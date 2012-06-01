@@ -2,7 +2,7 @@
 	<include name="HomeContentPanelInfo">
 		<control type="group" id="9003">
 			<onup>20</onup>
-			<ondown>608</ondown>
+			<ondown>607</ondown>
 			<visible>!Window.IsVisible(Favourites)</visible>
 			<include>VisibleFadeEffect</include>		
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
@@ -83,7 +83,7 @@
 					<onleft>8000</onleft>
 					<onright>8000</onright>
 					<onup>20</onup>
-					<ondown>608</ondown>
+					<ondown>607</ondown>
 					<preloaditems>4</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
@@ -234,7 +234,7 @@
 					<onleft>8001</onleft>
 					<onright>8001</onright>
 					<onup>20</onup>
-					<ondown>608</ondown>
+					<ondown>607</ondown>
 					<preloaditems>4</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
@@ -389,7 +389,7 @@
 					<onleft>8002</onleft>
 					<onright>8002</onright>
 					<onup>20</onup>
-					<ondown>608</ondown>
+					<ondown>607</ondown>
 					<preloaditems>4</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
@@ -504,7 +504,7 @@
 					<onleft>8003</onleft>
 					<onright>8003</onright>
 					<onup>20</onup>
-					<ondown>608</ondown>
+					<ondown>607</ondown>
 					<preloaditems>4</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
@@ -666,7 +666,7 @@
 						<onleft>8004</onleft>
 						<onright>8004</onright>
 						<onup>20</onup>
-						<ondown>608</ondown>
+						<ondown>607</ondown>
 						<preloaditems>4</preloaditems>
 						<scrolltime>150</scrolltime>
 						<pagecontrol>-</pagecontrol>
@@ -806,7 +806,7 @@
 						<onleft>8005</onleft>
 						<onright>8005</onright>
 						<onup>20</onup>
-						<ondown>608</ondown>
+						<ondown>607</ondown>
 						<preloaditems>4</preloaditems>
 						<scrolltime>150</scrolltime>
 						<pagecontrol>-</pagecontrol>
@@ -959,14 +959,15 @@
 						<visible>Control.HasFocus(8006)</visible>
 					</control>
 					<control type="panel" id="8006">
-						<posx>25</posx>
+						<!--posx>25</posx-->
+						<posx>18</posx>
 						<posy>75</posy>
 						<width>840</width>
 						<height>290</height>
 						<onleft>8006</onleft>
 						<onright>8006</onright>
 						<onup>20</onup>
-						<ondown>608</ondown>
+						<ondown>607</ondown>
 						<preloaditems>4</preloaditems>
 						<scrolltime>150</scrolltime>
 						<pagecontrol>-</pagecontrol>
@@ -1049,7 +1050,7 @@
 				<!-- Home Panel Addons -->
 				<visible>!Skin.HasSetting(HideHomeMediaPanel)</visible>
 				<visible>	
-					StringCompare(Container(9000).ListItem.Label2,AddOn) |
+					StringCompare(Container(9000).ListItem.Label2,AddOn) |  StringCompare(Container(9000).ListItem.Label2,Videos) |  
 					[!Skin.HasSetting(HideHomeMediaPanel) + !Skin.HasSetting(StickyWeatherPanel)  + !StringCompare(Container(9000).ListItem.Label2,Movies) +
 					!StringCompare(Container(9000).ListItem.Label2,Weather) + !StringCompare(Container(9000).ListItem.Label2,TVShows) + !StringCompare(Container(9000).ListItem.Label2,Music) +
 					!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Playlist)] |
@@ -1111,7 +1112,7 @@
 					<onleft>8007</onleft>
 					<onright>8007</onright>
 					<onup>20</onup>
-					<ondown>608</ondown>
+					<ondown>607</ondown>
 					<preloaditems>4</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
