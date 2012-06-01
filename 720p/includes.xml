@@ -13,6 +13,7 @@
 	<!--include file="Viewtype_Musicwallstream.xml" /-->
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
+	<include file="IncludesHomeLibraryStats.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesHomeWeatherForecast.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
