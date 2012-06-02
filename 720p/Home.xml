@@ -1,5 +1,6 @@
 <window id="0">
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
+	<onload condition="IsEmpty(Skin.String(HomePanelTrans))">Skin.SetString(HomePanelTrans,48FFFFFF)</onload>
 	<defaultcontrol always="true">8999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
@@ -275,6 +276,7 @@
 		<include condition="!Skin.HasSetting(HideHomeStats)">HomeContentPanelStats</include>
 		<include condition="!Skin.HasSetting(HideHomeMediaPanel)">HomeContentPanelInfo</include>
 		<include condition="!Skin.HasSetting(HideHomeWeatherPanel)">HomeWeatherForecast</include>
+		<!--include condition="!Skin.HasSetting(HideHomeSystemPanel)">HomeSystemPanelInfo</include-->
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<posx>-20</posx>
@@ -548,7 +550,7 @@
 				<onfocus>Skin.SetString(HomeItemTwoWidget,Pictures)</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeWidget,AddOn)</onfocus>
+				<onfocus>Skin.SetString(HomeItemThreeWidget,Videos)</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourWidget,Music)</onfocus>	

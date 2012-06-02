@@ -1528,13 +1528,156 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
+						<label>$LOCALIZE[31946]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>	
+					<control type="group" id="310">
+						<width>750</width>
+						<height>40</height>
+						<control type="grouplist" id="311">
+							<orientation>horizontal</orientation>
+							<width>750</width>
+							<height>40</height>
+							<itemgap>0</itemgap>
+							<onup>308</onup>
+							<ondown>323</ondown>
+							<align>center</align>
+							<control type="radiobutton" id="312">
+								<description>Transparency Level 90</description>
+								<width>70</width>
+								<height>40</height>
+								<label>90%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,18FFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),18FFFFFF)</selected>								
+							</control>
+							<control type="radiobutton" id="313">
+								<description>Transparency Level 80</description>
+								<width>70</width>
+								<height>40</height>
+								<label>80%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,2FFFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),2FFFFFFF)</selected>		
+							</control>
+							<control type="radiobutton" id="314">
+								<description>Transparency Level 70</description>
+								<width>70</width>
+								<height>40</height>
+								<label>70%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,48FFFFFF)</onclick>		
+								<selected>stringcompare(Skin.String(HomePanelTrans),48FFFFFF)</selected>	
+							</control>
+							<control type="radiobutton" id="315">
+								<description>Transparency Level 60</description>
+								<width>70</width>
+								<height>40</height>
+								<label>60%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,5FFFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),5FFFFFFF)</selected>
+							</control>
+							<control type="radiobutton" id="316">
+								<description>Transparency Level 50</description>
+								<width>70</width>
+								<height>40</height>
+								<label>50%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,78FFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),78FFFFFF)</selected>
+							</control>
+							<control type="radiobutton" id="317">
+								<description>Transparency Level 40</description>
+								<width>70</width>
+								<height>40</height>
+								<label>40%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,8FFFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),8FFFFFFF)</selected>
+							</control>
+							<control type="radiobutton" id="318">
+								<description>Transparency Level 30</description>
+								<width>70</width>
+								<height>40</height>
+								<label>30%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,A8FFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),A8FFFFFF)</selected>
+								</control>
+							<control type="radiobutton" id="319">
+								<description>Transparency Level 20</description>
+								<width>70</width>
+								<height>40</height>
+								<label>20%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,BFFFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),BFFFFFFF)</selected>
+							</control>
+							<control type="radiobutton" id="320">
+								<description>Transparency Level 10</description>
+								<width>70</width>
+								<height>40</height>
+								<label>10%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,DFFFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),DFFFFFFF)</selected>
+							</control>
+							<control type="radiobutton" id="321">
+								<description>Transparency Level 0</description>
+								<width>60</width>
+								<height>40</height>
+								<label>0%</label>
+								<font>font12</font>
+								<align>left</align>
+								<texturefocus>MenuItemFO.png</texturefocus>
+								<texturenofocus>MenuItemNF.png</texturenofocus>
+								<onclick>Skin.SetString(HomePanelTrans,FFFFFFFF)</onclick>	
+								<selected>stringcompare(Skin.String(HomePanelTrans),FFFFFFFF)</selected>
+							</control>
+						</control>
+					</control>
+					<control type="label" id="322">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
 						<label>$LOCALIZE[31101]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="310">
+					<control type="radiobutton" id="323">
 						<description>enable weather info</description>
 						<width>750</width>
 						<height>40</height>
@@ -1547,7 +1690,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="311">
+					<control type="radiobutton" id="324">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>

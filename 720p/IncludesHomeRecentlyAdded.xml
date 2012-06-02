@@ -21,7 +21,7 @@
 					<width>850</width>
 					<height>455</height>
 					<texture border="20">ContentPanel.png</texture>
-					<colordiffuse>6FFFFFFF</colordiffuse>
+					<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -172,7 +172,7 @@
 					<width>850</width>
 					<height>370</height>
 					<texture border="20">ContentPanel.png</texture>
-					<colordiffuse>6FFFFFFF</colordiffuse>
+					<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -327,7 +327,7 @@
 					<width>885</width>
 					<height>370</height>
 					<texture border="20">ContentPanel.png</texture>
-					<colordiffuse>6FFFFFFF</colordiffuse>
+					<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -458,7 +458,7 @@
 					<width>850</width>
 					<height>470</height>
 					<texture border="20">ContentPanel.png</texture>
-					<colordiffuse>6FFFFFFF</colordiffuse>
+					<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -604,7 +604,7 @@
 						<width>885</width>
 						<height>370</height>
 						<texture border="20">ContentPanel.png</texture>
-						<colordiffuse>6FFFFFFF</colordiffuse>
+						<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -744,7 +744,7 @@
 						<width>850</width>
 						<height>455</height>
 						<texture border="20">ContentPanel.png</texture>
-						<colordiffuse>6FFFFFFF</colordiffuse>
+						<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -904,7 +904,7 @@
 						<width>850</width>
 						<height>370</height>
 						<texture border="20">ContentPanel.png</texture>
-						<colordiffuse>6FFFFFFF</colordiffuse>
+						<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -1066,7 +1066,7 @@
 					<width>850</width>
 					<height>435</height>
 					<texture border="20">ContentPanel.png</texture>
-					<colordiffuse>6FFFFFFF</colordiffuse>
+					<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
