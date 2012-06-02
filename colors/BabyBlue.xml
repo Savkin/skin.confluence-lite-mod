@@ -6,5 +6,16 @@
 	<color name="black">FF000000</color>                      
 	<color name="blue">FF03d6d9</color>                            
 	<color name="selected">FF03d6d9</color>                    
-        <color name="orange">FF03d6d9</color>        
+        <color name="orange">FF03d6d9</color> 
+        
+    <color name="MenuFocus">FF03d6d9</color><!--blue-->
+    <color name="MenuNoFocus">FF505050</color><!--grey3-->
+    <color name="SubMenu">FF999999</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">FF03d6d9</color><!--blue-->
+    <color name="HomeInfoThree">FF999999</color><!--grey2-->
+    <color name="StatsName">FFFFFFFF</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->    
 </colors>
