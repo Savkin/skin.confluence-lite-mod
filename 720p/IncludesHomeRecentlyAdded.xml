@@ -41,7 +41,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IsEmpty(Window(home).Property(Watchlist_Control)) | IsEmpty(Window(home).Property(WatchList_Movie.1.Label))</visible>
 					<visible>!Control.HasFocus(8000)</visible>
@@ -56,7 +56,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!IsEmpty(Window(home).Property(Watchlist_Control)) + !IsEmpty(Window(home).Property(WatchList_Movie.1.Label))</visible>
 					<visible>!Control.HasFocus(8000)</visible>
@@ -71,7 +71,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Control.HasFocus(8000)</visible>
 				</control>
@@ -192,7 +192,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IsEmpty(Window(home).Property(Watchlist_Control)) | IsEmpty(Window(home).Property(WatchList_Episode.1.Label))</visible>
 					<visible>!Control.HasFocus(8001)</visible>
@@ -207,7 +207,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!IsEmpty(Window(home).Property(Watchlist_Control)) + !IsEmpty(Window(home).Property(WatchList_Episode.1.Label))</visible>
 					<visible>!Control.HasFocus(8001)</visible>
@@ -222,7 +222,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Control.HasFocus(8001)</visible>
 				</control>
@@ -257,7 +257,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 							<align>left</align>
 							<font>font12</font>
-							<textcolor>white</textcolor>
+							<textcolor>HomeInfoOne</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -293,7 +293,7 @@
 								<label>$INFO[ListItem.Label2]</label>
 								<align>left</align>
 								<font>font12</font>
-								<textcolor>white</textcolor>
+								<textcolor>HomeInfoOne</textcolor>
 								<shadowcolor>black</shadowcolor>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
@@ -347,7 +347,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IsEmpty(Window(home).Property(Watchlist_Control)) | IsEmpty(Window(home).Property(WatchList_Album.1.Label))</visible>
 					<visible>!Control.HasFocus(8002)</visible>
@@ -362,7 +362,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!IsEmpty(Window(home).Property(Watchlist_Control)) + !IsEmpty(Window(home).Property(WatchList_Album.1.Label))</visible>
 					<visible>!Control.HasFocus(8002)</visible>
@@ -377,7 +377,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Control.HasFocus(8002)</visible>
 				</control>
@@ -478,7 +478,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Control.HasFocus(8003)</visible>
 				</control>
@@ -492,7 +492,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Control.HasFocus(8003)</visible>
 				</control>
@@ -624,7 +624,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
 						<visible>!Control.HasFocus(8004)</visible>
@@ -639,7 +639,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>Skin.HasSetting(UseLastNotRandom)</visible>
 						<visible>!Control.HasFocus(8004)</visible>
@@ -654,7 +654,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>Control.HasFocus(8004)</visible>
 					</control>
@@ -764,7 +764,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
 						<visible>!Control.HasFocus(8005)</visible>
@@ -779,7 +779,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>Skin.HasSetting(UseLastNotRandom)</visible>
 						<visible>!Control.HasFocus(8005)</visible>
@@ -794,7 +794,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>Control.HasFocus(8005)</visible>
 					</control>
@@ -924,7 +924,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
 						<visible>!Control.HasFocus(8006)</visible>
@@ -939,7 +939,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>Skin.HasSetting(UseLastNotRandom)</visible>
 						<visible>!Control.HasFocus(8006)</visible>
@@ -954,7 +954,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>white</textcolor>
+						<textcolor>HomeInfoOne</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<visible>Control.HasFocus(8006)</visible>
 					</control>
@@ -990,7 +990,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 							<align>left</align>
 							<font>font12</font>
-							<textcolor>white</textcolor>
+							<textcolor>HomeInfoOne</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -1026,7 +1026,7 @@
 								<label>$INFO[ListItem.Label2]</label>
 								<align>left</align>
 								<font>font12</font>
-								<textcolor>white</textcolor>
+								<textcolor>HomeInfoOne</textcolor>
 								<shadowcolor>black</shadowcolor>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
@@ -1086,7 +1086,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Control.HasFocus(8007)</visible>
 				</control>
@@ -1100,7 +1100,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Control.HasFocus(8007)</visible>
 				</control>

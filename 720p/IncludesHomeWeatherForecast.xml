@@ -7,7 +7,7 @@
 				[Skin.HasSetting(HideHomeMediaPanel) + Skin.HasSetting(StickyWeatherPanel)] |
 				[!Skin.HasSetting(HideHomeMediaPanel) + Skin.HasSetting(StickyWeatherPanel)  + !StringCompare(Container(9000).ListItem.Label2,Movies) +
 				!StringCompare(Container(9000).ListItem.Label2,AddOn) + !StringCompare(Container(9000).ListItem.Label2,TVShows) + !StringCompare(Container(9000).ListItem.Label2,Music) +
-				!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Playlist)] |
+				!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Videos) + !StringCompare(Container(9000).ListItem.Label2,Playlist)] |
 				[StringCompare(Container(9000).ListItem.Label2,Playlist) + Skin.HasSetting(HideWatchPlaylist)]
 			</visible>	
 			<include>VisibleFadeEffect</include>
@@ -40,7 +40,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>white</textcolor>
+				<textcolor>HomeInfoOne</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!Skin.HasSetting(homepageWeatherinfo)</visible>
 			</control>
@@ -54,7 +54,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>white</textcolor>
+				<textcolor>HomeInfoOne</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Skin.HasSetting(homepageWeatherinfo)</visible>
 			</control>
@@ -71,7 +71,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>HomeInfoTwo</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
@@ -88,12 +88,12 @@
 					<height>20</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=HomeInfoThree]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=HomeInfoThree]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -102,7 +102,7 @@
 					<height>65</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -131,7 +131,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>HomeInfoTwo</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
@@ -148,12 +148,12 @@
 					<height>20</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=HomeInfoThree]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=HomeInfoThree]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day1.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -162,7 +162,7 @@
 					<height>65</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -191,7 +191,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>HomeInfoTwo</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
@@ -208,12 +208,12 @@
 					<height>20</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=HomeInfoThree]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=HomeInfoThree]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day2.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -222,7 +222,7 @@
 					<height>65</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -251,7 +251,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>HomeInfoTwo</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="image">
@@ -268,12 +268,12 @@
 					<height>20</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>[COLOR=grey2]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=grey2]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label>[COLOR=HomeInfoThree]$LOCALIZE[419]: [/COLOR]$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]  [COLOR=HomeInfoThree]$LOCALIZE[418]: [/COLOR]$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<visible>!IsEmpty(Window(weather).Property(Day3.HighTemp))</visible>
 				</control>
 				<control type="textbox">
@@ -282,7 +282,7 @@
 					<height>65</height>
 					<width>180</width>
 					<font>font10</font>
-					<textcolor>white</textcolor>
+					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -305,11 +305,11 @@
 				<height>20</height>
 				<width>830</width>
 				<font>font10</font>
-				<textcolor>white</textcolor>
+				<textcolor>HomeInfoOne</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31303] : [COLOR=orange]$INFO[Window(weather).Property(WeatherProvider)][/COLOR]</label>
+				<label>$LOCALIZE[31303] : [COLOR=HomeInfoThree]$INFO[Window(weather).Property(WeatherProvider)][/COLOR]</label>
 				<include>Window_OpenClose_Animation</include>
 			</control>
 		</control>		
