@@ -12,7 +12,7 @@
         <color name="SubMenu">ffffff00</color><!--grey2-->
         <color name="CommonBtnFocus">ffffff00</color><!--white-->
         <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
-        <color name="HomeInfoOne">ffffff00</color><!--white-->
+        <color name="HomeInfoOne">ffffffff</color><!--white-->
         <color name="HomeInfoTwo">FFF30000</color><!--blue-->
         <color name="HomeInfoThree">FF999999</color><!--grey2-->
         <color name="StatsName">FFFFFFFF</color><!--white-->
