@@ -8,4 +8,16 @@
 	<color name="blue">84ff00ff</color>	
 	<color name="selected">FFFF69b4</color>
 	<color name="dialogheader">FFdda0dd</color>
+	
+    <color name="MenuFocus">84ff00ff</color><!--blue-->
+    <color name="MenuNoFocus">FF505050</color><!--grey3-->
+    <color name="SubMenu">FF999999</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">84ff00ff</color><!--blue-->
+    <color name="HomeInfoThree">FF999999</color><!--grey2-->
+    <color name="StatsName">FFFFFFFF</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+	
 </colors>
