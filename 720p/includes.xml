@@ -13,6 +13,8 @@
 	<!--include file="Viewtype_Musicwallstream.xml" /-->
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
+	<include file="IncludesHomeLibraryStats.xml" />
+	<include file="IncludesHomeSystemStats.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesHomeWeatherForecast.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
@@ -62,6 +64,18 @@
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
+	<include name="ContextMenuButtonCommonValues">
+        <font>fontContextMenu</font>
+        <width>340</width>
+        <height>40</height>
+        <textcolor>grey2</textcolor>
+        <focusedcolor>white</focusedcolor>
+        <align>center</align>
+        <textwidth>290</textwidth>
+        <texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+        <texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+        <pulseonselect>no</pulseonselect>
+	</include>
 	<include name="ButtonMediaSubCommonValues">
 		<height>40</height>
 		<width>221</width>
@@ -80,8 +94,8 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12</font>
-		<textcolor>grey2</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<textcolor>CommonBtnNoFocus</textcolor>
+		<focusedcolor>CommonBtnFocus</focusedcolor>
 		<texturefocus border="5">HomeSubFO.png</texturefocus>
 		<texturenofocus border="5">HomeSubNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
@@ -884,7 +898,7 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font28_title</font>
-			<textcolor>white</textcolor>
+			<textcolor>HomeInfoOne</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Time]</label>
 			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>

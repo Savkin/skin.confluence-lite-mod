@@ -148,7 +148,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Videos,Files,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOn)</onclick>												
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Videos)</onclick>												
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[3])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<onclick>Dialog.Close(2114)</onclick>
@@ -160,7 +160,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Videos,Root,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOn)</onclick>												
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Videos)</onclick>												
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[3])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<onclick>Dialog.Close(2114)</onclick>
@@ -297,7 +297,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Videos,Addons,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOn)</onclick>												
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Videos)</onclick>												
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31982])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<onclick>Dialog.Close(2114)</onclick>

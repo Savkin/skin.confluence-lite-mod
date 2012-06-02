@@ -1,0 +1,387 @@
+<includes>
+	<include name="HomeContentPanelStats">
+		<control type="group">
+			<visible>!Window.IsVisible(Favourites) + !Skin.HasSetting(GlobalSearchActive) + !Skin.HasSetting(HideHomeStats) + !Player.HasMedia</visible>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+			<control type="group">
+				<description>Video Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-550,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Videos)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>510</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[20342]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Count)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>205</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>150</width>
+					<label>$LOCALIZE[20343]:[COLOR StatsAmnt] $INFO[Window.Property(TVShows.Count)][/COLOR]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>365</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[20389]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Count)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>Movie Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-550,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Movies)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>510</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[20342]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Count)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>205</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>150</width>
+					<label>$LOCALIZE[16102]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Watched)][/COLOR]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>365</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.UnWatched)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>TVShow Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-550,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,TVShows)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>510</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[20343]:[COLOR StatsAmnt] $INFO[Window.Property(TVShows.Count)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>205</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>150</width>
+					<label>$LOCALIZE[20360]:[COLOR StatsAmnt] $INFO[Window.Property(Episodes.Count)][/COLOR]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>365</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(Episodes.UnWatched)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>Concerts Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-550,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Concerts)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>510</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[31025]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Count)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>205</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>150</width>
+					<label>$LOCALIZE[16102]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Watched)][/COLOR]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>365</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.UnWatched)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>Music Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-550,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Music)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>510</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[132]:[COLOR StatsAmnt] $INFO[Window.Property(Music.AlbumsCount)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>205</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>150</width>
+					<label>$LOCALIZE[133]:[COLOR StatsAmnt] $INFO[Window.Property(Music.ArtistsCount)][/COLOR]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>365</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$LOCALIZE[134]:[COLOR StatsAmnt] $INFO[Window.Property(Music.SongsCount)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>Playlist Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-550,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Playlist)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>510</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$VAR[UsrHomePlaylistStatCount]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>205</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>150</width>
+					<label>$VAR[UsrHomePlaylistUnWatched]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>365</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>150</width>
+					<label>$VAR[UsrHomePlaylistWatched]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>
