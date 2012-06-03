@@ -1,13 +1,13 @@
 <colors>
-	<color name="white">FFFFFFFF</color>                 
-	<color name="grey">FFb4b4b4</color>                      
- 	<color name="grey2">FF999999</color>                     
-	<color name="grey3">FF505050</color>                      
-	<color name="black">FF000000</color>                      
-	<color name="blue">FF03d6d9</color>                            
-	<color name="selected">FF03d6d9</color>                    
-        <color name="orange">FF03d6d9</color> 
-        
+   <color name="white">FFFFFFFF</color>
+    <color name="grey">FFb4b4b4</color>
+    <color name="grey2">FF999999</color>
+    <color name="grey3">FF505050</color>
+    <color name="black">FF000000</color>
+    <color name="blue">FF03d6d9</color>
+    <color name="selected">FF03d6d9</color>
+    <color name="orange">FF03d6d9</color>        
+    <!--HOME-->
     <color name="MenuFocus">FF03d6d9</color><!--blue-->
     <color name="MenuNoFocus">FF505050</color><!--grey3-->
     <color name="SubMenu">FF999999</color><!--grey2-->
@@ -17,5 +17,7 @@
     <color name="HomeInfoTwo">FF03d6d9</color><!--blue-->
     <color name="HomeInfoThree">FF999999</color><!--grey2-->
     <color name="StatsName">FFFFFFFF</color><!--white-->
-    <color name="StatsAmnt">FFFFFFFF</color><!--white-->    
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+    <color name="RSSText">FFFFFFFF</color><!--blue-->
+    <color name="RSSTitle>FF03d6d9</color><!--blue-->
 </colors>
