@@ -21,4 +21,8 @@
 	<color name="RSSHiLite">FFFFFFFF</color><!--white-->
         <color name="StatsName">FFFFFFFF</color><!--white-->
         <color name="StatsAmnt">FFFFFFFF</color><!--white-->	
+<<<<<<< HEAD
 </colors>
+=======
+</colors>
+>>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312
