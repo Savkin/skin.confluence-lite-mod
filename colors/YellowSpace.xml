@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <colors>
 	<color name="white">FFFFFFFF</color>
 	<color name="grey">FFb4b4b4</color>
@@ -19,3 +20,28 @@
         <color name="StatsName">FFFFFFFF</color><!--white-->
         <color name="StatsAmnt">FFFFFFFF</color><!--white-->
 </colors>
+=======
+<colors>
+	<color name="white">FFffffff</color>
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">88FFFFFF</color>
+	<color name="grey3">33FFFFFF</color>
+	<color name="grey4">17FFFFFF</color>
+	<color name="black">FF000000</color>
+	<color name="blue">FFffff00</color>
+	<color name="selected">FFcccc33</color>
+	<color name="dialogheader">FFccff33</color>
+
+    <color name="MenuFocus">FFffff00</color><!--blue-->
+    <color name="MenuNoFocus">FF505050</color><!--grey3-->
+    <color name="SubMenu">FF999999</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">FFffff00</color><!--blue-->
+    <color name="HomeInfoThree">FF999999</color><!--grey2-->
+    <color name="StatsName">FFFFFFFF</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+
+</colors>
+>>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312

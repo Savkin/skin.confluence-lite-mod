@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <colors>
 	<color name="white">ffffffff</color>              <!-- WHITE -->
 	<color name="grey">ff03bbd2</color>               <!-- LIGHT BLUE -->
@@ -24,3 +25,29 @@
     <color name="StatsName">FFFFFFFF</color><!--white-->
     <color name="StatsAmnt">FFFFFFFF</color><!--white-->
 </colors>
+=======
+<colors>
+
+    <color name="white">FFFFFFFF</color>
+    <color name="grey">FFb4b4b4</color>
+    <color name="grey2">FF999999</color>
+    <color name="grey3">FF505050</color>
+    <color name="black">FF000000</color>
+    <color name="blue">ff03d282</color>
+    <color name="orange">ff03bbd2</color>             <!-- LIGHT BLUE -->
+    <color name="selected">ff03d282</color>
+    <color name="dialogheader">ffbbabf5</color>
+    <color name="orange">ff03bbd2</color>             <!--ORANGE MUSIC TITLE -->
+
+    <color name="MenuFocus">ff04d282</color><!--blue-->
+    <color name="MenuNoFocus">ff0353d2</color><!--grey3-->
+    <color name="SubMenu">ff03d282</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">ff03d282</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">ffbbabf5</color><!--blue-->
+    <color name="HomeInfoThree">ff03d282</color><!--grey2-->
+    <color name="StatsName">FFFFFFFF</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+</colors>
+>>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312

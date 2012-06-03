@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <colors>
 	<color name="white">FFFFFFFF</color>
 	<color name="grey">FFebebeb</color>
@@ -20,3 +21,33 @@
         <color name="StatsName">FFFFFFFF</color><!--white-->
         <color name="StatsAmnt">FFFFFFFF</color><!--white-->
 </colors>
+=======
+<colors>
+	<color name="white">FFFFFFFF</color>
+	<color name="grey">FFebebeb</color>
+	<color name="grey2">ffcacaca</color>
+	<color name="grey3">FF696a6c</color>
+	<color name="grey4">FFebebeb</color>
+	<color name="black">FF111111</color>
+	<color name="blue">ff83622d</color>
+        <color name="selected">FFDCB66F</color>
+	<color name="dialogheader">ee83622d</color>
+        <color name="orange">ee83622d</color>   
+    <!--MENU-->
+    <color name="MenuFocus">ff83622d</color><!--blue-->
+    <color name="MenuNoFocus">FF505050</color><!--grey3-->
+    <color name="SubMenu">FF999999</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">ff83622d</color><!--blue-->
+    <color name="HomeInfoThree">FF999999</color><!--grey2-->
+    <color name="StatsName">FFDCB66F</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+    <color name="RSSText">FFFFFFFF</color><!--blue-->
+    <color name="RSSTitle">FFDCB66F</color><!--blue-->
+
+
+                  
+</colors>
+>>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312

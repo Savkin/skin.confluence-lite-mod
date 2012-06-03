@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <colors>
 	<color name="white">FFFFFFF0</color>  
 	<color name="grey">FFb4b4b4</color>
@@ -19,3 +20,32 @@
     <color name="StatsName">FFFFFFFF</color><!--white-->
     <color name="StatsAmnt">FFFFFFFF</color><!--white-->
 </colors>
+=======
+<colors>
+	<color name="white">FFFFFFF0</color>  
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">FF999999</color>
+	<color name="grey3">FF505050</color>
+	<color name="black">FF000000</color>
+	<color name="blue">ff63822c</color>      <!-- DARK GREEN -->
+	<color name="selected">FF6DF300</color>  <!-- VERY DARK GREEN -->
+        <color name="orange">FFcccc33</color>    <!-- YELLOW -->
+
+    <color name="MenuFocus">ff63822c</color><!--blue-->
+    <color name="MenuNoFocus">FF505050</color><!--grey3-->
+    <color name="SubMenu">FF999999</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">ff63822c</color><!--blue-->
+    <color name="HomeInfoThree">FF999999</color><!--grey2-->
+    <color name="StatsName">FFFFFFFF</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+
+
+
+
+
+
+</colors>
+>>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312

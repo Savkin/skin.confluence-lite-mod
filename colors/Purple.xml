@@ -1,0 +1,32 @@
+<colors>
+	<color name="white">FFffffff</color>
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">88FFFFFF</color>
+	<color name="grey3">33FFFFFF</color>
+	<color name="grey4">17FFFFFF</color>
+	<color name="black">FF000000</color>
+        <color name="blue">FF6f04d2</color>                         <!-- DARK PURPLE -->
+        <color name="selected">FF0204ce</color>                     <!-- PINKISH -->
+       	<color name="dialogheader">FF0804d2</color>                 <!-- EXTRA LIGHT PURPLE -->
+        <color name="orange">FF6f04d2</color>                       <!--- PURPLE -->
+
+  <color name="MenuFocus">FF6f04d2</color><!--blue-->
+    <color name="MenuNoFocus">33FFFFFF</color><!--grey3-->
+    <color name="SubMenu">88FFFFFF</color><!--grey2-->
+    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnNoFocus">88FFFFFF</color><!--grey2-->
+    <color name="HomeInfoOne">ffffffff</color><!--white-->
+    <color name="HomeInfoTwo">FF6f04d2</color><!--blue-->
+    <color name="HomeInfoThree">88FFFFFF</color><!--grey2-->
+    <color name="StatsName">FFFFFFFF</color><!--white-->
+    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+</colors>
+
+
+
+
+
+
+
+
+</colors>
