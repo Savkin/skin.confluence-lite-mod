@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-<colors>
-	<color name="white">ffffffff</color>              <!-- WHITE -->
-	<color name="grey">ff03bbd2</color>               <!-- LIGHT BLUE -->
-	<color name="grey2">ff03d282</color>              <!-- SEA GREEN -->
-	<color name="grey3">ff0353d2</color>              <!-- BLUE -->
-	<color name="grey4">ffd28203</color>              <!-- ORANGE -->
-	<color name="black">FF000000</color>              <!-- BLACK -->
-	<color name="blue">ff03d282</color>               <!-- SEA GREEN -->  
-	<color name="selected">ffbbabf5</color>           <!-- BLUE -->
-	<color name="dialogheader">ffabc0f5</color>       <!-- SEA GREEN -->
-        <color name="orange">ff03bbd2</color>             <!-- LIGHT BLUE -->
-        <color name="red">ffd20353</color>                <!-- RED -->
-        <color name="yellow">ffbad203</color>             <!-- YELLOW -->
-        
-        
-    <color name="MenuFocus">ffbbabf5</color><!--blue-->
-    <color name="MenuNoFocus">ff0353d2</color><!--grey3-->
-    <color name="SubMenu">ff03d282</color><!--grey2-->
-    <color name="CommonBtnFocus">ffffffff</color><!--white-->
-    <color name="CommonBtnNoFocus">ff03d282</color><!--grey2-->
-    <color name="HomeInfoOne">ffffffff</color><!--white-->
-    <color name="HomeInfoTwo">ffbbabf5</color><!--blue-->
-    <color name="HomeInfoThree">ff03d282</color><!--grey2-->
-    <color name="StatsName">FFFFFFFF</color><!--white-->
-    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
-</colors>
-=======
 <colors>
 
     <color name="white">FFFFFFFF</color>
@@ -50,4 +22,3 @@
     <color name="StatsName">FFFFFFFF</color><!--white-->
     <color name="StatsAmnt">FFFFFFFF</color><!--white-->
 </colors>
->>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312

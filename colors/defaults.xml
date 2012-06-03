@@ -1,13 +1,12 @@
 <colors>
+	<!-- Confluence Lite Colours -->
 	<color name="white">FFFFFFFF</color>
 	<color name="grey">FFb4b4b4</color>
 	<color name="grey2">FF999999</color>
 	<color name="grey3">FF505050</color>
 	<color name="black">FF000000</color>
 	<color name="blue">FF0084ff</color>
-	<color name="selected">FFEB9E17</color>
-	
-		<!-- Added Colours for MOD -->
+	<!-- Added Colours for MOD -->
 	<color name="MenuFocus">FF0084ff</color><!--blue-->
 	<color name="MenuNoFocus">FF505050</color><!--grey3-->
 	<color name="SubMenu">FF999999</color><!--grey2-->
@@ -21,8 +20,4 @@
 	<color name="RSSHiLite">FFFFFFFF</color><!--white-->
         <color name="StatsName">FFFFFFFF</color><!--white-->
         <color name="StatsAmnt">FFFFFFFF</color><!--white-->	
-<<<<<<< HEAD
 </colors>
-=======
-</colors>
->>>>>>> 367feac4f209989e7edbd6fc7b48f894f5dc7312
