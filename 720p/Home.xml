@@ -803,10 +803,10 @@
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
 				<description>RSS feed</description>
-				<posx>160</posx>
-				<posy>0</posy>
+				<posx>-40</posx>
+				<posy>6</posy>
 				<height>30</height>
-				<width>1085</width>
+				<width>1285</width>
 				<font>font12</font>
 				<urlset>1</urlset>
 				<textcolor>RSSText</textcolor>
@@ -816,23 +816,15 @@
 			<control type="image">
 				<description>RSS background</description>
 				<posx>1250</posx>
-				<posy>2</posy>
+				<posy>6</posy>
 				<width>24</width>
 				<height>24</height>
 				<texture>icon-rss.png</texture>
 			</control>
-			<control type="image">
-				<description>RSS background</description>
-				<posx>156</posx>
-				<posy>2</posy>
-				<width>24</width>
-				<height>24</height>
-				<texture flipx="true">icon-rss.png</texture>
-			</control>
 		</control>
 		<control type="group" id="10">
 			<posx>5</posx>
-			<posy>65r</posy>
+			<posy>70r</posy>
 			<include>Window_OpenClose_Animation</include>
 			<control type="button" id="22">
 				<description>Search button</description>
