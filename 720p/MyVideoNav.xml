@@ -181,6 +181,15 @@
 					<selected>Skin.HasSetting(View508HideInfo)</selected>
 					<visible>Control.IsVisible(508)</visible>
 				</control>
+				<control type="radiobutton" id="100">
+					<description>Show Fanart in 720 Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>Test</label>
+					<onclick>Skin.ToggleSetting(720transparent)</onclick>
+					<selected>Skin.HasSetting(720transparent)</selected>
+					<visible>Control.IsVisible(720)</visible>
+				</control>
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>

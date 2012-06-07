@@ -19,15 +19,27 @@
 				<width>1280</width>
 				<height>720</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>blackback.png</texture>
+				<texture>$INFO[ListItem.Property(fanart_image)]</texture>
+				<visible>Skin.HasSetting(720transparent)</visible>
 			</control>
 			<control type="image">
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>720r</posy>
 				<width>1280</width>
-				<height>500</height>
+				<height>720</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>ContentPanel.png</texture>
+				<texture>blackback.png</texture>
+				<colordiffuse>99FFFF99</colordiffuse>
+				<visible>Skin.HasSetting(720transparent)</visible>
+			</control>			
+			<control type="image">
+				<posx>0</posx>
+				<posy>720r</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>blackback.png</texture>
+				<visible>!Skin.HasSetting(720transparent)</visible>
 			</control>
 			<control type="image">
 				<posx>25</posx>
@@ -52,7 +64,7 @@
 				<focusposition>3</focusposition>
 				<orientation>horizontal</orientation>
 				<preloaditems>4</preloaditems>
-				<itemlayout height="310" width="195" condition="!Skin.HasSetting(CoverFlow)">
+				<itemlayout height="310" width="195">
 					<control type="image">
 						<posx>91</posx>
 						<posy>60</posy>
@@ -72,63 +84,7 @@
 						<texture>showcase/$INFO[ListItem.Overlay]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout height="310" width="195" condition="!Skin.HasSetting(CoverFlow)">
-					<control type="image">
-						<posx>85</posx>
-						<posy>55</posy>
-						<width>185</width>
-						<height>271</height>
-						<aspectratio>stretch</aspectratio>
-						<bordertexture border="5">ThumbBorder.png</bordertexture>
-						<bordersize>8</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="40,52,184,270" end="20,15,214,310" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="40,52,184,270" start="20,15,214,310" time="200">unfocus</animation>
-					</control>
-					<control type="image">
-						<posx>90</posx>
-						<posy>60</posy>
-						<width>175</width>
-						<height>261</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>GlassOverlay.png</texture>
-						<animation reversible="false" effect="zoom" start="40,52,174,260" end="19,15,204,300" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="40,52,174,260" start="19,15,204,300" time="200">unfocus</animation>
-					</control>
-					<control type="image">
-						<posx>177</posx>
-						<posy>58</posy>
-						<width>90</width>
-						<height>90</height>
-						<aspectratio>keep</aspectratio>
-						<texture>showcase/$INFO[ListItem.Overlay]</texture>
-						<animation reversible="false" effect="zoom" start="42,53,89,89" end="-21,15,121,120" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="42,53,89,89" start="-21,15,121,120" time="200">unfocus</animation>
-					</control>
-				</focusedlayout>
-				<itemlayout height="310" width="195" condition="Skin.HasSetting(CoverFlow)">
-					<control type="image">
-						<posx>91</posx>
-						<posy>60</posy>
-						<width>174</width>
-						<height>260</height>
-						<aspectratio>stretch</aspectratio>
-						<bordertexture border="6">button-nofocus.png</bordertexture>
-						<bordersize>3</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<animation effect="rotatey" end="30" center="360,288" time="200" condition="true">conditionsl</animation>
-					</control>
-					<control type="image">
-						<posx>177</posx>
-						<posy>63</posy>
-						<width>85</width>
-						<height>85</height>
-						<aspectratio>keep</aspectratio>
-						<texture>showcase/$INFO[ListItem.Overlay]</texture>
-						<animation effect="rotatey" center="0" end="-10" time="0" condition="true">Conditional</animation>
-					</control>
-				</itemlayout>
-				<focusedlayout height="310" width="195" condition="Skin.HasSetting(CoverFlow)">
+				<focusedlayout height="310" width="195">
 					<control type="image">
 						<posx>85</posx>
 						<posy>55</posy>
