@@ -83,7 +83,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>NowPlayAlbum</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -96,7 +96,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>white</textcolor>
+				<textcolor>NowPlayTitle</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
@@ -105,11 +105,11 @@
 				<posy>305</posy>				
 				<height>30</height>
 				<width>300</width>
-				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>NowPlayTime</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
@@ -143,7 +143,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayTitle</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -152,11 +152,11 @@
 					<posy>505</posy>					
 					<height>30</height>
 					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=FF0084ff] / [/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayTime</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
@@ -189,7 +189,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayAlbum</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -202,7 +202,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayTitle</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -211,11 +211,11 @@
 					<posy>505</posy>
 					<height>30</height>
 					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayTime</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
@@ -242,7 +242,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayAlbum</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -255,7 +255,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayTitle</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -264,11 +264,11 @@
 					<posy>505</posy>					
 					<height>30</height>
 					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>NowPlayTime</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
@@ -431,8 +431,8 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>CommonBtnNoFocus</textcolor>
+				<focusedcolor>CommonBtnFocus</focusedcolor>
 				<texturefocus flipy="true" border="5">HomeSubFO.png</texturefocus>
 				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
 				<pulseonselect>false</pulseonselect>
@@ -886,6 +886,11 @@
 				<ondown>9003</ondown>
 			</control>
 		</control>
+		
+		
+		
+		
+		
 		<control type="group">
 			<posx>20</posx>
 			<posy>0</posy>
@@ -964,7 +969,7 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font10</font>
-			<textcolor>HomeInfoOne</textcolor>
+			<textcolor>HomeInfoDate</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Date]</label>
 			<include>Window_OpenClose_Animation</include>
