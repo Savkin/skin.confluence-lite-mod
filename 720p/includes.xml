@@ -10,6 +10,7 @@
 	<include file="Viewtype_Lowlist.xml" />
 	<include file="Viewtype_Rightlist.xml" />
 	<include file="Viewtype_Wallstream.xml" />
+	<include file="ViewsMovieSets.xml" />
 	<!--include file="Viewtype_Musicwallstream.xml" /-->
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
@@ -1072,6 +1073,53 @@
 				<align>center</align>
 			</control>
 		</focusedlayout>
+	</include>
+	<include name="MovieSetCaseUnderlay">
+		<control type="image">
+			<posx>5</posx>
+			<posy>33</posy>
+			<width>120</width>
+			<height>175</height>
+			<aspectratio stretchdiffuse="false">stretch</aspectratio>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<texture background="true">EmptyCaseBorder.png</texture>
+		</control>
+	</include>	
+	<include name="MovieSetCaseOverlay">	
+		<control type="image">
+			<posx>5</posx>
+			<posy>33</posy>
+			<width>120</width>
+			<height>175</height>
+			<aspectratio stretchdiffuse="false">stretch</aspectratio>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<texture background="true">EmptyCaseOverlay.png</texture>
+		</control>
+	</include>
+	<include name="MovieSetTitles">
+		<width>390</width>
+		<height>25</height>
+		<scroll>false</scroll>	
+		<font>font12</font>
+		<textcolor>white</textcolor>
+		<shadowcolor>black</shadowcolor>
+	</include>	
+	<include name="ContainerMovieSets">
+		<control type="list" id="7000">
+			<description>Container Movie Sets</description>
+			<hitrect x="0" y="0" w="0" h="0" />
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1</width>
+			<height>1</height>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<pagecontrol>-</pagecontrol>
+			<itemlayout height="1" width="1" />
+			<focusedlayout height="1" width="1" />
+		</control>
 	</include>
 	<include name="KBurnsAnimateFanart">
 		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanArt)">Conditional</animation>

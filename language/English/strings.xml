@@ -212,7 +212,11 @@
 	<string id="31625">Western</string>
 
 	
-	
+
+	<string id="31942">has been watched</string>
+	<string id="31943">have been watched</string>
+	<string id="31944">Movies in set of which</string>
+	<string id="31945">Movie Set View</string>
 	<string id="31946">Panel Transparency</string>
 	<string id="31947">Movie Set Info</string>
 	<string id="31948">Watch it Later</string>
