@@ -1,3 +1,7 @@
+[B]1.1.2[/B] [I]June 2012[/I]
+
+
+
 [B]1.1.0[/B] [I]May 2012[/I]
 - Bugfix old code removed from submenus visible conditions + enforced 5 limit
 - Added new larger font
