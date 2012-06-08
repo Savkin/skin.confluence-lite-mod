@@ -1,12 +1,12 @@
 <includes>
 	<include name="MultiGenreFlag">
-		<width>120</width>
-		<height>110</height>
+		<width>108</width>
+		<height>99</height>
 		<aspectratio aligny="bottom">keep</aspectratio>
 		<fadetime>IconCrossfadeTime</fadetime>
 	</include>
 	<include name="GenreTextPlace">
-		<width>120</width>
+		<width>108</width>
 		<height>30</height>
 		<font>font10_title</font>
 		<textcolor>grey2</textcolor>
@@ -54,7 +54,7 @@
 		</control>
 		<control type="image">
 			<include>MultiGenreFlag</include>
-			<texture background="true" fallback="DefaultGenre/Documentary.png">$VAR[GenreFlagPath]$LOCALIZE[31608].png</texture>
+			<texture background="true" fallback="DefaultGenre/Document.png">$VAR[GenreFlagPath]$LOCALIZE[31608].png</texture>
 			<visible>substring(ListItem.Genre,$LOCALIZE[31608]) | substring(ListItem.Genre,Document) | substring(Container(7000).ListItem.Genre,$LOCALIZE[31608]) | substring(Container(7000).ListItem.Genre,Document)</visible>
 		</control>
 		<control type="image">

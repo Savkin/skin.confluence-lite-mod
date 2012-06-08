@@ -1,0 +1,442 @@
+<includes>
+	<include name="MovieSetList">
+		<control type="group">
+			<visible>Control.IsVisible(737)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="list" id="737">
+				<posx>890</posx>
+				<posy>65</posy>
+				<width>450</width>
+				<height>570</height>
+				<onleft>9000</onleft>
+				<onright>60</onright>
+				<onup>737</onup>
+				<ondown>737</ondown>
+				<viewtype label="$LOCALIZE[31945]">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<visible>stringcompare(Container.FolderPath,videodb://1/7/)</visible>
+				<itemlayout height="40" width="380">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>365</width>
+						<height>41</height>
+						<texture border="0,2,0,2">MenuItemNF.png</texture>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>300</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="380">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>365</width>
+						<height>41</height>
+						<texture border="0,2,0,2">MenuItemNF.png</texture>
+						<visible>!Control.HasFocus(737)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>365</width>
+						<height>41</height>
+						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<visible>Control.HasFocus(737)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="label">
+						<posx>10</posx>
+						<posy>0</posy>
+						<width>300</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>1250</posx>
+				<posy>50</posy>
+				<width>25</width>
+				<height>600</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onleft>737</onleft>
+				<onright condition="!Skin.HasSetting(HideMediaHomeButton)">8998</onright>
+				<onright condition="Skin.HasSetting(HideMediaHomeButton) + !Skin.HasSetting(KioskMode)">9000</onright>
+				<onright condition="Skin.HasSetting(HideMediaHomeButton) + Skin.HasSetting(KioskMode)">737</onright>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(737)</visible>
+			</control>
+			<control type="label">
+				<description>Title txt</description>
+				<posx>60</posx>
+				<posy>60</posy>
+				<width>805</width>
+				<height>25</height>
+				<label fallback="194">$INFO[Container(7000).ListItem.Label]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font24_title</font>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+			</control>	
+			<control type="group">
+				<posx>90</posx>
+				<posy>55</posy>
+				<include>MovieSetCaseUnderlay</include>
+				<control type="image">
+					<posx>10</posx>
+					<posy>37</posy>
+					<width>110</width>
+					<height>164</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.1.Icon)]</texture>
+				</control>
+				<include>MovieSetCaseOverlay</include>
+				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.1.Filename))</visible> 						
+			</control>	
+			<control type="group">
+				<posx>215</posx>
+				<posy>55</posy>
+				<include>MovieSetCaseUnderlay</include>
+				<control type="image">
+					<posx>10</posx>
+					<posy>37</posy>
+					<width>110</width>
+					<height>164</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.2.Icon)]</texture>
+				</control>
+				<include>MovieSetCaseOverlay</include>
+				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.2.Filename))</visible> 									
+			</control>	
+			<control type="group">
+				<posx>340</posx>
+				<posy>55</posy>
+				<include>MovieSetCaseUnderlay</include>
+				<control type="image">
+					<posx>10</posx>
+					<posy>37</posy>
+					<width>110</width>
+					<height>164</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.3.Icon)]</texture>
+				</control>
+				<include>MovieSetCaseOverlay</include>
+				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.3.Filename))</visible> 													
+			</control>	
+			<control type="group">
+				<posx>465</posx>
+				<posy>55</posy>
+				<include>MovieSetCaseUnderlay</include>
+				<control type="image">
+					<posx>10</posx>
+					<posy>37</posy>
+					<width>110</width>
+					<height>164</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.4.Icon)]</texture>
+				</control>
+				<include>MovieSetCaseOverlay</include>
+				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.4.Filename))</visible> 													
+			</control>	
+			<control type="group">
+				<posx>590</posx>
+				<posy>55</posy>
+				<include>MovieSetCaseUnderlay</include>
+				<control type="image">
+					<posx>10</posx>
+					<posy>37</posy>
+					<width>110</width>
+					<height>164</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.5.Icon)]</texture>
+				</control>
+				<include>MovieSetCaseOverlay</include>
+				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.5.Filename))</visible> 													
+			</control>	
+			<control type="group">
+				<posx>715</posx>
+				<posy>55</posy>
+				<include>MovieSetCaseUnderlay</include>
+				<control type="image">
+					<posx>10</posx>
+					<posy>37</posy>
+					<width>110</width>
+					<height>164</height>
+					<aspectratio stretchdiffuse="false">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.6.Icon)]</texture>
+				</control>
+				<include>MovieSetCaseOverlay</include>
+				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.6.Filename))</visible> 													
+			</control>		
+			<control type="group">
+				<visible>IntegerGreaterThan(Container(7000).ListItem.Property(TotalMovies),6)</visible> 													
+				<control type="group">
+					<posx>90</posx>
+					<posy>230</posy>
+					<include>MovieSetCaseUnderlay</include>
+					<control type="image">
+						<posx>10</posx>
+						<posy>37</posy>
+						<width>110</width>
+						<height>164</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.7.Icon)]</texture>
+					</control>
+					<include>MovieSetCaseOverlay</include>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.7.Filename))</visible> 																
+				</control>	
+				<control type="group">
+					<posx>215</posx>
+					<posy>230</posy>
+					<include>MovieSetCaseUnderlay</include>
+					<control type="image">
+						<posx>10</posx>
+						<posy>37</posy>
+						<width>110</width>
+						<height>164</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.8.Icon)]</texture>
+					</control>
+					<include>MovieSetCaseOverlay</include>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.8.Filename))</visible> 																
+				</control>	
+				<control type="group">
+					<posx>340</posx>
+					<posy>230</posy>
+					<include>MovieSetCaseUnderlay</include>
+					<control type="image">
+						<posx>10</posx>
+						<posy>37</posy>
+						<width>110</width>
+						<height>164</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.9.Icon)]</texture>
+					</control>
+					<include>MovieSetCaseOverlay</include>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.9.Filename))</visible> 																
+				</control>	
+				<control type="group">
+					<posx>465</posx>
+					<posy>230</posy>
+					<include>MovieSetCaseUnderlay</include>
+					<control type="image">
+						<posx>10</posx>
+						<posy>37</posy>
+						<width>110</width>
+						<height>164</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.10.Icon)]</texture>
+					</control>
+					<include>MovieSetCaseOverlay</include>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.10.Filename))</visible> 																
+				</control>	
+				<control type="group">
+					<posx>590</posx>
+					<posy>230</posy>
+					<include>MovieSetCaseUnderlay</include>
+					<control type="image">
+						<posx>10</posx>
+						<posy>37</posy>
+						<width>110</width>
+						<height>164</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.11.Icon)]</texture>
+					</control>
+					<include>MovieSetCaseOverlay</include>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.11.Filename))</visible> 																
+				</control>	
+				<control type="group">
+					<posx>715</posx>
+					<posy>230</posy>
+					<include>MovieSetCaseUnderlay</include>
+					<control type="image">
+						<posx>10</posx>
+						<posy>37</posy>
+						<width>110</width>
+						<height>164</height>
+						<aspectratio stretchdiffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.12.Icon)]</texture>
+					</control>
+					<include>MovieSetCaseOverlay</include>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.12.Filename))</visible> 																
+				</control>		
+			</control>
+			<control type="image">
+				<posx>95</posx>
+				<posy>350</posy>
+				<width>154</width>
+				<height>27</height>
+				<texture>$INFO[Container(7000).ListItem.Property(StarRating),YellowRating/]</texture>				
+				<include>VisibleFadeEffect</include>
+				<animation effect="slide" end="0,88" time="0" condition="IntegerGreaterThan(Container(7000).ListItem.Property(TotalMovies),6)">conditional</animation>
+			</control>
+			
+			<control type="group">
+				<control type="label">
+					<posx>845</posx>
+					<posy>352</posy>
+					<width>590</width>
+					<height>15</height> 	
+					<font>font12_title</font> 	
+					<textcolor>selected</textcolor> 	
+					<shadowcolor>black</shadowcolor> 	
+					<label fallback="416">$INFO[Container(7000).ListItem.Property(TotalMovies)] $LOCALIZE[31944] $INFO[Container(7000).ListItem.Property(WatchedMovies)] $LOCALIZE[31943]</label> 	
+					<align>right</align> 	
+					<visible>IntegerGreaterThan(Container(7000).ListItem.Property(WatchedMovies),1) | !IntegerGreaterThan(Container(7000).ListItem.Property(WatchedMovies),0)</visible> 														
+				</control> 	
+				<control type="label"> 
+					<posx>845</posx>
+					<posy>352</posy>
+					<width>590</width>
+					<height>15</height> 	
+					<font>font12_title</font> 	
+					<textcolor>selected</textcolor> 	
+					<shadowcolor>black</shadowcolor> 
+					<label fallback="416">$INFO[Container(7000).ListItem.Property(TotalMovies)] $LOCALIZE[31944] $INFO[Container(7000).ListItem.Property(WatchedMovies)] $LOCALIZE[31942]</label> 	
+					<align>right</align> 	
+					<visible>!IntegerGreaterThan(Container(7000).ListItem.Property(WatchedMovies),1) + IntegerGreaterThan(Container(7000).ListItem.Property(WatchedMovies),0)</visible> 														
+				</control> 			
+				<visible>IntegerGreaterThan(Container(7000).ListItem.Property(TotalMovies),0)</visible> 														
+				<animation effect="slide" end="0,88" time="0" condition="IntegerGreaterThan(Container(7000).ListItem.Property(TotalMovies),6)">conditional</animation>
+			</control>	
+			<control type="grouplist">
+				<description>Movie Set Titles Odd</description>
+				<posx>60</posx>
+				<posy>470</posy>
+				<align>left</align>
+				<aligny>center</aligny>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.1.Title)] $INFO[Container(7000).ListItem.Property(movie.1.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.1.Filename))</visible> 						
+				</control>	
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.3.Title)] $INFO[Container(7000).ListItem.Property(movie.3.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.3.Filename))</visible> 						
+				</control>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.5.Title)] $INFO[Container(7000).ListItem.Property(movie.5.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.5.Filename))</visible> 						
+				</control>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.7.Title)] $INFO[Container(7000).ListItem.Property(movie.7.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.7.Filename))</visible> 						
+				</control>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.9.Title)] $INFO[Container(7000).ListItem.Property(movie.9.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.9.Filename))</visible> 						
+				</control>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.11.Title)] $INFO[Container(7000).ListItem.Property(movie.11.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.11.Filename))</visible> 						
+				</control>
+			</control>
+			<control type="grouplist">
+				<description>Movie Set Titles Even</description>
+				<posx>475</posx>
+				<posy>470</posy>
+				<align>left</align>
+				<aligny>center</aligny>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.2.Title)] $INFO[Container(7000).ListItem.Property(movie.2.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.2.Filename))</visible> 						
+				</control>	
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.4.Title)] $INFO[Container(7000).ListItem.Property(movie.4.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.4.Filename))</visible> 						
+				</control>	
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.6.Title)] $INFO[Container(7000).ListItem.Property(movie.6.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.6.Filename))</visible> 						
+				</control>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.8.Title)] $INFO[Container(7000).ListItem.Property(movie.8.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.8.Filename))</visible> 						
+				</control>	
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.10.Title)] $INFO[Container(7000).ListItem.Property(movie.10.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.10.Filename))</visible> 						
+				</control>
+				<control type="label">
+					<description>Title txt</description>
+					<include>MovieSetTitles</include>
+					<label>$INFO[Container(7000).ListItem.Property(movie.12.Title)] $INFO[Container(7000).ListItem.Property(movie.12.Year)]</label>
+					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.12.Filename))</visible> 						
+				</control>			
+			</control>	
+			<control type="grouplist">
+				<description>Media Genre Flagging Images</description>
+				<posx>84</posx>
+				<posy>560</posy>
+				<width>756</width>
+				<height>110</height>
+				<align>center</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>MultiVideoGenreFlagging</include>
+				<visible>!IntegerGreaterThan(Container(7000).ListItem.Property(TotalMovies),8)</visible> 													
+			</control>
+		</control>	
+	</include>
+</includes>	

@@ -1,9 +1,11 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-<views>50,51,500,550,551,560,501,508,504,503,505,511,720,722,723,724,725</views>
-<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+	<views>50,51,500,550,551,560,501,508,504,503,505,511,720,722,723,724,725,737</views>
+	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+	<onload condition="Library.HasContent(Movies) + System.HasAddon(script.moviesets)+ IsEmpty(Window(10025).Property(MovieSets.IsAlive))">RunScript(script.moviesets,containerId=7000)</onload>
 	<controls>
+		<include condition="System.HasAddon(script.moviesets)">ContainerMovieSets</include>	
 		<include>CommonBackground</include>
 		<include>ContentPanelBackgrounds</include>
 		<control type="group">
@@ -17,14 +19,15 @@
 			<include>MediaListView2</include> <!-- view id = 504 -->
 			<include>WideIconView</include> <!-- view id = 505 -->
 			<include>MusicVideoInfoListView</include> <!-- view id = 511 -->
-			<include>AddonInfoListView1</include> <!-- view id = 550 -->
-			<include>AddonInfoThumbView1</include> <!-- view id = 551 -->
-			<include>LiveTVView1</include> <!-- view id = 560 -->
-			<include>WallStreamView</include> 	<!-- view id = 722 -->
+			<include>AddonInfoListView1</include> 	<!-- view id = 550 -->
+			<include>AddonInfoThumbView1</include> 	<!-- view id = 551 -->
+			<include>LiveTVView1</include> 			<!-- view id = 560 -->
+			<include>WallStreamView</include> 		<!-- view id = 722 -->
 			<!--include>WallStreamView2</include--> 	<!-- view id = 723 -->
-			<include>Lowlist</include> 			<!-- view id = 724 -->
+			<include>Lowlist</include> 				<!-- view id = 724 -->
 			<include>Rightlist</include> 			<!-- view id = 725 -->
-<include>Showcase</include> 			<!-- view id = 720 -->
+			<include>Showcase</include> 			<!-- view id = 720 -->
+			<include>MovieSetList</include> 		<!-- view id = 737 -->
 	</control>
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
