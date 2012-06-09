@@ -1,5 +1,6 @@
+<!-- SEAGREEN COLOR SET BY FREAKYLINUX GUY -->
 <colors>
-
+    <!-- CONFLUENCE LITE COLORS -->
     <color name="white">FFFFFFFF</color>
     <color name="grey">FFb4b4b4</color>
     <color name="grey2">FF999999</color>
@@ -11,6 +12,7 @@
     <color name="dialogheader">ffbbabf5</color>
     <color name="orange">ff03bbd2</color>             <!--ORANGE MUSIC TITLE -->
 
+    <!-- CONFLUENCE LITE MOD ADVANCED COLORS -->
     <color name="MenuFocus">ff04d282</color><!--blue-->
     <color name="MenuNoFocus">ff0353d2</color><!--grey3-->
     <color name="SubMenu">ff03d282</color><!--grey2-->
@@ -19,6 +21,21 @@
     <color name="HomeInfoOne">ffffffff</color><!--white-->
     <color name="HomeInfoTwo">ffbbabf5</color><!--blue-->
     <color name="HomeInfoThree">ff03d282</color><!--grey2-->
-    <color name="StatsName">FFFFFFFF</color><!--white-->
-    <color name="StatsAmnt">FFFFFFFF</color><!--white-->
+    <color name="StatsName">FF03d282</color><!--white-->
+    <color name="StatsAmnt">FF03bbd2</color><!--white-->
+
+    <!--RSS FEED -->
+    <color name="RSSHiLite">FF03bbd2</color>
+    <color name="RSSTitle">FF03d282</color>
+    <color name="RSSText">ff0#D282</color>
+
+    <!--ADVANCED COLORS CLOCK -->
+    <color name="HomeInfoDate">FF03bbd2</color><!--white-->
+    <color name="HomeInfoClock">FF03d282</color><!--white-->
+
+
+    <!--ADNVANCED COLORS HOME ALBUM INFO -->
+    <color name="NowPlayAlbum">FF03D282</color><!--white-->
+    <color name="NowPlayTitle">ff03bbd2</color><!--white-->
+    <color name="NowPlayTime">FF03D282</color><!--white-->
 </colors>
