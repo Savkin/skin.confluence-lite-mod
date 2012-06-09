@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,550,551,560,501,508,504,503,505,511,720,722,723,724,725,737</views>
+	<views>50,51,500,550,551,560,501,508,504,503,505,511,720,722,723,724,725,737,728</views>
 	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<onload condition="Library.HasContent(Movies) + System.HasAddon(script.moviesets)+ IsEmpty(Window(10025).Property(MovieSets.IsAlive))">RunScript(script.moviesets,containerId=7000)</onload>
 	<controls>
@@ -28,6 +28,7 @@
 			<include>Rightlist</include> 			<!-- view id = 725 -->
 			<include>Showcase</include> 			<!-- view id = 720 -->
 			<include>MovieSetList</include> 		<!-- view id = 737 -->
+			<include>Episode</include> 				<!-- view id = 728 -->
 	</control>
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
