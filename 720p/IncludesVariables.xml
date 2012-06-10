@@ -5,21 +5,35 @@
 		<value>special://skin/backgrounds/background.jpg</value>
 	</variable>
 	<variable name="CommonScreenBackground" type="text">
+		<value condition="!IsEmpty(Window(home).Property(SubMenuBackground))">$INFO[Window(home).Property(SubMenuBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemOne) + !IsEmpty(Skin.String(HomeItemOneBackground))">$INFO[Skin.String(HomeItemOneBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemTwo) + !IsEmpty(Skin.String(HomeItemTwoBackground))">$INFO[Skin.String(HomeItemTwoBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemThree) + !IsEmpty(Skin.String(HomeItemThreeBackground))">$INFO[Skin.String(HomeItemThreeBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemFour) + !IsEmpty(Skin.String(HomeItemFourBackground))">$INFO[Skin.String(HomeItemFourBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemFive) + !IsEmpty(Skin.String(HomeItemFiveBackground))">$INFO[Skin.String(HomeItemFiveBackground)]</value>
-		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemSix) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
+/		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemSix) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemSeven) + !IsEmpty(Skin.String(HomeItemSevenBackground))">$INFO[Skin.String(HomeItemSevenBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemEight) + !IsEmpty(Skin.String(HomeItemEightBackground))">$INFO[Skin.String(HomeItemEightBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemNine) + !IsEmpty(Skin.String(HomeItemNineBackground))">$INFO[Skin.String(HomeItemNineBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemTen) + !IsEmpty(Skin.String(HomeItemTenBackground))">$INFO[Skin.String(HomeItemTenBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),Settings) + !IsEmpty(Skin.String(HomeSystemBackground))">$INFO[Skin.String(HomeSystemBackground)]</value>		
-		<value condition="!IsEmpty(Skin.String(WeatherFanartDir))">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</value>
+		<!--value condition="!IsEmpty(Skin.String(WeatherFanartDir))">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</value-->
 		<value condition="!IsEmpty(Skin.String(HomeGlobalBackground))">$INFO[Skin.String(HomeGlobalBackground)]</value>
 		<value condition="!IsEmpty(Skin.CurrentTheme)  + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109])">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</value>
 		<value>special://skin/backgrounds/background.jpg</value>
+	</variable>
+	<variable name="SubMenuItemBackground">
+		<value condition="Container(9000).Hasfocus(1) + !IsEmpty(Skin.String(HomeItemOneBackground))">$INFO[Skin.String(HomeItemOneBackground)]</value>
+		<value condition="Container(9000).Hasfocus(2) + !IsEmpty(Skin.String(HomeItemTwoBackground))">$INFO[Skin.String(HomeItemTwoBackground)]</value>
+		<value condition="Container(9000).Hasfocus(3) + !IsEmpty(Skin.String(HomeItemThreeBackground))">$INFO[Skin.String(HomeItemThreeBackground)]</value>
+		<value condition="Container(9000).Hasfocus(4) + !IsEmpty(Skin.String(HomeItemFourBackground))">$INFO[Skin.String(HomeItemFourBackground)]</value>
+		<value condition="Container(9000).Hasfocus(5) + !IsEmpty(Skin.String(HomeItemFiveBackground))">$INFO[Skin.String(HomeItemFiveBackground)]</value>
+/		<value condition="Container(9000).Hasfocus(6) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
+		<value condition="Container(9000).Hasfocus(7) + !IsEmpty(Skin.String(HomeItemSevenBackground))">$INFO[Skin.String(HomeItemSevenBackground)]</value>
+		<value condition="Container(9000).Hasfocus(8) + !IsEmpty(Skin.String(HomeItemEightBackground))">$INFO[Skin.String(HomeItemEightBackground)]</value>
+		<value condition="Container(9000).Hasfocus(9) + !IsEmpty(Skin.String(HomeItemNineBackground))">$INFO[Skin.String(HomeItemNineBackground)]</value>
+		<value condition="Container(9000).Hasfocus(10) + !IsEmpty(Skin.String(HomeItemTenBackground))">$INFO[Skin.String(HomeItemTenBackground)]</value>
+		<value condition="Container(9000).Hasfocus(11) + !IsEmpty(Skin.String(HomeSystemBackground))">$INFO[Skin.String(HomeSystemBackground)]</value>		
 	</variable>
 	<variable name="GenreFlagPath">
 		<value condition="Skin.HasSetting(UsrGenreFanArt)">MovieGenre/</value>
