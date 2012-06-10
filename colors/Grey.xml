@@ -1,0 +1,36 @@
+<!-- GREY COLOR SET BY FREAKYLINUX GUY -->
+<colors>
+        <!-- CONFLUENCE LITE COLORS -->
+	<color name="white">FFFFFFFF</color>
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">FF999999</color>
+	<color name="grey3">FF505050</color>
+	<color name="black">FFb4b4b</color>
+	<color name="blue">FF999999</color>
+	<color name="selected">FFFFFFFF</color>
+        <color name="orange">FFAAAAAA</color>
+
+	<!-- CONFLUENCE LITE MOD ADVANCED COLORS -->
+	<color name="MenuFocus">FF999999</color><!--blue-->
+	<color name="MenuNoFocus">FF505050</color><!--grey3-->
+	<color name="SubMenu">FF999999</color><!--grey2-->
+	<color name="CommonBtnFocus">FFFFFFFF</color><!--white-->
+	<color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+	<color name="HomeInfoOne">FFFFFFFF</color><!--white-->
+	<color name="HomeInfoTwo">FF999999</color><!--blue-->
+	<color name="HomeInfoThree">FF999999</color><!--grey2-->
+	<color name="RSSText">FF000000</color><!--blue-->
+	<color name="RSSTitle">FF999999</color><!--blue-->
+	<color name="RSSHiLite">FFFFFFFF</color><!--white-->
+        <color name="StatsName">FFFFFFFF</color><!--white-->
+        <color name="StatsAmnt">FFb4b4b4</color><!--white-->	
+
+    <!--ADVANCED COLORS CLOCK -->
+    <color name="HomeInfoDate">FFFFFFFF</color><!--white-->
+    <color name="HomeInfoClock">FFFFFFFF</color><!--white-->
+
+        <!--ADNVANCED COLORS HOME ALBUM INFO -->
+        <color name="NowPlayAlbum">white</color><!--white-->
+        <color name="NowPlayTitle">FF999999</color><!--white-->
+        <color name="NowPlayTime">white</color><!--white-->
+</colors>

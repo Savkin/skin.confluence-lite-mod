@@ -1,0 +1,42 @@
+<!-- PURPLE-PINK COLOR SET BY FREAKYLINUX GUY -->
+<colors>
+        <!-- CONFLUENCE LITE COLORS -->
+	<color name="white">FFffffff</color>
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">88FFFFFF</color>
+	<color name="grey3">33FFFFFF</color>
+	<color name="grey4">17FFFFFF</color>
+	<color name="black">FF000000</color>
+	<color name="blue">84ff00ff</color>
+	<color name="selected">FFFF69b4</color>
+       	<color name="dialogheader">FFdda0dd</color>
+        <color name="orange">FFdda0dd</color>
+        <!-- CONFLUENCE MOD ADVANCED COLORS -->
+        <color name="MenuFocus">84ff00ff</color><!--blue-->
+        <color name="MenuNoFocus">FF505050</color><!--grey3-->
+        <color name="SubMenu">FF999999</color><!--grey2-->
+        <color name="CommonBtnFocus">ffffffff</color><!--white-->
+        <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
+        <color name="HomeInfoOne">ffffffff</color><!--white-->
+        <color name="HomeInfoTwo">84ff00ff</color><!--blue-->
+        <color name="HomeInfoThree">FF999999</color><!--grey2-->
+ 
+        <!--STATS -->
+        <color name="StatsName">84ff00ff</color><!--white-->
+        <color name="StatsAmnt">FFDDA0DD</color><!--white-->
+
+        <!--RSS FEED-->
+        <color name="RSSText">FFFFFFFF</color><!--blue-->
+        <color name="RSSTitle">FFFF69b4</color><!--blue-->
+        <color name="RSSHiLite">FFDDA0DD</color><!--blue-->
+
+        <!--ADVANCED COLORS CLOCK -->
+        <color name="HomeInfoDate">FFDDA0DD</color><!--white-->
+        <color name="HomeInfoClock">FFFF69B4</color><!--white-->
+
+
+        <!--ADNVANCED COLORS HOME ALBUM INFO -->
+        <color name="NowPlayAlbum">FFDDA0DD</color><!--white-->
+        <color name="NowPlayTitle">FFFF69B4</color><!--white-->
+        <color name="NowPlayTime">FFDDA0DD</color><!--white-->
+</colors>
