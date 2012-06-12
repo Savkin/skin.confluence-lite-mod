@@ -1053,8 +1053,8 @@
 					StringCompare(Container(9000).ListItem.Label2,AddOn) |  StringCompare(Container(9000).ListItem.Label2,Videos) |  
 					[!Skin.HasSetting(HideHomeMediaPanel) + !Skin.HasSetting(StickyWeatherPanel)  + !StringCompare(Container(9000).ListItem.Label2,Movies) +
 					!StringCompare(Container(9000).ListItem.Label2,Weather) + !StringCompare(Container(9000).ListItem.Label2,TVShows) + !StringCompare(Container(9000).ListItem.Label2,Music) +
-					!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Playlist)] |
-					[StringCompare(Container(9000).ListItem.Label2,Playlist) + Skin.HasSetting(HideWatchPlaylist)]
+					!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Playlist)]|
+					[StringCompare(Container(9000).ListItem.Label2,Playlist) + Skin.HasSetting(HideWatchPlaylist) +  !Skin.HasSetting(StickyWeatherPanel)]
 				</visible>
 				<include>VisibleFadeEffect</include>
 				<posx>215</posx>
