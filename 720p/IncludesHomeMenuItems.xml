@@ -87,12 +87,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
 		</control>
-		<!--control type="button" id="90167">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>344</label>
-			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
-		</control-->
 		<control type="image" id="90168">
 			<width>35</width>
 			<height>35</height>
@@ -161,13 +155,6 @@
 			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
 			<visible>Library.HasContent(Music)</visible>
 		</control>
-		<!--control type="button" id="90114">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>134</label>
-			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
-			<visible>Library.HasContent(Music)</visible>
-		</control-->
 		<control type="button" id="90115">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>744</label>
@@ -262,24 +249,6 @@
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
-	<include name="HomeSubMenuPictures">
-		<control type="image" id="90141">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-		</control>
-		<control type="button" id="90142">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>24001</label>
-			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
-		</control>
-		<control type="image" id="90146">
-			<width>35</width>
-			<height>35</height>
-			<texture border="0,0,0,3">HomeSubEnd.png</texture>
-		</control>
-	</include>
 	<include name="HomeSubMenuShutdown">
 		<control type="image" id="90181">
 			<width>35</width>
@@ -316,13 +285,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>ActivateWindow(Profiles)</onclick>
 		</control>
-		<!--control type="button" id="90187">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>5</label>
-			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick>SetProperty(MenuItemActive,Settings,Home)</onclick>
-			<onclick>ActivateWindow(Settings)</onclick>
-		</control-->
 		<control type="image" id="90188">
 			<width>35</width>
 			<height>35</height>
@@ -377,6 +339,110 @@
 			<visible>!IsEmpty(Window(0).Property(favourite.5.path))</visible>
 		</control>
 		<control type="image" id="90197">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuPlaylist">
+		<control type="image" id="90198">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90199">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemOneLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemOneAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemOneAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemOneLabel))</visible>
+		</control>
+		<control type="button" id="90200">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemTwoLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemTwoAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemTwoAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemTwoLabel))</visible>
+		</control>
+		<control type="button" id="90201">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemThreeLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemThreeAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemThreeAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemThreeLabel))</visible>
+		</control>
+		<control type="button" id="90202">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemFourLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemFourAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemFourAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemFourLabel))</visible>
+		</control>
+		<control type="button" id="90203">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemFiveLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemFiveAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemFiveAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemFiveLabel))</visible>
+		</control>
+		<control type="image" id="90204">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuAddOn">
+		<control type="image" id="90205">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90206">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemSixLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemSixAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemSixAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemSixLabel))</visible>
+		</control>
+		<control type="button" id="90207">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemSevenLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemSevenAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemSevenAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemSevenLabel))</visible>
+		</control>
+		<control type="button" id="90208">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemEightLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemEightAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemEightAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemEightLabel))</visible>
+		</control>
+		<control type="button" id="90209">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemNineLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemNineAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemNineAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemNineLabel))</visible>
+		</control>
+		<control type="button" id="90210">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubMenuItemTenLabel)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(SubMenuItemTenAction)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubMenuItemTenAction))</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItemTenLabel))</visible>
+		</control>
+		<control type="image" id="90211">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>

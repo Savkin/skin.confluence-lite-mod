@@ -277,7 +277,6 @@
 		<include condition="!Skin.HasSetting(HideHomeStats)">HomeContentPanelStats</include>
 		<include condition="!Skin.HasSetting(HideHomeMediaPanel)">HomeContentPanelInfo</include>
 		<include condition="!Skin.HasSetting(HideHomeWeatherPanel)">HomeWeatherForecast</include>
-		<!--include condition="!Skin.HasSetting(HideHomeSystemPanel)">HomeSystemPanelInfo</include-->
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<posx>-20</posx>
@@ -467,28 +466,28 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9010</onleft>
 					<onright>9010</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,Videos)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[3])</visible>
 					<include>HomeSubMenuVideos</include> 
 				</control>
 				<control type="grouplist" id="9016">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9016</onleft>
 					<onright>9016</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,Movies)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[342])</visible>
 					<include>HomeSubMenuMovies</include> 
 				</control>
 				<control type="grouplist" id="9017">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9017</onleft>
 					<onright>9017</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,TVShows)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[20364])</visible>
 					<include>HomeSubMenuTVShows</include> 
 				</control>
 				<control type="grouplist" id="9011">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9011</onleft>
 					<onright>9011</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,Music)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[2])</visible>
 					<include>HomeSubMenuMusic</include> 
 				</control>
 				<control type="grouplist" id="9012">
@@ -502,29 +501,38 @@
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9013</onleft>
 					<onright>9013</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,DiscMedia)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[446])</visible>
 					<include>HomeSubMenuPlayDisc</include> 
-				</control>
-				<control type="grouplist" id="9014">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9014</onleft>
-					<onright>9014</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,Pictures)</visible>
-					<include>HomeSubMenuPictures</include> 
 				</control>
 				<control type="grouplist" id="9015">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9015</onleft>
 					<onright>9015</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,Shutdown)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[13005])</visible>
 					<include>HomeSubMenuShutdown</include> 
 				</control>
 				<control type="grouplist" id="9016">
 					<include>HomeSubMenuCommonValues</include>
 					<onleft>9016</onleft>
 					<onright>9016</onright>
-					<visible>StringCompare(Container(9000).ListItem.Label2,Favourite)</visible>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[1036])</visible>
 					<include>HomeSubMenuFavourites</include> 
+				</control>
+				<control type="grouplist" id="9018">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9018</onleft>
+					<onright>9018</onright>
+					<include>HomeSubMenuPlaylist</include> 
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[559])</visible>
+					<visible>!IsEmpty(Skin.String(SubMenuItemOneAction)) | !IsEmpty(Skin.String(SubMenuItemTwoAction)) | !IsEmpty(Skin.String(SubMenuItemThreeAction)) | !IsEmpty(Skin.String(SubMenuItemFourAction)) | !IsEmpty(Skin.String(SubMenuItemFiveAction))</visible>
+				</control>
+				<control type="grouplist" id="9019">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9019</onleft>
+					<onright>9019</onright>
+					<include>HomeSubMenuAddOn</include> 
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),$LOCALIZE[31982])</visible>
+					<visible>!IsEmpty(Skin.String(SubMenuItemSixAction)) | !IsEmpty(Skin.String(SubMenuItemSevenAction)) | !IsEmpty(Skin.String(SubMenuItemEightAction)) | !IsEmpty(Skin.String(SubMenuItemNineAction)) | !IsEmpty(Skin.String(SubMenuItemTenAction))</visible>
 				</control>
 			</control>
 			<control type="image">
@@ -546,21 +554,27 @@
 				<texturefocus>-</texturefocus>
 				<onfocus>Skin.SetString(HomeItemOneLabel,$LOCALIZE[8])</onfocus>
 				<onfocus>Skin.SetString(HomeItemOneWidget,Weather)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemOneSub,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemOneAction,ActivateWindow(Weather))</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoLabel,$LOCALIZE[1])</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoWidget,Pictures)</onfocus>
+				<onfocus>Skin.SetString(HomeItemTwoWidget,AddOn)</onfocus>
+				<onfocus>Skin.SetString(HomeItemTwoSub,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeWidget,Videos)</onfocus>
+				<onfocus>Skin.SetString(HomeItemThreeSub,$LOCALIZE[3])</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourWidget,Music)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemFourSub,$LOCALIZE[2])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourAction,ActivateWindow(Music))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFiveLabel,$LOCALIZE[0])</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveWidget,AddOn)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemFiveWidget,AddOn)</onfocus>
+				<onfocus>Skin.SetString(HomeItemfiveSub,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFiveAction,ActivateWindow(Programs,Addons,return))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemSixLabel,$LOCALIZE[427])</onfocus>
-				<onfocus>Skin.SetString(HomeItemSixWidget,DiscMedia)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemSixWidget,DiscMedia)</onfocus>
+				<onfocus>Skin.SetString(HomeItemSixSub,$LOCALIZE[446])</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixAction,XBMC.PlayDVD())</onfocus>
 				<onfocus>Skin.SetBool(InitialSetUpRun)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
@@ -673,111 +687,121 @@
 					<item id="1">
 						<description>Home Menu Item One</description>
 						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemOneWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemOneAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemOneBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemOneWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemOneSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemOneAction))</visible>
 					</item>
 					<item id="2">
 						<description>Home Menu Item Two</description>
 						<label>$INFO[Skin.String(HomeItemTwoLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemTwoWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemTwo,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemTwoAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemTwoBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemTwoWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemTwoSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemTwoAction))</visible>
 					</item>
 					<item id="3">
 						<description>Home Menu Item Three</description>
 						<label>$INFO[Skin.String(HomeItemThreeLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemThreeWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemThree,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemThreeAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemThreeBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemThreeWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemThreeSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemThreeAction))</visible>
 					</item>
 					<item id="4">
 						<description>Home Menu Item Four</description>
 						<label>$INFO[Skin.String(HomeItemFourLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemFourWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemFour,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemFourAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemFourBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemFourWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemFourSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemFourAction))</visible>
 					</item>
 					<item id="5">
 						<description>Home Menu Item Five</description>
 						<label>$INFO[Skin.String(HomeItemFiveLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemFiveWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemFive,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemFiveAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemFiveBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemFiveWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemFiveSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemFiveAction))</visible>
 					</item>
 					<item id="6">
 						<description>Home Menu Item Six</description>
 						<label>$INFO[Skin.String(HomeItemSixLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemSixWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemSix,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemSixAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemSixBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemSixWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemSixSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSixAction))</visible>
 					</item>
 					<item id="7">
 						<description>Home Menu Item Seven</description>
 						<label>$INFO[Skin.String(HomeItemSevenLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemSevenWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemSeven,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemSevenAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemSevenBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemSevenWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemSevenSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSevenAction))</visible>
 					</item>
 					<item id="8">
 						<description>Home Menu Item Eight</description>
 						<label>$INFO[Skin.String(HomeItemEightLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemEightWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemEight,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemEightAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemEightBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemEightWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemEightSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemEightAction))</visible>
 					</item>
 					<item id="9">
 						<description>Home Menu Item Nine</description>
 						<label>$INFO[Skin.String(HomeItemNineLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemNineWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemNine,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemNineAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemNineBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemNineWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemNineSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemNineAction))</visible>
 					</item>
 					<item id="10">
 						<description>Home Menu Item Ten</description>
 						<label>$INFO[Skin.String(HomeItemTenLabel)]</label>
+						<label2>$INFO[Skin.String(HomeItemTenWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemTen,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemTenAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemTenBackground)]</thumb>
-						<label2>$INFO[Skin.String(HomeItemTenWidget)]</label2>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemTenSub)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemTenAction))</visible>
 					</item>
 					<item id="11">
 						<description>Home Menu Settings</description>
 						<label>$LOCALIZE[13000]</label>
+						<label2>$LOCALIZE[5]</label2>
 						<onclick>SetProperty(MenuItemActive,Settings,Home)</onclick>
 						<onclick>ActivateWindow(Settings)</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeSystemBackground)]</thumb>
-						<label2>$LOCALIZE[5]</label2>
 						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</item>
 				</content>
@@ -879,11 +903,6 @@
 				<ondown>9003</ondown>
 			</control>
 		</control>
-		
-		
-		
-		
-		
 		<control type="group">
 			<posx>20</posx>
 			<posy>0</posy>

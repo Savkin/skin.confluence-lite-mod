@@ -210,9 +210,15 @@
 	<string id="31623">Thriller</string>
 	<string id="31624">War</string>	
 	<string id="31625">Western</string>
-
 	
-
+	
+	
+	
+	<string id="31937">Select Submenu Set</string>
+	<string id="31938">None</string>
+	<string id="31939">Home Menu Submenu Type</string>
+	<string id="31940">Rip CD</string>
+	<string id="31941">User Submenu Item</string>
 	<string id="31942">has been watched</string>
 	<string id="31943">have been watched</string>
 	<string id="31944">Movies in set of which</string>
@@ -223,7 +229,7 @@
 	<string id="31949">Show Library Stats</string>
 	<string id="31950">Home Menu Items</string>
 	<string id="31951">Menu Item</string>
-	<string id="31952">Select Menu Option Type</string>
+	<string id="31952">Select Menu Option</string>
 	<string id="31953">Clear Menu Option</string>
 	<string id="31954">XBMC</string>
 	<string id="31955">Installed</string>
