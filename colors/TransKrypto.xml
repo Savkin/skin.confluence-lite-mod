@@ -25,9 +25,9 @@
         <color name="RSSTitle">FF6DF300</color><!--blue-->
         <color name="RSSHiLite">FF6DF300</color>
 
-    <!--ADVANCED COLORS CLOCK -->
-    <color name="HomeInfoDate">FFFFFFFF</color><!--white-->
-    <color name="HomeInfoClock">FFFFFFFF</color><!--white-->
+        <!--ADVANCED COLORS CLOCK -->
+        <color name="HomeInfoDate">FF9AD16A</color><!--white-->
+        <color name="HomeInfoClock">FF6DF300</color><!--white-->
 
         <!--ADNVANCED COLORS HOME ALBUM INFO -->
         <color name="NowPlayAlbum">FF9AD16A</color><!--white-->
