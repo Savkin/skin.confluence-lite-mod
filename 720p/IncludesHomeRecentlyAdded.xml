@@ -1056,6 +1056,11 @@
 					!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Playlist)]|
 					[StringCompare(Container(9000).ListItem.Label2,Playlist) + Skin.HasSetting(HideWatchPlaylist) +  !Skin.HasSetting(StickyWeatherPanel)]
 				</visible>
+				<visible>
+					!IsEmpty(Skin.String(HomeAddonOneLabel)) | !IsEmpty(Skin.String(HomeAddonTwoLabel)) | !IsEmpty(Skin.String(HomeAddonThreeLabel)) |
+					!IsEmpty(Skin.String(HomeAddonFourLabel)) | !IsEmpty(Skin.String(HomeAddonFiveLabel)) | !IsEmpty(Skin.String(HomeAddonSixLabel)) | !IsEmpty(Skin.String(HomeAddonSevenLabel)) |
+					!IsEmpty(Skin.String(HomeAddonEightLabel)) | !IsEmpty(Skin.String(HomeAddonNineLabel)) | !IsEmpty(Skin.String(HomeAddonTenLabel))
+				</visible>
 				<include>VisibleFadeEffect</include>
 				<posx>215</posx>
 				<posy>50</posy>
