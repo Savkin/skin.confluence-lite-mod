@@ -1083,7 +1083,7 @@
 			<height>175</height>
 			<aspectratio stretchdiffuse="false">stretch</aspectratio>
 			<fadetime>IconCrossfadeTime</fadetime>
-			<texture background="true">EmptyCaseBorder.png</texture>
+			<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 		</control>
 	</include>	
 	<include name="MovieSetCaseOverlay">	
@@ -1094,7 +1094,7 @@
 			<height>175</height>
 			<aspectratio stretchdiffuse="false">stretch</aspectratio>
 			<fadetime>IconCrossfadeTime</fadetime>
-			<texture background="true">EmptyCaseOverlay.png</texture>
+			<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 		</control>
 	</include>
 	<include name="MovieSetTitles">

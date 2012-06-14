@@ -95,7 +95,7 @@
 							<height>175</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true">EmptyCaseBorder.png</texture>
+							<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
@@ -105,7 +105,7 @@
 							<height>164</height>
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+							<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
@@ -115,7 +115,7 @@
 							<height>175</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true">EmptyCaseOverlay.png</texture>
+							<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
@@ -129,7 +129,7 @@
 								<height>175</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true">EmptyCaseBorder.png</texture>
+								<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 							<control type="image">
@@ -139,7 +139,7 @@
 								<height>164</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 							<control type="image">
@@ -149,7 +149,7 @@
 								<height>175</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true">EmptyCaseOverlay.png</texture>
+								<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 						</control>
@@ -516,7 +516,7 @@
 							<height>175</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true">EmptyCaseBorder.png</texture>
+							<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
@@ -526,7 +526,7 @@
 							<height>164</height>
 							<aspectratio scalediffuse="false">scale</aspectratio>
 							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+							<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
@@ -536,7 +536,7 @@
 							<height>175</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true">EmptyCaseOverlay.png</texture>
+							<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 					</itemlayout>
@@ -550,7 +550,7 @@
 								<height>175</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true">EmptyCaseBorder.png</texture>
+								<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 							<control type="image">
@@ -560,7 +560,7 @@
 								<height>164</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 							<control type="image">
@@ -570,7 +570,7 @@
 								<height>175</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true">EmptyCaseOverlay.png</texture>
+								<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 						</control>
@@ -818,7 +818,7 @@
 								<height>175</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true">EmptyCaseBorder.png</texture>
+								<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 							<control type="image">
@@ -828,7 +828,7 @@
 								<height>164</height>
 								<aspectratio scalediffuse="false">scale</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+								<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 							<control type="image">
@@ -838,7 +838,7 @@
 								<height>175</height>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 								<fadetime>IconCrossfadeTime</fadetime>
-								<texture background="true">EmptyCaseOverlay.png</texture>
+								<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 								<visible>!IsEmpty(ListItem.Label)</visible>
 							</control>
 						</itemlayout>
@@ -852,7 +852,7 @@
 									<height>175</height>
 									<aspectratio scalediffuse="false">stretch</aspectratio>
 									<fadetime>IconCrossfadeTime</fadetime>
-									<texture background="true">EmptyCaseBorder.png</texture>
+									<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
 									<visible>!IsEmpty(ListItem.Label)</visible>
 								</control>
 								<control type="image">
@@ -862,7 +862,7 @@
 									<height>164</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<fadetime>IconCrossfadeTime</fadetime>
-									<texture background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+									<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
 									<visible>!IsEmpty(ListItem.Label)</visible>
 								</control>
 								<control type="image">
@@ -872,7 +872,7 @@
 									<height>175</height>
 									<aspectratio scalediffuse="false">stretch</aspectratio>
 									<fadetime>IconCrossfadeTime</fadetime>
-									<texture background="true">EmptyCaseOverlay.png</texture>
+									<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
 									<visible>!IsEmpty(ListItem.Label)</visible>
 								</control>
 							</control>

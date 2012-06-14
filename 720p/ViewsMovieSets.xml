@@ -113,7 +113,7 @@
 					<height>164</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.1.Icon)]</texture>
+					<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.1.Icon)]</texture>
 				</control>
 				<include>MovieSetCaseOverlay</include>
 				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.1.Filename))</visible> 						
@@ -129,7 +129,7 @@
 					<height>164</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.2.Icon)]</texture>
+					<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.2.Icon)]</texture>
 				</control>
 				<include>MovieSetCaseOverlay</include>
 				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.2.Filename))</visible> 									
@@ -145,7 +145,7 @@
 					<height>164</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.3.Icon)]</texture>
+					<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.3.Icon)]</texture>
 				</control>
 				<include>MovieSetCaseOverlay</include>
 				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.3.Filename))</visible> 													
@@ -161,7 +161,7 @@
 					<height>164</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.4.Icon)]</texture>
+					<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.4.Icon)]</texture>
 				</control>
 				<include>MovieSetCaseOverlay</include>
 				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.4.Filename))</visible> 													
@@ -177,7 +177,7 @@
 					<height>164</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.5.Icon)]</texture>
+					<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.5.Icon)]</texture>
 				</control>
 				<include>MovieSetCaseOverlay</include>
 				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.5.Filename))</visible> 													
@@ -193,7 +193,7 @@
 					<height>164</height>
 					<aspectratio stretchdiffuse="false">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.6.Icon)]</texture>
+					<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.6.Icon)]</texture>
 				</control>
 				<include>MovieSetCaseOverlay</include>
 				<visible>!IsEmpty(Container(7000).ListItem.Property(movie.6.Filename))</visible> 													
@@ -211,7 +211,7 @@
 						<height>164</height>
 						<aspectratio stretchdiffuse="false">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.7.Icon)]</texture>
+						<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.7.Icon)]</texture>
 					</control>
 					<include>MovieSetCaseOverlay</include>
 					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.7.Filename))</visible> 																
@@ -227,7 +227,7 @@
 						<height>164</height>
 						<aspectratio stretchdiffuse="false">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.8.Icon)]</texture>
+						<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.8.Icon)]</texture>
 					</control>
 					<include>MovieSetCaseOverlay</include>
 					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.8.Filename))</visible> 																
@@ -243,7 +243,7 @@
 						<height>164</height>
 						<aspectratio stretchdiffuse="false">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.9.Icon)]</texture>
+						<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.9.Icon)]</texture>
 					</control>
 					<include>MovieSetCaseOverlay</include>
 					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.9.Filename))</visible> 																
@@ -259,7 +259,7 @@
 						<height>164</height>
 						<aspectratio stretchdiffuse="false">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.10.Icon)]</texture>
+						<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.10.Icon)]</texture>
 					</control>
 					<include>MovieSetCaseOverlay</include>
 					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.10.Filename))</visible> 																
@@ -275,7 +275,7 @@
 						<height>164</height>
 						<aspectratio stretchdiffuse="false">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.11.Icon)]</texture>
+						<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.11.Icon)]</texture>
 					</control>
 					<include>MovieSetCaseOverlay</include>
 					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.11.Filename))</visible> 																
@@ -291,7 +291,7 @@
 						<height>164</height>
 						<aspectratio stretchdiffuse="false">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" fallback="DefaultPoster" diffuse="EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.12.Icon)]</texture>
+						<texture background="true" fallback="DefaultPoster" diffuse="ClearCase/EmptyCaseMask.png">$INFO[Container(7000).ListItem.Property(movie.12.Icon)]</texture>
 					</control>
 					<include>MovieSetCaseOverlay</include>
 					<visible>!IsEmpty(Container(7000).ListItem.Property(movie.12.Filename))</visible> 																
