@@ -154,8 +154,8 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<include condition="IsEmpty(Window(home).Property(Watchlist_Control)) | IsEmpty(Window(home).Property(WatchList_Movie.1.Label))">HomeContentRecentMovies</include>	
-					<include condition="!IsEmpty(Window(home).Property(Watchlist_Control)) + !IsEmpty(Window(home).Property(WatchList_Movie.1.Label))">HomeContentSuggestMovies</include>	
+					<include condition="Skin.HasSetting(HideWatchlist)">HomeContentRecentMovies</include>	
+					<include condition="!Skin.HasSetting(HideWatchlist)">HomeContentSuggestMovies</include>	
 				</control>	
 			</control>
 			<control type="group">
@@ -309,8 +309,8 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<include condition="IsEmpty(Window(home).Property(Watchlist_Control)) | IsEmpty(Window(home).Property(WatchList_Episode.1.Label))">HomeContentRecentTVShows</include>	
-					<include condition="!IsEmpty(Window(home).Property(Watchlist_Control)) + !IsEmpty(Window(home).Property(WatchList_Episode.1.Label))">HomeContentSuggestTVShows</include>	
+					<include condition="Skin.HasSetting(HideWatchlist)">HomeContentRecentTVShows</include>	
+					<include condition="!Skin.HasSetting(HideWatchlist)">HomeContentSuggestTVShows</include>	
 				</control>	
 			</control>		
 			<control type="group">
@@ -440,8 +440,8 @@
 							</control>	
 						</control>
 					</focusedlayout>
-					<include condition="IsEmpty(Window(home).Property(Watchlist_Control)) | IsEmpty(Window(home).Property(WatchList_Album.1.Label))">HomeContentRecentAlbums</include>	
-					<include condition="!IsEmpty(Window(home).Property(Watchlist_Control)) + !IsEmpty(Window(home).Property(WatchList_Album.1.Label))">HomeContentSuggestAlbums</include>	
+					<include condition="Skin.HasSetting(HideWatchlist)">HomeContentRecentAlbums</include>	
+					<include condition="!Skin.HasSetting(HideWatchlist)">HomeContentSuggestAlbums</include>	
 				</control>	
 			</control>
 			<control type="group">
@@ -1042,7 +1042,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-						<include>PlayListContent</include>
+						<include>PlayListEpisodes</include>
 					</control>	
 				</control>
 			</control>	
@@ -1330,86 +1330,186 @@
 	</include>
 	<include name="HomeContentSuggestMovies">
 		<content>
-			<item>
+			<item id="1">
 				<label>$INFO[Window.Property(WatchList_Movie.1.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.1.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.1.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.1.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.1.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="1">
+				<label>$INFO[Window.Property(LatestMovie.10.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.10.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.10.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.10.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.1.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="2">
 				<label>$INFO[Window.Property(WatchList_Movie.2.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.2.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.2.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.2.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.2.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="2">
+				<label>$INFO[Window.Property(LatestMovie.9.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.9.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.9.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.9.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.2.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="3">
 				<label>$INFO[Window.Property(WatchList_Movie.3.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.3.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.3.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.3.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.3.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="3">
+				<label>$INFO[Window.Property(LatestMovie.8.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.8.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.8.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.8.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.3.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="4">
 				<label>$INFO[Window.Property(WatchList_Movie.4.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.4.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.4.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.4.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.4.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.4.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="4">
+				<label>$INFO[Window.Property(LatestMovie.7.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.7.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.7.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.7.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.4.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="5">
 				<label>$INFO[Window.Property(WatchList_Movie.5.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.5.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.5.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.5.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.5.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="5">
+				<label>$INFO[Window.Property(LatestMovie.6.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.6.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.6.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.6.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.5.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="6">
 				<label>$INFO[Window.Property(WatchList_Movie.6.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.6.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.6.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.6.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.6.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="6">
+				<label>$INFO[Window.Property(LatestMovie.5.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.5.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.5.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.5.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.6.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="7">
 				<label>$INFO[Window.Property(WatchList_Movie.7.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.7.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.7.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.7.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.7.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="7">
+				<label>$INFO[Window.Property(LatestMovie.4.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.4.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.4.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.4.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.7.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="8">
 				<label>$INFO[Window.Property(WatchList_Movie.8.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window.Property(WatchList_Movie.8.Path),PlayMedia(,)]</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.8.Path)])</onclick>
-				<icon>$INFO[Window.Property(WatchList_Movie.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.8.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.8.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.8.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="8">
+				<label>$INFO[Window.Property(LatestMovie.3.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.3.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.3.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.3.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.8.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="9">
 				<label>$INFO[Window.Property(WatchList_Movie.9.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.9.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.9.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.9.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.9.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="9">
+				<label>$INFO[Window.Property(LatestMovie.2.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.2.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.2.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.2.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.9.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="10">
 				<label>$INFO[Window.Property(WatchList_Movie.10.Label)]</label>
-				<label2></label2>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Movie.10.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Movie.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Movie.10.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Movie.10.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Movie.10.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
+				<label2>-</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.1.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestMovie.1.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestMovie.1.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Movie.10.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
 		</content>
 	</include>
 	<include name="HomeContentRecentTVShows">				
@@ -1486,98 +1586,154 @@
 				<thumb>$INFO[Window.Property(LatestEpisode.9.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestEpisode.9.EpisodeTitle))</visible>
 			</item>
-			<item>
-				<label>$INFO[Window.Property(LatestEpisode.10.EpisodeTitle)]</label>
-				<label2>$INFO[Window.Property(LatestEpisode.10.ShowTitle)]</label2>
-				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.10.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestEpisode.10.Thumb)]</icon>
-				<thumb>$INFO[Window.Property(LatestEpisode.10.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(LatestEpisode.10.EpisodeTitle))</visible>
-			</item>
 		</content>
 	</include>					
 	<include name="HomeContentSuggestTVShows">				
 		<content>
-			<item>
+			<item id="1">
 				<label>$INFO[Window.Property(WatchList_Episode.1.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.1.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.1.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.1.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.1.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.1.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="1">
+				<label>$INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.9.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.9.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.9.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.9.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.1.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="2">
 				<label>$INFO[Window.Property(WatchList_Episode.2.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.2.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.2.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.2.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.2.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.2.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="2">
+				<label>$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.8.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.8.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.8.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.2.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="3">
 				<label>$INFO[Window.Property(WatchList_Episode.3.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.3.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.3.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.3.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.3.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.3.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="3">
+				<label>$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.7.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.7.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.7.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.3.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="4">
 				<label>$INFO[Window.Property(WatchList_Episode.4.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.4.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.4.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.4.Thumb)]</icon>
-				<thumb>$INFO[Window.Property(WatchList_Episode.4.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.4.Label))</visible>
+				<thumb>$INFO[Window.Property(WatchList_Episode.3.Fanart)]</thumb>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.4.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="4">
+				<label>$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.6.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.6.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.6.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.4.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="5">
 				<label>$INFO[Window.Property(WatchList_Episode.5.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.5.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.5.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.5.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.5.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.5.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="5">
+				<label>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.5.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.5.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.5.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.5.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="6">
 				<label>$INFO[Window.Property(WatchList_Episode.6.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.6.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.6.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.6.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.6.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.6.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="6">
+				<label>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.4.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.4.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.4.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.6.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="7">
 				<label>$INFO[Window.Property(WatchList_Episode.7.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.7.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.7.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.7.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.7.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.7.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="7">
+				<label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.3.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.3.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.3.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.7.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>
+			<item id="8">
 				<label>$INFO[Window.Property(WatchList_Episode.8.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.8.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.8.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.8.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.8.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.8.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="8">
+				<label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.2.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.2.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.2.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.8.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="9">
 				<label>$INFO[Window.Property(WatchList_Episode.9.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Episode.9.TVShowTitle)]</label2>
 				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.9.Path)])</onclick>
 				<icon>$INFO[Window.Property(WatchList_Episode.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Episode.9.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.9.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Episode.9.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
-				<label>$INFO[Window.Property(WatchList_Episode.10.Label)]</label>
-				<label2>$INFO[Window.Property(WatchList_Episode.10.TVShowTitle)]</label2>
-				<onclick>PlayMedia($ESCINFO[Window.Property(WatchList_Episode.10.Path)])</onclick>
-				<icon>$INFO[Window.Property(WatchList_Episode.10.Thumb)]</icon>
-				<thumb>$INFO[Window.Property(WatchList_Episode.10.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Episode.10.Label))</visible>
-			</item>
+			<item id="9">
+				<label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
+				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.1.Path)])</onclick>
+				<icon>$INFO[Window.Property(LatestEpisode.1.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestEpisode.1.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Episode.9.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
 		</content>
 	</include>					
 	<include name="HomeContentRecentAlbums">				
@@ -1676,96 +1832,186 @@
 	</include>					
 	<include name="HomeContentSuggestAlbums">	
 		<content>
-			<item>
+			<item id="1">
 				<label>$INFO[Window.Property(WatchList_Album.1.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.1.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.1.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.1.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.1.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.1.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="1">
+				<label>$INFO[Window.Property(LatestAlbum.10.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.10.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.10.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.10.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.1.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>			
+			<item id="2">
 				<label>$INFO[Window.Property(WatchList_Album.2.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.2.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.2.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.2.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.2.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.2.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="2">
+				<label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.9.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.9.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.9.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.2.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>		
+			<item id="3">
 				<label>$INFO[Window.Property(WatchList_Album.3.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.3.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.3.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.3.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.3.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.3.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="3">
+				<label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.8.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.8.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.8.Fanart)]</thumb>
+			<visible>IsEmpty(Window.Property(WatchList_Album.3.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>		
+			<item id="4">
 				<label>$INFO[Window.Property(WatchList_Album.4.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.4.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.4.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.4.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.4.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.4.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.4.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="4">
+				<label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.7.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.7.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.7.Fanart)]</thumb>
+			<visible>IsEmpty(Window.Property(WatchList_Album.4.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="5">
 				<label>$INFO[Window.Property(WatchList_Album.5.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.5.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.5.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.5.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.5.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.5.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="5">
+				<label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.6.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.6.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.6.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.5.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>
+			<item id="6">
 				<label>$INFO[Window.Property(WatchList_Album.6.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.6.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.6.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.6.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.6.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.6.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="6">
+				<label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.5.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.5.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.5.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.6.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="7">
 				<label>$INFO[Window.Property(WatchList_Album.7.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.7.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.7.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.7.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.7.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.7.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="7">
+				<label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.4.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.4.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.4.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.7.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="8">
 				<label>$INFO[Window.Property(WatchList_Album.8.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.8.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.8.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.8.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.8.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.8.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="8">
+				<label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.3.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.3.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.3.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.8.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="9">
 				<label>$INFO[Window.Property(WatchList_Album.9.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.9.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.9.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.9.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.9.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.9.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
-			<item>
+			<item id="9">
+				<label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.2.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.2.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.2.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.9.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
+			<item id="10">
 				<label>$INFO[Window.Property(WatchList_Album.10.Label)]</label>
 				<label2>$INFO[Window.Property(WatchList_Album.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
-				<onclick>$INFO[Window(home).Property(WatchList_Album.10.Path)]</onclick>	
+				<onclick>$INFO[Window(Home).Property(WatchList_Album.10.Path)]</onclick>
 				<icon>$INFO[Window.Property(WatchList_Album.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(WatchList_Album.10.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(WatchList_Album.10.Label))</visible>
+				<visible>!IsEmpty(Window.Property(WatchList_Album.10.Label)) + !Skin.HasSetting(HideWatchlist)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
+				<label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.1.Path)]&quot;)</onclick>		
+				<icon>$INFO[Window.Property(LatestAlbum.1.Thumb)]</icon>
+				<thumb>$INFO[Window.Property(LatestAlbum.1.Fanart)]</thumb>
+				<visible>IsEmpty(Window.Property(WatchList_Album.10.Label)) | Skin.HasSetting(HideWatchlist)</visible>
+			</item>	
 		</content>
 	</include>	
 	<include name="HomeContentRecentConcerts">	
@@ -1933,6 +2179,82 @@
 				<onclick>$VAR[UsrHomePlaylistPathTen]</onclick>
 				<icon>$VAR[UsrHomePlaylistThumbTen]</icon>
 				<thumb>$VAR[UsrHomePlaylistFanArtTen]</thumb>
+			</item>
+		</content>
+	</include>
+	<include name="PlayListEpisodes">
+		<content>
+			<item id="1">
+				<label>$VAR[UsrHomePlaylistTitleOne]</label>
+				<label2>$VAR[UsrHomePlaylistInfoOne]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathOne]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbOne]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtOne]</thumb>
+			</item>
+			<item id="2">
+				<label>$VAR[UsrHomePlaylistTitleTwo]</label>
+				<label2>$VAR[UsrHomePlaylistInfoTwo]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathTwo]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbTwo]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtTwo]</thumb>
+			</item>
+			<item id="3">
+				<label>$VAR[UsrHomePlaylistTitleThree]</label>
+				<label2>$VAR[UsrHomePlaylistInfoThree]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathThree]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbThree]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtThree]</thumb>
+			</item>
+			<item id="4">
+				<label>$VAR[UsrHomePlaylistTitleFour]</label>
+				<label2>$VAR[UsrHomePlaylistInfoFour]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathFour]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbFour]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtFour]</thumb>
+			</item>
+			<item id="5">
+				<label>$VAR[UsrHomePlaylistTitleFive]</label>
+				<label2>$VAR[UsrHomePlaylistInfoFive]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathFive]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbFive]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtFive]</thumb>
+			</item>
+			<item id="6">
+				<label>$VAR[UsrHomePlaylistTitleSix]</label>
+				<label2>$VAR[UsrHomePlaylistInfoSix]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathSix]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbSix]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtSix]</thumb>
+			</item>
+			<item id="7">
+				<label>$VAR[UsrHomePlaylistTitleSeven]</label>
+				<label2>$VAR[UsrHomePlaylistInfoSeven]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathSeven]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbSeven]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtSeven]</thumb>
+			</item>
+			<item id="8">
+				<label>$VAR[UsrHomePlaylistTitleEight]</label>
+				<label2>$VAR[UsrHomePlaylistInfoEight]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathEight]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbEight]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtEight]</thumb>
+			</item>
+			<item id="9">
+				<label>$VAR[UsrHomePlaylistTitleNine]</label>
+				<label2>$VAR[UsrHomePlaylistInfoNine]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$VAR[UsrHomePlaylistPathNine]</onclick>
+				<icon>$VAR[UsrHomePlaylistThumbNine]</icon>
+				<thumb>$VAR[UsrHomePlaylistFanArtNine]</thumb>
 			</item>
 		</content>
 	</include>
