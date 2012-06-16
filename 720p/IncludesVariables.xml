@@ -11,7 +11,7 @@
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemThree) + !IsEmpty(Skin.String(HomeItemThreeBackground))">$INFO[Skin.String(HomeItemThreeBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemFour) + !IsEmpty(Skin.String(HomeItemFourBackground))">$INFO[Skin.String(HomeItemFourBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemFive) + !IsEmpty(Skin.String(HomeItemFiveBackground))">$INFO[Skin.String(HomeItemFiveBackground)]</value>
-/		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemSix) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
+		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemSix) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemSeven) + !IsEmpty(Skin.String(HomeItemSevenBackground))">$INFO[Skin.String(HomeItemSevenBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemEight) + !IsEmpty(Skin.String(HomeItemEightBackground))">$INFO[Skin.String(HomeItemEightBackground)]</value>
 		<value condition="StringCompare(Window(home).Property(MenuItemActive),ItemNine) + !IsEmpty(Skin.String(HomeItemNineBackground))">$INFO[Skin.String(HomeItemNineBackground)]</value>
@@ -28,7 +28,7 @@
 		<value condition="Container(9000).Hasfocus(3) + !IsEmpty(Skin.String(HomeItemThreeBackground))">$INFO[Skin.String(HomeItemThreeBackground)]</value>
 		<value condition="Container(9000).Hasfocus(4) + !IsEmpty(Skin.String(HomeItemFourBackground))">$INFO[Skin.String(HomeItemFourBackground)]</value>
 		<value condition="Container(9000).Hasfocus(5) + !IsEmpty(Skin.String(HomeItemFiveBackground))">$INFO[Skin.String(HomeItemFiveBackground)]</value>
-/		<value condition="Container(9000).Hasfocus(6) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
+		<value condition="Container(9000).Hasfocus(6) + !IsEmpty(Skin.String(HomeItemSixBackground))">$INFO[Skin.String(HomeItemSixBackground)]</value>
 		<value condition="Container(9000).Hasfocus(7) + !IsEmpty(Skin.String(HomeItemSevenBackground))">$INFO[Skin.String(HomeItemSevenBackground)]</value>
 		<value condition="Container(9000).Hasfocus(8) + !IsEmpty(Skin.String(HomeItemEightBackground))">$INFO[Skin.String(HomeItemEightBackground)]</value>
 		<value condition="Container(9000).Hasfocus(9) + !IsEmpty(Skin.String(HomeItemNineBackground))">$INFO[Skin.String(HomeItemNineBackground)]</value>
@@ -346,16 +346,6 @@
 		<value condition="Container(9000).Hasfocus(8) + StringCompare(Window(home).Property(HomePlayListEight.Type),Movie)">$INFO[Window(home).Property(HomePlayListEight.10.Title)]</value>
 		<value condition="Container(9000).Hasfocus(9) + StringCompare(Window(home).Property(HomePlayListNine.Type),Movie)">$INFO[Window(home).Property(HomePlayListNine.10.Title)]</value>
 		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Movie)">$INFO[Window(home).Property(HomePlayListTen.10.Title)]</value>
-		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Episode)">$INFO[Window(home).Property(HomePlayListOne.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Episode)">$INFO[Window(home).Property(HomePlayListTwo.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(3) + StringCompare(Window(home).Property(HomePlayListThree.Type),Episode)">$INFO[Window(home).Property(HomePlayListThree.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(4) + StringCompare(Window(home).Property(HomePlayListFour.Type),Episode)">$INFO[Window(home).Property(HomePlayListFour.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(5) + StringCompare(Window(home).Property(HomePlayListFive.Type),Episode)">$INFO[Window(home).Property(HomePlayListFive.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(6) + StringCompare(Window(home).Property(HomePlayListSix.Type),Episode)">$INFO[Window(home).Property(HomePlayListSix.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(7) + StringCompare(Window(home).Property(HomePlayListSeven.Type),Episode)">$INFO[Window(home).Property(HomePlayListSeven.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(8) + StringCompare(Window(home).Property(HomePlayListEight.Type),Episode)">$INFO[Window(home).Property(HomePlayListEight.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(9) + StringCompare(Window(home).Property(HomePlayListNine.Type),Episode)">$INFO[Window(home).Property(HomePlayListNine.10.EpisodeTitle)]</value>
-		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Episode)">$INFO[Window(home).Property(HomePlayListTen.10.EpisodeTitle)]</value>
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Music)">$INFO[Window(home).Property(HomePlayListOne.10.Album)]</value>
 		<value condition="Container(9000).Hasfocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Music)">$INFO[Window(home).Property(HomePlayListTwo.10.Album)]</value>
 		<value condition="Container(9000).Hasfocus(3) + StringCompare(Window(home).Property(HomePlayListThree.Type),Music)">$INFO[Window(home).Property(HomePlayListThree.10.Album)]</value>
@@ -566,16 +556,6 @@
 		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Music)">$INFO[Window(home).Property(HomePlayListTen.9.Artist)]</value>
 	</variable>
 	<variable name="UsrHomePlaylistInfoTen" type="text">
-		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Episode)">$INFO[Window(home).Property(HomePlayListOne.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Episode)">$INFO[Window(home).Property(HomePlayListTwo.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(3) + StringCompare(Window(home).Property(HomePlayListThree.Type),Episode)">$INFO[Window(home).Property(HomePlayListThree.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(4) + StringCompare(Window(home).Property(HomePlayListFour.Type),Episode)">$INFO[Window(home).Property(HomePlayListFour.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(5) + StringCompare(Window(home).Property(HomePlayListFive.Type),Episode)">$INFO[Window(home).Property(HomePlayListFive.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(6) + StringCompare(Window(home).Property(HomePlayListSix.Type),Episode)">$INFO[Window(home).Property(HomePlayListSix.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(7) + StringCompare(Window(home).Property(HomePlayListSeven.Type),Episode)">$INFO[Window(home).Property(HomePlayListSeven.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(8) + StringCompare(Window(home).Property(HomePlayListEight.Type),Episode)">$INFO[Window(home).Property(HomePlayListEight.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(9) + StringCompare(Window(home).Property(HomePlayListNine.Type),Episode)">$INFO[Window(home).Property(HomePlayListNine.10.ShowTitle)]</value>
-		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Episode)">$INFO[Window(home).Property(HomePlayListTen.10.ShowTitle)]</value>
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Music)">$INFO[Window(home).Property(HomePlayListOne.10.Artist)]</value>
 		<value condition="Container(9000).Hasfocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Music)">$INFO[Window(home).Property(HomePlayListTwo.10.Artist)]</value>
 		<value condition="Container(9000).Hasfocus(3) + StringCompare(Window(home).Property(HomePlayListThree.Type),Music)">$INFO[Window(home).Property(HomePlayListThree.10.Artist)]</value>
@@ -1162,14 +1142,5 @@
 		<value condition="!IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">     [COLOR blue][B]$LOCALIZE[31964]   1:[/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR blue][B]2:[/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]     [COLOR blue][B]3:[/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]</value>
 		<value condition="!IsEmpty(MusicPlayer.offset(2).Artist) + IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">     [COLOR blue][B]$LOCALIZE[31964]   1:[/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR blue][B]2:[/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]</value>
 		<value condition="!IsEmpty(MusicPlayer.offset(1).Artist) + IsEmpty(MusicPlayer.offset(2).Artist) + IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">     [COLOR blue][B]$LOCALIZE[31964]   1:[/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]</value>
-	</variable>
-	<variable name="PartlyWatched">
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,0) + !IntegerGreaterThan(ListItem.PercentPlayed,19)">OverlayPartlywatched1</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,19) + !IntegerGreaterThan(ListItem.PercentPlayed,31)">OverlayPartlywatched2</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,31) + !IntegerGreaterThan(ListItem.PercentPlayed,43)">OverlayPartlywatched3</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,43) + !IntegerGreaterThan(ListItem.PercentPlayed,56)">OverlayPartlywatched4</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,56) + !IntegerGreaterThan(ListItem.PercentPlayed,68)">OverlayPartlywatched5</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,68) + !IntegerGreaterThan(ListItem.PercentPlayed,81)">OverlayPartlywatched6</value>
-		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,81)">OverlayPartlywatched7</value>
 	</variable>
 </includes>	
