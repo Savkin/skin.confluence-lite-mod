@@ -1,5 +1,13 @@
 <includes>
 	<include name="CommonBackground">
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true" fallback="special://skin/backgrounds/background.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>IsEmpty(Container(9000).ListItem.Thumb) + !IsEmpty(Skin.CurrentTheme) + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109])</visible>
+		</control>
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
 			<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
@@ -18,12 +26,12 @@
 		</control>
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
-			<imagepath background="true">$VAR[CommonScreenBackground]</imagepath>
+			<imagepath background="true" >$VAR[CommonScreenBackground]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<visible>!Window.IsActive(home) + !Player.HasVideo</visible>
-		</control>	
+		</control>
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
 			<imagepath background="true">$VAR[CommonScreenBackground]</imagepath>
