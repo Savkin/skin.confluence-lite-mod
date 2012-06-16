@@ -33,6 +33,6 @@
 
         <!--ADNVANCED COLORS HOME ALBUM INFO -->
         <color name="NowPlayAlbum">white</color><!--white-->
-        <color name="NowPlayTItle">FFcccc33</color><!--white-->
+        <color name="NowPlayTitle">FFcccc33</color><!--white-->
         <color name="NowPlayTime">white</color><!--white-->
 </colors>
