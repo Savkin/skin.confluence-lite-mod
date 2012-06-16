@@ -437,7 +437,6 @@
 					<posy>60</posy>
 					<width>1220</width>
 					<height>600</height>
-					<include condition="!Skin.HasSetting(MediaNotTransparent)">TransparentEffect</include>
 					<texture border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
