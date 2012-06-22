@@ -1136,6 +1136,12 @@
 		<value condition="substring(Player.Filenameandpath,.xvid,right)">xvid</value>
 		<value>dv</value>
 	</variable>
+	<variable name="ContainerTypeInfo">
+		<value condition="Container.Content(Artists) + Window.IsVisible(MusicLibrary)">$LOCALIZE[31936]</value>
+		<value condition="Container.Content(Actors)">$LOCALIZE[20337] $LOCALIZE[31935]</value>
+		<value condition="Container.Content(Directors)">$LOCALIZE[20339] $LOCALIZE[31935]</value>
+		<value condition="Container.Content(Artists)">$LOCALIZE[21891]</value>
+	</variable>
 	<variable name="NextFiveScroller" type="text">
 		<value condition="!IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">     [COLOR blue][B]$LOCALIZE[31964]   1:[/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR blue][B]2:[/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]    [COLOR blue][B]3:[/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]    [COLOR blue][B]4:[/B][/COLOR]  $INFO[MusicPlayer.offset(4).Artist] - $INFO[MusicPlayer.offset(4).Title]    [COLOR blue][B]5:[/B][/COLOR]  $INFO[MusicPlayer.offset(5).Artist] - $INFO[MusicPlayer.offset(5).Title]</value>
 		<value condition="!IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">     [COLOR blue][B]$LOCALIZE[31964]   1:[/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR blue][B]2:[/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]    [COLOR blue][B]3:[/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]    [COLOR blue][B]4:[/B][/COLOR]  $INFO[MusicPlayer.offset(4).Artist] - $INFO[MusicPlayer.offset(4).Title]</value>
