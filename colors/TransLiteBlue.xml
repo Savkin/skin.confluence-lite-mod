@@ -30,7 +30,7 @@
     <color name="HomeInfoClock">FFFFFFFF</color><!--white-->
 
         <!--ADNVANCED COLORS HOME ALBUM INFO -->
-        <color name="NowPlayAlbum">white</color><!--white-->
-        <color name="NowPlayTitle">white</color><!--white-->
-        <color name="NowPlayTIme">white</color><!--white-->
+        <color name="NowPlayAlbum">FFFFFFFF</color><!--white-->
+        <color name="NowPlayTitle">FF00B7E6</color><!--white-->
+        <color name="NowPlayTIme">FFFFFFFF</color><!--white-->
 </colors>
