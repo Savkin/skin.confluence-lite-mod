@@ -7,10 +7,10 @@
 	<color name="grey3">FF696a6c</color>
 	<color name="grey4">FFebebeb</color>
 	<color name="black">FF111111</color>
-	<color name="blue">ff83622d</color>
+	<color name="blue">FF83622d</color>
         <color name="selected">FFDCB66F</color>
-	<color name="dialogheader">ee83622d</color>
-        <color name="orange">ee83622d</color>   
+	<color name="dialogheader">FF83622d</color>
+        <color name="orange">FF83622d</color>   
 
         <!-- CONFLUENCE MOD ADVANCED COLORS -->
         <color name="MenuFocus">ff83622d</color><!--blue-->
@@ -36,8 +36,8 @@
         <color name="HomeInfoClock">FFDCB66F</color><!--white-->
 
 
-        <!--ADNVANCED COLORS HOME ALBUM INFO -->
-        <color name="NowPlayAlbum">white</color><!--white-->
+        <!--ADVANCED COLORS HOME ALBUM INFO -->
+        <color name="NowPlayAlbum">FFDCB66F</color><!--white-->
         <color name="NowPlayTitle">FFDCB66F</color><!--white-->
-        <color name="NowPlayTime">white</color><!--white-->
+        <color name="NowPlayTime">FFDCB66F</color><!--white-->
 </colors>
