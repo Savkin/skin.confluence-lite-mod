@@ -1,12 +1,15 @@
 [B]1.1.3[/B] [I]June 2012[/I]
 - Added ability to Edit Selected Submenu items
 - Bugfix Weather panel showing under Addons
-
-
-[B]1.1.2[/B] [I]June 2012[/I]
-
-
-
+- Created .PO file for Languages
+- Included all theme files including new TransGrey
+- Bugfix replaced various default images eg CDArt
+- Added Jezz's new Media Info View
+- Support script.metadata.actors (Context Menu Only ATM)
+- Recoded Home Panel - TV limited 9 items - Addons only if exist
+- Recoded Weather Home panel requires weather.wunderground-0.1.9.zip
+- Bugfix LibStats Bar too short
+ 
 [B]1.1.0[/B] [I]May 2012[/I]
 - Bugfix old code removed from submenus visible conditions + enforced 5 limit
 - Added new larger font

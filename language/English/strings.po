@@ -604,14 +604,9 @@ msgctxt "#31409"
 msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
 msgstr ""
 
-#empty strings from id 31410 to 31420
-
 msgctxt "#31421"
 msgid "Select your XBMC user Profile[CR]to login and continue"
 msgstr ""
-
-#Weather plugin
-#empty strings from id 31422 to 31599
 
 msgctxt "#31600"
 msgid "Action"
@@ -717,7 +712,7 @@ msgctxt "#31625"
 msgid "Western"
 msgstr ""
 
-#empty strings from id 31626 to 31899
+#Weather plugin
 
 msgctxt "#31900"
 msgid "Weather Maps"
@@ -760,8 +755,34 @@ msgid "Fetching forecast info..."
 msgstr ""
 
 #Confluence.lite.mod
-#Genre Catagories
-#empty strings from id 31910 to 31941
+
+msgctxt "#31935"
+msgid "information"
+msgstr ""	
+	
+msgctxt "#31936"
+msgid "Filmography"
+msgstr ""		
+	
+msgctxt "#31937"
+msgid "Select Submenu Set"
+msgstr ""	
+	
+msgctxt "#31938"
+msgid "None"
+msgstr ""	
+	
+msgctxt "#31939"
+msgid "Home Menu Submenu Type"
+msgstr ""	
+
+msgctxt "#31940"
+msgid "Rip CD"
+msgstr ""	
+
+msgctxt "#31941"
+msgid "User Submenu Item"
+msgstr ""
 
 msgctxt "#31942"
 msgid "has been watched"
