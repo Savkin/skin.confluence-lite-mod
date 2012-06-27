@@ -1,3 +1,8 @@
+[B]2.0.0[/B] [I]July 2012[/I]
+- MOD now requires XBMC - Frodo
+- Converted lang.xml to Gettext PO format
+
+
 [B]1.1.3[/B] [I]June 2012[/I]
 - Added ability to Edit Selected Submenu items
 - Bugfix Weather panel showing under Addons
