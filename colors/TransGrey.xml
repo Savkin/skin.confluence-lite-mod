@@ -5,7 +5,7 @@
 	<color name="grey">FFb4b4b4</color>
 	<color name="grey2">FF999999</color>
 	<color name="grey3">FF505050</color>
-	<color name="black">FF000000</color>
+	<color name="black">FF392b2b</color>
 	<color name="blue">FF999999</color>
 	<color name="selected">FFFFFFFF</color>
         <color name="orange">FFAAAAAA</color>
@@ -22,7 +22,7 @@
 
         <!--RSS FEED -->
 	<color name="RSSText">ffffffff</color><!--blue-->
-	<color name="RSSTitle">ffffffff</color><!--blue-->
+	<color name="RSSTitle">ff999999</color><!--blue-->
 	<color name="RSSHiLite">ffffffff</color><!--white-->
  
         <!-- STATS -->
@@ -34,7 +34,7 @@
         <color name="HomeInfoClock">FFFFFFFF</color><!--white-->
 
         <!--ADNVANCED COLORS HOME ALBUM INFO -->
-        <color name="NowPlayAlbum">FFffffff</color><!--white-->
-        <color name="NowPlayTitle">FFffffff</color><!--white-->
-        <color name="NowPlayTime">FFffffff</color><!--white-->
+        <color name="NowPlayAlbum">FFFFFFFF</color><!--white-->
+        <color name="NowPlayTitle">FF999999</color><!--white-->
+        <color name="NowPlayTime">FFFFFFFF</color><!--white-->
 </colors>
