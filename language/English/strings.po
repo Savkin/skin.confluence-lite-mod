@@ -771,7 +771,7 @@ msgstr ""
 msgctxt "#31938"
 msgid "None"
 msgstr ""	
-	
+
 msgctxt "#31939"
 msgid "Home Menu Submenu Type"
 msgstr ""	
