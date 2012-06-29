@@ -2,6 +2,11 @@
 	<fontset id="Default" idloc="31390" unicode="true"> 
 	<!-- Normal Fonts -->
 	 	<font>
+			<name>font8</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>10</size>
+		</font>
+		<font>
 			<name>font10</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>14</size>
@@ -39,10 +44,15 @@
 
 
 	<!-- Title Fonts -->
+		<font>
+			<name>font8_title</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>10</size>
+		</font>
 	 	<font>
 			<name>font10_title</name>
 			<filename>Roboto-Bold.ttf</filename>
-			<size>12</size>
+			<size>14</size>
 		</font>
 	 	<font>
 			<name>font12_title</name>
@@ -94,6 +104,11 @@
 	<fontset id="Large-Font" unicode="true"> 
 	<!-- Normal Fonts -->
 	 	<font>
+			<name>font8</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>15</size>
+		</font>
+		<font>
 			<name>font10</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>17</size>
@@ -131,6 +146,11 @@
 		
 		
 	<!-- Title Fonts -->
+		<font>
+			<name>font8_title</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>15</size>
+		</font>
 	 	<font>
 			<name>font10_title</name>
 			<filename>Roboto-Bold.ttf</filename>
@@ -185,6 +205,11 @@
 	<fontset id="Arial" idloc="31392" unicode="true"> 
 	<!-- Arial Font better for non English -->
 	 	<font>
+			<name>font8</name>
+			<filename>arial.ttf</filename>
+			<size>10</size>
+		</font>
+		<font>
 			<name>font10</name>
 			<filename>arial.ttf</filename>
 			<size>12</size>
@@ -222,6 +247,12 @@
 
 
 	<!-- Title Fonts -->
+		<font>
+			<name>font8_title</name>
+			<filename>arial.ttf</filename>
+			<size>8</size>
+			<style>bold</style>
+		</font>
 	 	<font>
 			<name>font10_title</name>
 			<filename>arial.ttf</filename>
