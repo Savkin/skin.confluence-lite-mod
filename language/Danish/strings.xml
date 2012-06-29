@@ -1,16 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Language file translated with Team XBMC Translator-->
-<!--Translator: Kim Buchwald Christensen-->
-<!--Email: kimbchr at gmail dot com-->
-<!--Date of translation: 12/04/2009-->
-<!--$Revision$-->
-<!--Based on english strings version 25203-->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Project: Mod of Confluence lite -->
+<!-- translation date: 2012-06-25 19:15+0000 -->
+<!-- translator: Henrik Gotfredsen -->
 <strings>
   <string id="31000">Ændr din</string>
   <string id="31001">Elsker</string>
   <string id="31002">Hader</string>
   <string id="31003">Strømstyring</string>
+  <string id="31004">Arbejder...</string>
+  <string id="31005">Skjul information</string>
+  <string id="31006">View valgmuligheder</string>
   <string id="31007">Plugins</string>
+  <string id="31008">Fuldskærm</string>
+  <string id="31009">Total varighed</string>
   <string id="31020">Nyligt tilføjet</string>
   <string id="31021">Video - Filer</string>
   <string id="31022">Musik - Filer</string>
@@ -24,6 +26,7 @@
   <string id="31030">Komplet liste</string>
   <string id="31031">Billedeikoner</string>
   <string id="31032">Billedevæg</string>
+  <string id="31033">Info</string>
   <string id="31040">Spiller nu</string>
   <string id="31042">AFSPILLER</string>
   <string id="31043">PAUSE</string>
@@ -33,17 +36,21 @@
   <string id="31047">Nuværende standard</string>
   <string id="31048">Standard til visualisering</string>
   <string id="31049">Sluttid</string>
+  <string id="31050">Sorter: Stigende</string>
+  <string id="31051">Sorter: Faldende</string>
   <string id="31055">Åbn afspilningsliste</string>
   <string id="31056">Gem afspilningsliste</string>
   <string id="31057">Luk afspilningsliste</string>
   <string id="31058">Musikfiler til systemet</string>
   <string id="31059">Nuværende afspilningsliste</string>
   <string id="31060">Denne fil er stakket. Vælg den del du vil afspille fra.</string>
+  <string id="31061">Den/De Valgte</string>
   <string id="31101">Indstillinger til hovedsiden</string>
   <string id="31102">Baggrund</string>
-  <string id="31103">Vis "PAUSE" i  billedserier</string>
-  <string id="31105"></string>
+  <string id="31103">Vis \</string>
+  <string id="31104">Afspil Trailere i et vindue [COLOR=grey3](Kun video informations dialog)[/COLOR] </string>
   <string id="31106">Diverse indstillinger</string>
+  <string id="31107">Gem markeringer læst fra video filnavne [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]</string>
   <string id="31108">Skjul hovedsideknapper</string>
   <string id="31109">Baggrunde til hovedsiden</string>
   <string id="31110">Skift baggrund på hjem-knappen</string>
@@ -52,31 +59,38 @@
   <string id="31113">Enkelt billede</string>
   <string id="31114">Flere billeder</string>
   <string id="31115">Tilpasningsprogram</string>
-  <string id="31116"></string>
+  <string id="31116">Vis sidste tilføjede albummer</string>
   <string id="31117">Vis nyligt tilføjne videoer</string>
   <string id="31118">Undermenu til hovedsiden</string>
-  <string id="31119"></string>
+  <string id="31119">Gem Baggrunds Fanart</string>
   <string id="31120">KNAPTITEL</string>
-  <string id="31121"></string>
   <string id="31122">Vejrside</string>
   <string id="31123">Brug plakater og ikke bannere til TV-serier</string>
-  <string id="31124">Vis "Spiller nu" i baggrunden for videoer</string>
-  <string id="31125">Vis "Spiller nu" i baggrunden for visualisering</string>
-  <string id="31126"></string>
-  <string id="31127"></string>
+  <string id="31124">Vis \</string>
+  <string id="31125">Vis \</string>
+  <string id="31126">Afspil TV tema sange i video biblioteket (TvTunes add-on)</string>
+  <string id="31127">TvTunes</string>
   <string id="31128">XBMC Sangtekster</string>
+  <string id="31132">Sangtekst Add-on</string>
+  <string id="31133">Undertekst Add-on</string>
+  <string id="31134">Start side video undermenu</string>
+  <string id="31135">Start side musik undermenu</string>
+  <string id="31136">Start side billede undermenu</string>
+  <string id="31140">Musik OSD</string>
+  <string id="31141">Video OSD</string>
   <string id="31200">Genveje</string>
   <string id="31201">Kategorier</string>
   <string id="31202">Vis rolleliste</string>
   <string id="31203">Vælg din sang</string>
   <string id="31204">Sektionlinks</string>
   <string id="31205">Sangtekstkilde</string>
-  <string id="31250">Radar og prognose</string>
-  <string id="31251">Prognose</string>
-  <string id="31252">TWC-skript</string>
+  <string id="31206">Fundet</string>
+  <string id="31207">Find flere emner</string>
+  <string id="31208">Kommende episoder</string>
   <string id="31300">Temperatur nu</string>
   <string id="31301">Sidst opdateret</string>
   <string id="31302">Menu</string>
+  <string id="31303">Data udbyder</string>
   <string id="31304">Billede</string>
   <string id="31305">Intet diskmedie fundet</string>
   <string id="31306">Skub ud</string>
@@ -102,14 +116,126 @@
   <string id="31327">Opløsning</string>
   <string id="31328">Nyligt tilføjet</string>
   <string id="31329">[B]TIMER STARTET![/B] [COLOR=grey2] - SYSTEMET LUKKER NED OM[/COLOR]</string>
+  <string id="31330">Klik på knap for at afspille[CR][CR]Film trailer</string>
+  <string id="31331">Album detaljer</string>
+  <string id="31351">Pause</string>
+  <string id="31352">Stop</string>
+  <string id="31353">Hurtigt fremad</string>
+  <string id="31354">Spol tilbage</string>
+  <string id="31355">Film menu</string>
+  <string id="31356">Download undertekster</string>
+  <string id="31390">Standard skin</string>
+  <string id="31391">Standard skin uden store bogstaver</string>
+  <string id="31392">Ariel baseret</string>
   <string id="31400">[B]SKIFT INDSTILLINGER TIL UDSEENDE[/B][CR][CR]Skift skin · Vælg sprog og region · Skift indstillinger til fil-listen[CR]Indstil pauseskærm</string>
   <string id="31401">[B]SKIFT INDSTILLINGER TIL VIDEOER[/B][CR][CR]Håndter din videosamling</string>
   <string id="31402">[B]SKIFT INDSTILLINGER TIL MUSIK[/B][CR][CR]Håndter din musiksamling</string>
   <string id="31403">[B]SKIFT INDSTILLINGER TIL BILLEDER[/B][CR][CR]Vælg hvordan billeder vises · Konfigurer billedeserier</string>
   <string id="31404">[B]SKIFT INDSTILLINGER TIL VEJRSIDEN[/B][CR][CR]Du kan vælge tre byer, der skal hentes vejrudsigter for</string>
-  <string id="31405">[B]SKIFT NETVÆRKSINDSTILLINGER[/B][CR][CR]Indstil styring af XBMC via UPnP og HTTP · Indstil fildeling[CR]Indstillinger for adgang til Internettet</string>
   <string id="31406">[B]SKIFT SYSTEMINDSTILLINGER[/B][CR][CR]Indstil og kalibrer skærmen · Indstil lydudgang · Indstil fjernbetjeninger[CR]Indstil strømstyring · Aktiver fejllogning · Indstil hovedlås</string>
   <string id="31407">[B]SKIFT SKIN-INDSTILLINGER[/B][CR][CR]Indstil Confluence · Konfigurer hovedsiden[CR]Skift baggrunde i skinnet</string>
-  <string id="31420">[B][COLOR=white]XBMC kunne ikke finde en skive.[/COLOR][/B][CR][CR]Indsæt en skive i drevet og forsøg igen eller annuler</string>
+  <string id="31408">[B]Konfigurer Add-ons[/B][CR][CR]hold styr på dine add-ons .  Browse efter og installer add-ons fra XBMC.org[CR]Modificer add-ons indstillinger</string>
+  <string id="31409">[B]Configurer service indstillinger[/B][CR][CR]indstil kontrol af XBMC via UPnP og HTTP . Konfigurer fil deling[CR] slå Zeroconf til. Konfigurer AirPlay</string>
   <string id="31421">Vælg din XBMC-brugerprofil[CR]for at logge ind og fortsætte</string>
+  <string id="31600">Action</string>
+  <string id="31601">Eventyr</string>
+  <string id="31602">Animation</string>
+  <string id="31603">Biografi</string>
+  <string id="31604">Børne</string>
+  <string id="31605">Komedie</string>
+  <string id="31606">Krimi</string>
+  <string id="31607">Katastrofe</string>
+  <string id="31608">Dokumentar</string>
+  <string id="31609">Drama</string>
+  <string id="31610">Familie</string>
+  <string id="31611">Fantasi</string>
+  <string id="31612">Historie</string>
+  <string id="31613">Ferie</string>
+  <string id="31614">Skræk</string>
+  <string id="31615">Indie</string>
+  <string id="31616">Musical</string>
+  <string id="31617">Mysterie</string>
+  <string id="31618">Kærlighedsfilm</string>
+  <string id="31619">Sci-fi</string>
+  <string id="31620">Kort</string>
+  <string id="31621">Sport</string>
+  <string id="31622">Spænding</string>
+  <string id="31623">Thri</string>
+  <string id="31624">Krigs</string>
+  <string id="31625">wester</string>
+  <string id="31900">Vejr kort</string>
+  <string id="31901">36 timers vejrudsigt</string>
+  <string id="31902">Timelig vejrudsigt</string>
+  <string id="31903">Weekend vejrudsigt</string>
+  <string id="31904">10 Dages vejrudsigt</string>
+  <string id="31905">Vejrudsigt</string>
+  <string id="31906">Kort & Video</string>
+  <string id="31907">Video vejrudsigt [COLOR=grey2](Fullscreen Playback)[/COLOR]</string>
+  <string id="31908">Chance for nedbør</string>
+  <string id="31909">Henter vejrudsigts info...</string>
+  <string id="31935">Information</string>
+  <string id="31936">Filmografi</string>
+  <string id="31937">Vælg undermenu sæt</string>
+  <string id="31938">Ingen</string>
+  <string id="31939">Hjemme menu undermenu type</string>
+  <string id="31940">Rip CD</string>
+  <string id="31941"> Bruger undermenu del</string>
+  <string id="31942">Er blevet set</string>
+  <string id="31943">Er blevet set</string>
+  <string id="31944">Film i sæt af hvilke</string>
+  <string id="31945">Film sæt View</string>
+  <string id="31946">Panel gennemsigtighed</string>
+  <string id="31947">Film sæt info</string>
+  <string id="31948">Se det senere</string>
+  <string id="31949">Vis bibliotes info</string>
+  <string id="31950">Hjemme menu dele</string>
+  <string id="31951">Menu del</string>
+  <string id="31952">Vælg menu type</string>
+  <string id="31953">Slet menu option</string>
+  <string id="31954">XBMC</string>
+  <string id="31955">Installeret</string>
+  <string id="31956">Streaming medie</string>
+  <string id="31957">NB! Ingen favoritter fundet</string>
+  <string id="31958">Bruger</string>
+  <string id="31959">Foreslået</string>
+  <string id="31960">Tilfældig</string>
+  <string id="31961">Biograf</string>
+  <string id="31962">Db redigering</string>
+  <string id="31963">Slå Album Art baggrundsvæg til</string>
+  <string id="31964">Næste numre</string>
+  <string id="31965">Hjemme medie panel</string>
+  <string id="31966">Tillad Watchlist script foreslag</string>
+  <string id="31967">tillad playlist script foreslag</string>
+  <string id="31968">Playlist script viser senest tilføjede ikke tilfældige </string>
+  <string id="31969">Playlist script viser kun usete </string>
+  <string id="31970">Vis handlingen under pause</string>
+  <string id="31971">TVshows bruger Logoer ikke ClearArt</string>
+  <string id="31972">Gem covere</string>
+  <string id="31973">Lav liste</string>
+  <string id="31974">Vis Logoer</string>
+  <string id="31975">Vis ClearArt</string>
+  <string id="31976">Gem genre ikoner</string>
+  <string id="31977">Vis ExtraFanArt</string>
+  <string id="31978">Play</string>
+  <string id="31979">Browse ikke play - favoritter playliste tilføjet hoved menu</string>
+  <string id="31980">Nyligt tilføjede </string>
+  <string id="31981">Tilfældige</string>
+  <string id="31982">Add- ons</string>
+  <string id="31983">Vis undertekst sprog</string>
+  <string id="31984">Medie views - globalt</string>
+  <string id="31985">Brug eksternt Watch status ikoner [COLOR=grey3](Media Thumbnails Only)[/COLOR]</string>
+  <string id="31986">Tillad eksternt \</string>
+  <string id="31987">Wallstream</string>
+  <string id="31988">Mørklæg sete</string>
+  <string id="31989">Sidst tilføjede albummer</string>
+  <string id="31990">Get skin gulv</string>
+  <string id="31991">Stop baggrunds Fanart Animation</string>
+  <string id="31992">Tillad vejrudsigts panel</string>
+  <string id="31993">Foretræk vejrpanel fremfor add-ons panel</string>
+  <string id="31994">Gem hjemme panel Fanart</string>
+  <string id="31995">Slå returner hjem knappen til</string>
+  <string id="31996">Slå kiosk mode til</string>
+  <string id="31997">Højre liste</string>
+  <string id="31998">Global baggrund</string>
+  <string id="31999">Hjemme panel add-ons</string>
 </strings>
