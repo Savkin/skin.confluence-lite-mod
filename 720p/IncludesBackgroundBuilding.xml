@@ -52,8 +52,24 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Container.Content(Seasons) + Skin.HasSetting(UseTvSeasonArt) + !Skin.HasSetting(HideBackGroundFanart)+ !IsEmpty(ListItem.Path) + !StringCompare(ListItem.label,..)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Container.Content(Episodes) + Skin.HasSetting(UseTvSeasonArt) + !Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Path) + !StringCompare(ListItem.label,..)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
 			<texture background="true">$INFO[Fanart.Image]</texture>
-			<animation effect="fade" time="600" delay="3000">Hidden</animation>
+			<animation effect="fade" time="600" delay="400">Hidden</animation>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(Fanart.Image)</visible>
 			<visible>!Player.HasAudio |[Player.HasAudio + SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
