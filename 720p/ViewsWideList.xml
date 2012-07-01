@@ -209,7 +209,7 @@
 					<visible>!Skin.HasSetting(UseStatusBanners) + Window.IsVisible(Videos) + !IsEmpty(ListItem.Overlay)</visible>
 				</control>
 				<control type="image"> 	
-					<posx>169</posx> 	
+					<posx>202</posx> 	
 					<posy>104</posy> 	
 					<width>160</width> 	
 					<height>19</height> 	
@@ -436,7 +436,7 @@
 					<visible>!Skin.HasSetting(UseStatusBanners) + Window.IsVisible(Videos) + !IsEmpty(ListItem.Overlay)</visible>
 				</control>
 				<control type="image"> 	
-					<posx>169</posx> 	
+					<posx>202</posx> 	
 					<posy>104</posy> 	
 					<width>160</width> 	
 					<height>19</height> 	
