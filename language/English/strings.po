@@ -756,6 +756,18 @@ msgstr ""
 
 #Confluence.lite.mod
 
+msgctxt "#31932"
+msgid "Use Season Art - TVShow/season */fanart.jpg"
+msgstr ""
+
+msgctxt "#31933"
+msgid "Up One Level"
+msgstr ""
+
+msgctxt "#31934"
+msgid "Wide List"
+msgstr ""	
+
 msgctxt "#31935"
 msgid "information"
 msgstr ""	
