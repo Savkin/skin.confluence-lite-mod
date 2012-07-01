@@ -479,6 +479,17 @@
 					<texture border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
+			<control type="group">
+				<include>VisibleFadeEffect</include>
+				<visible>Control.IsVisible(529)</visible>
+				<control type="image">
+					<posx>45</posx>
+					<posy>40</posy>
+					<width>1215</width>
+					<height>620</height>
+					<texture border="15">ContentPanel.png</texture>
+				</control>
+			</control>
 		</control>
 	</include>
 </includes>
