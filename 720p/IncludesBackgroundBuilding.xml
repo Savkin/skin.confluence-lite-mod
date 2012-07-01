@@ -39,6 +39,7 @@
 			<randomize>true</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<visible>!Window.IsActive(home) + Player.HasAudio + [IsEmpty(MusicPlayer.Property(Fanart_Image)) | Skin.HasSetting(HideBackGroundFanart)]</visible>
+			<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
@@ -47,13 +48,28 @@
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>Window_OpenClose_Animation</include>
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
-			<visible>!SubString(Window(videolibrary).Property(TvTunesIsAlive),True)</visible>
 			<visible>!Player.HasVideo</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Container.Content(Seasons) + Skin.HasSetting(UseTvSeasonArt) + !Skin.HasSetting(HideBackGroundFanart)+ !IsEmpty(ListItem.Path) + !StringCompare(ListItem.label,..)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Container.Content(Episodes) + Skin.HasSetting(UseTvSeasonArt) + !Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Path) + !StringCompare(ListItem.label,..)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
 			<texture background="true">$INFO[Fanart.Image]</texture>
-			<animation effect="fade" time="600" delay="3000">Hidden</animation>
+			<animation effect="fade" time="600" delay="400">Hidden</animation>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(Fanart.Image)</visible>
 			<visible>!Player.HasAudio |[Player.HasAudio + SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
@@ -477,6 +493,17 @@
 					<width>1220</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<include>VisibleFadeEffect</include>
+				<visible>Control.IsVisible(529)</visible>
+				<control type="image">
+					<posx>45</posx>
+					<posy>40</posy>
+					<width>1215</width>
+					<height>620</height>
+					<texture border="15">ContentPanel.png</texture>
 				</control>
 			</control>
 		</control>
