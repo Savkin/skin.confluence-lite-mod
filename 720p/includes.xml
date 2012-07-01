@@ -12,6 +12,7 @@
 	<include file="Viewtype_Wallstream.xml" />
 	<include file="ViewsMovieSets.xml" />
 	<include file="ViewsTVEpisodes.xml" />
+	<include file="ViewsWideList.xml" />
 	<!--include file="Viewtype_Musicwallstream.xml" /-->
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
