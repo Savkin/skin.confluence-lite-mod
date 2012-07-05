@@ -756,6 +756,10 @@ msgstr ""
 
 #Confluence.lite.mod
 
+msgctxt "#31931"
+msgid "Animated Cases"
+msgstr ""
+
 msgctxt "#31932"
 msgid "Use Season Art - TVShow/season */fanart.jpg"
 msgstr ""

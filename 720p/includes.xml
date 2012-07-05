@@ -13,6 +13,7 @@
 	<include file="ViewsMovieSets.xml" />
 	<include file="ViewsTVEpisodes.xml" />
 	<include file="ViewsWideList.xml" />
+	<include file="ViewsAnimatedCase.xml" />
 	<!--include file="Viewtype_Musicwallstream.xml" /-->
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
@@ -1122,6 +1123,17 @@
 			<itemlayout height="1" width="1" />
 			<focusedlayout height="1" width="1" />
 		</control>
+	</include>
+	<include name="ViewMovieDiskDefault">
+		<texture>disc.png</texture>
+	</include>
+	<include name="ViewMovieDiskDVD">
+		<texture fallback="disc-dvd.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
+		<visible>!stringcompare(ListItem.Label,..)</visible>
+	</include>
+	<include name="ViewMovieDiskBluRay">
+		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
+		<visible>!stringcompare(ListItem.Label,..)</visible>
 	</include>
 	<include name="KBurnsAnimateFanart">
 		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanArt)">Conditional</animation>
