@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,550,551,560,501,508,504,503,505,511,515,720,722,723,724,725,737,728,529</views>
+	<views>50,51,57,500,550,551,560,501,508,504,503,505,511,515,720,722,723,724,725,737,728,529</views>
 	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<onload condition="Library.HasContent(Movies) + System.HasAddon(script.moviesets)+ IsEmpty(Window(10025).Property(MovieSets.IsAlive))">RunScript(script.moviesets,containerId=7000)</onload>
 	<controls>
@@ -12,6 +12,7 @@
 			<include>Window_OpenClose_Animation</include>		
 			<include>CommonRootView</include> <!-- view id = 50 -->
 			<include>FullWidthList</include> <!-- view id = 51 -->
+			<include>AnimatedCaseWithDisc</include>		<!-- view id = 57  -->
 			<include>ThumbnailView</include> <!-- view id = 500 -->
 			<include>PosterWrapView</include> <!-- view id = 501 -->
 			<include>PosterWrapView2_Fanart</include> <!-- view id = 508 -->
@@ -120,9 +121,9 @@
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[31977]</label>
-					<onclick>Skin.ToggleSetting(View504ExtraFanArt)</onclick>
-					<selected>Skin.HasSetting(View504ExtraFanArt)</selected>
-					<visible>Control.IsVisible(504) + [Container.Content(Movies) | Container.Content(TVShows)]</visible>
+					<onclick>Skin.ToggleSetting(ViewExtraFanArt)</onclick>
+					<selected>Skin.HasSetting(ViewExtraFanArt)</selected>
+					<visible>[Control.IsVisible(504) | Control.IsVisible(57)] + [Container.Content(Movies) | Container.Content(TVShows)]</visible>
 				</control>
 				<control type="radiobutton" id="93">
 					<description>Show Genre Toggle</description>
@@ -196,6 +197,15 @@
 					<selected>Skin.HasSetting(720transparent)</selected>
 					<visible>Control.IsVisible(720)</visible>
 				</control>
+				<control type="radiobutton" id="101">
+					<description>Animate movie Case in 57</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31931]</label>
+					<onclick>Skin.ToggleSetting(HideMovieCDArt)</onclick>
+					<selected>!Skin.HasSetting(HideMovieCDArt)</selected>
+					<visible>Control.IsVisible(57)</visible>
+				</control>	
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>

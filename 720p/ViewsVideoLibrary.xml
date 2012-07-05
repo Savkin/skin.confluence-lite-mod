@@ -1693,7 +1693,7 @@
 					<randomize>true</randomize>
 					<fadetime>300</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-					<visible>Container.Content(Movies) + Skin.HasSetting(View504ExtraFanArt)</visible>
+					<visible>Container.Content(Movies) + Skin.HasSetting(ViewExtraFanArt)</visible>
 					<bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
@@ -1718,7 +1718,7 @@
 					<randomize>true</randomize>
 					<fadetime>300</fadetime>
 					<imagepath background="true">$INFO[ListItem.Path,,extrafanart/]</imagepath>
-					<visible>Container.Content(TVShows) + Skin.HasSetting(View504ExtraFanArt)</visible>
+					<visible>Container.Content(TVShows) + Skin.HasSetting(ViewExtraFanArt)</visible>
 					<bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>

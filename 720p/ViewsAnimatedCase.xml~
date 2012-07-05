@@ -1,0 +1,455 @@
+<includes>	
+<include name="AnimatedCaseWithDisc"> <!-- Edit 31/12/12 -->
+		<control type="group">
+			<visible>Control.IsVisible(57)</visible>
+			<control type="wraplist" id="57">
+				
+				
+<visible>[Container.Content(Movies) + !SubString(Container.FolderPath,plugin.video.live.streams)] | Container.Content(Seasons) | [Container.Content(TVShows) + !Skin.HasSetting(TVShowsUseBanners)  + !Skin.HasSetting(TVShowsUselogos)]</visible>
+				
+				
+				<visible>!Container.Content(LiveTV)</visible>
+				<posx>520</posx>
+				<posy>220</posy>
+				<width>700</width>
+				<height>450</height>
+				<onleft>57</onleft>
+				<onright>57</onright>
+				<onup>9000</onup>
+				<ondown>60</ondown>
+				<viewtype label="$LOCALIZE[31931]">icon</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>250</scrolltime>
+				<focusposition>1</focusposition>
+				<orientation>horizontal</orientation>
+				<preloaditems>2</preloaditems>
+				<itemlayout width="230" height="310">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>202</width>
+						<height>310</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<visible>stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>6</posx>
+						<posy>6</posy>
+						<width>195</width>
+						<height>310</height>					
+						<aspectratio>stretch</aspectratio>
+						<texture>CaseInside.png</texture>
+						<visible>!stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCDArt)</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>10</posy>
+						<width>170</width>
+						<height>290</height>	
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.Thumb]</texture>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>202</width>
+						<height>310</height>
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="ClearCase/dv.png">$VAR[VideoListCase,ClearCase/,.png]</texture>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout width="250" height="310">
+					<control type="image">
+						<posx>0</posx>
+						<posy>24</posy>
+						<width>188</width>
+						<height>267</height>
+						<aspectratio>stretch</aspectratio>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<animation effect="zoom" start="0,24,188,267" end="-21,-3,228,324" time="250">Focus</animation>
+						<animation effect="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250">UnFocus</animation>
+						<visible>stringcompare(ListItem.Label,..)</visible>
+					</control>				
+					<control type="image">
+						<posx>6</posx>
+						<posy>6</posy>
+						<width>195</width>
+						<height>310</height>	
+						<aspectratio>stretch</aspectratio>
+						<texture>CaseInside.png</texture>
+						<animation effect="zoom" start="6,6,195,310" end="-15,-26,244,374" time="250">Focus</animation>
+						<animation effect="zoom" start="-15,-26,244,374" end="6,6,195,310" time="250">UnFocus</animation>
+						<visible>!stringcompare(ListItem.Label,..)+ !Skin.HasSetting(HideMovieCDArt)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>71</posy>
+						<width>173</width>
+						<height>173</height>
+						<aspectratio>stretch</aspectratio>
+						<include condition="![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]">ViewMovieDiskDVD</include>
+						<include condition="substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)">ViewMovieDiskDefault</include>
+						<animation effect="zoom" start="12,71,173,173" end="-3,51,209,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-3,51,209,209" end="12,71,173,173" time="250">UnFocus</animation>
+						<visible>![stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !Container.Content(Seasons) + !stringcompare(ListItem.Label,..) + !ListItem.IsFolder + !Skin.HasSetting(HideMovieCDArt)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>71</posy>
+						<width>173</width>
+						<height>173</height>
+						<aspectratio>stretch</aspectratio>
+						<include condition="![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]">ViewMovieDiskBluRay</include>
+						<include condition="substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)">ViewMovieDiskDefault</include>
+						<animation effect="zoom" start="12,71,173,173" end="-3,51,209,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-3,51,209,209" end="12,71,173,173" time="250">UnFocus</animation>
+						<visible>[stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCDArt)</visible>
+					</control>
+					<control type="image">
+						<posx>12</posx>
+						<posy>71</posy>
+						<width>173</width>
+						<height>173</height>
+						<texture>disc.png</texture>
+						<animation effect="zoom" start="12,71,173,173" end="-3,51,209,209" time="250">Focus</animation>
+						<animation effect="zoom" start="-3,51,209,209" end="12,71,173,173" time="250">UnFocus</animation>
+						<visible>[Container.Content(Seasons) | [!Container.Content(Seasons) + ListItem.IsFolder]] + !stringcompare(ListItem.Label,..) + !Skin.HasSetting(HideMovieCDArt)</visible>
+					</control>
+					<control type="image">
+						<description>Rating image</description>
+						<posx>50</posx>
+						<posy>25</posy>
+						<width>96</width>
+						<height>36</height>
+						<aspectratio aligny="center">keep</aspectratio>
+						<texture>$VAR[AgeLimit,flagging/transparentratings/,.png]</texture>
+						<colordiffuse>FF7C7063</colordiffuse>
+						<animation effect="zoom" start="50,25,96,36" end="34,-5,128,48" time="250">Focus</animation>
+						<animation effect="zoom" start="34,-5,128,48" end="50,25,96,36" time="250">UnFocus</animation>
+						<visible>Container.Content(Movies) + !Skin.HasSetting(HideMovieCDArt)</visible>
+					</control>
+					<control type="label">
+						<posx>50</posx>
+						<posy>25</posy>
+						<width>120</width>
+						<height>36</height>
+						<scroll>false</scroll>
+						<font>font28_title</font>
+						<textcolor>FF574F46</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<label>$INFO[listitem.mpaa]</label>
+						<animation effect="zoom" start="50,25,120,36" end="34,-5,157,48" time="250">Focus</animation>
+						<animation effect="zoom" start="34,-5,157,48" end="50,25,120,36" time="250">UnFocus</animation>
+						<visible>!Skin.HasSetting(HideMovieCDArt) + Container.Content(TVShows) | Container.Content(Seasons)</visible>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>250</posy>
+						<width>83</width>
+						<height>17</height>
+						<align>center</align>
+						<label>$INFO[ListItem.Year]</label>
+						<font>font28_title</font>
+						<textcolor>FF574F46</textcolor>
+						<shadowcolor>FF000000</shadowcolor>
+						<animation effect="zoom" start="100,250,83,17" end="96,272,91,20" time="250">Focus</animation>
+						<animation effect="zoom" start="96,272,91,20" end="100,250,83,17" time="250">UnFocus</animation>
+						<visible>!Skin.HasSetting(HideMovieCDArt) + !IsEmpty(ListItem.Year)</visible>
+					</control>
+					<control type="image">
+						<posx>75</posx>
+						<posy>205</posy>
+						<width>44</width>
+						<height>26</height>
+						<texture>movieset.png</texture>
+						<visible>!Skin.HasSetting(HideMovieCDArt) + Container.Content(Movies) + ListItem.IsFolder + !stringcompare(ListItem.Label,..) + SubString(Container.Folderpath,videodb://,left)</visible>
+					</control>
+					<control type="image">
+						<posx>25</posx>
+						<posy>10</posy>
+						<width>170</width>
+						<height>290</height>	
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="DefaultVideo.png" background="true" diffuse="EmptyCaseMask.png">$INFO[ListItem.Thumb]</texture>
+						<animation type="focus" reversible="false" condition="!Skin.HasSetting(HideMovieCDArt)">
+							<effect type="zoom" start="25,10,170,290" end="10,-20,204,348" time="250"/>
+							<effect type="rotatey" delay="500" center="1" start="0" end="85" time="1000" tween="quadratic" easing="out"/>
+						</animation>
+						<animation type="focus" reversible="false" condition="Skin.HasSetting(HideMovieCDArt)">
+							<effect type="zoom" start="25,10,170,290" end="10,-20,204,348" time="250"/>
+						</animation>
+						<animation type="UnFocus" reversible="true" condition="!Skin.HasSetting(HideMovieCDArt)">
+							<effect type="zoom" start="10,-20,204,348" end="25,10,170,290" time="250" reversible="true"/>
+							<effect type="rotatey" center="1" start="85" end="0" time="250" reversible="true"/>
+						</animation>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>202</width>
+						<height>310</height>
+						<aspectratio>stretch</aspectratio>
+						<texture fallback="ClearCase/dv.png">$VAR[VideoListCase,ClearCase/,.png]</texture>
+						<animation type="focus" reversible="false" condition="!Skin.HasSetting(HideMovieCDArt)">
+							<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250"/>
+							<effect type="rotatey" delay="500" center="1" start="0" end="85" time="1000" tween="quadratic" easing="out"/>
+						</animation>
+						<animation type="focus" reversible="false" condition="Skin.HasSetting(HideMovieCDArt)">
+							<effect type="zoom" start="0,0,202,310" end="-21,-32,244,374" time="250"/>
+						</animation>
+						<animation type="UnFocus" reversible="true" condition="!Skin.HasSetting(HideMovieCDArt)">
+							<effect type="zoom" start="-21,-32,244,374" end="0,0,202,310" time="250" reversible="true"/>
+							<effect type="rotatey" center="1" start="85" end="0" time="250" reversible="true"/>
+						</animation>
+						<visible>!stringcompare(ListItem.Label,..)</visible>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>100</posx>
+				<posy>620</posy>
+				<width>1080</width>
+				<height>25</height>
+				<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
+				<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="14,0,14,0">ScrollBarH_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onup>57</onup>
+				<ondown condition="!Skin.HasSetting(HideMediaHomeButton)">8998</ondown>
+				<ondown condition="Skin.HasSetting(HideMediaHomeButton) + !Skin.HasSetting(KioskMode)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HideMediaHomeButton) + Skin.HasSetting(KioskMode)">57</ondown>
+				<showonepage>false</showonepage>
+				<orientation>horizontal</orientation>
+				<visible>Control.IsVisible(57)</visible>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(57)</visible>
+				<control type="label">
+					<posx>80</posx>
+					<posy>50</posy>
+					<width>1120</width>
+					<height>35</height>
+					<font>font30_title</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>true</scroll>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label fallback="194">$VAR[Mainlabel]</label>
+				</control>	
+				<control type="grouplist">
+					<description>Media Genre Flagging</description>
+					<posx>150</posx>
+					<posy>90</posy>
+					<width>1040</width>
+					<align>center</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<include>GenreText</include>
+				</control>
+				<control type="image">
+					<posx>95</posx>
+					<posy>120</posy>
+					<width>400</width>
+					<height>220</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" fallback="DefaultNoImage.png" diffuse="episodematte.png">$INFO[ListItem.Property(fanart_image)]</texture>
+					<visible>!StringCompare(ListItem.Label,..)</visible>
+				</control>
+				<control type="multiimage">
+					<posx>95</posx>
+					<posy>120</posy>
+					<width>400</width>
+					<height>220</height>
+					<timeperimage>2000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>300</fadetime>
+					<aspectratio>stretch</aspectratio>
+					<imagepath fallback="DefaultNoImage.png" background="true" diffuse="episodematte.png">$INFO[ListItem.Path,,extrafanart/]</imagepath>
+					<visible>
+						!StringCompare(ListItem.Label,..) + [IsEmpty(Container(7000).ListItem.Property(IsSet)) + Skin.HasSetting(ViewExtraFanArt)]
+						|[!IsEmpty(Container(7000).ListItem.Property(IsSet)) + Skin.HasSetting(ViewExtraFanArt) + IsEmpty(Container(7000).ListItem.Property(ExtraFanart))]
+					</visible>
+				</control>
+				<control type="multiimage">
+					<description>extra fanart for movieset</description>
+					<posx>95</posx>
+					<posy>120</posy>
+					<width>400</width>
+					<height>220</height>
+					<timeperimage>2000</timeperimage>
+					<randomize>true</randomize>
+					<fadetime>300</fadetime>
+					<aspectratio>stretch</aspectratio>
+					<imagepath fallback="DefaultNoImage.png" background="true" diffuse="episodematte.png">$INFO[Container(7000).ListItem.Property(ExtraFanart)]</imagepath>
+					<visible>!StringCompare(ListItem.Label,..) + Skin.HasSetting(ViewExtraFanArt) + !IsEmpty(Container(7000).ListItem.Property(ExtraFanart))</visible>
+				</control>				
+				
+				
+				
+				
+				
+				<control type="image">
+					<posx>515</posx>
+					<posy>115</posy>
+					<width>4</width>
+					<height>475</height>
+					<texture>separator_vertical.png</texture>
+				</control>
+				
+				<control type="textbox">
+					<description>Description Value The Movie</description>
+					<visible>!StringCompare(ListItem.Label,..) + IsEmpty(Window(10025).Property(Content.MovieSets))</visible>
+					<posx>80</posx>
+					<posy>350</posy>
+					<width>430</width>
+					<height>215</height>
+					<align>justify</align>
+					<font>font12caps</font>
+					<textcolor>white</textcolor>
+					<label>$VAR[ShowMediaPlot]</label>
+					<autoscroll time="4000" delay="5000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+				</control>
+				
+				
+<!--				
+				<control type="grouplist">
+					<visible>!IsEmpty(Window(10025).Property(Content.MovieSets))</visible>
+					<description>Movie Set Titles</description>
+					<posx>80</posx>
+					<posy>320</posy>
+					<width>430</width>
+					<height>240</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<itemgap>0</itemgap>
+					<orientation>vertical</orientation>
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.1.Title)] $INFO[Container(7000).ListItem.Property(movie.1.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.1.Filename))</visible> 						
+					</control>	
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.2.Title)] $INFO[Container(7000).ListItem.Property(movie.2.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.2.Filename))</visible> 						
+					</control>
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.3.Title)] $INFO[Container(7000).ListItem.Property(movie.3.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.3.Filename))</visible> 						
+					</control>
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.4.Title)] $INFO[Container(7000).ListItem.Property(movie.4.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.4.Filename))</visible> 						
+					</control>	
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.5.Title)] $INFO[Container(7000).ListItem.Property(movie.5.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.5.Filename))</visible> 						
+					</control>
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.6.Title)] $INFO[Container(7000).ListItem.Property(movie.6.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.6.Filename))</visible> 						
+					</control>
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.7.Title)] $INFO[Container(7000).ListItem.Property(movie.7.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.7.Filename))</visible> 						
+					</control>
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.8.Title)] $INFO[Container(7000).ListItem.Property(movie.8.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.8.Filename))</visible> 						
+					</control>	
+					<control type="label">
+						<description>Title txt</description>
+						<include>MovieSetTitles</include>
+						<align>center</align>
+						<label>$INFO[Container(7000).ListItem.Property(movie.9.Title)] $INFO[Container(7000).ListItem.Property(movie.9.Year)]</label>
+						<visible>!IsEmpty(Container(7000).ListItem.Property(movie.9.Filename))</visible> 						
+					</control>
+				</control>
+-->
+
+
+				
+				<control type="image">
+					<posx>80</posx>
+					<posy>570</posy>
+					<width>430</width>
+					<height>4</height>
+					<texture>separator.png</texture>
+				</control>
+				
+				
+				<control type="group">
+					<include>VisibleFadeEffect</include>
+					<visible>!StringCompare(ListItem.Label,..)</visible>
+					<control type="image">
+						<posx>80</posx>
+						<posy>580</posy>
+						<width>40</width>
+						<height>40</height>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture>$INFO[ListItem.SubtitleLanguage,Language/,.png]</texture>
+						<visible>!Skin.HasSetting(HideSubTitleFlags) + !IsEmpty(ListItem.SubtitleLanguage)</visible>
+					</control>
+					<control type="grouplist">
+						<description>Media Codec Flagging Images</description>
+						<posx>125</posx>
+						<posy>580</posy>
+						<width>330</width>
+						<align>center</align>
+						<itemgap>0</itemgap>
+						<orientation>horizontal</orientation>
+						<include>VideoCodecFlaggingConditions</include>
+						<include>AudioCodecFlaggingConditions</include>
+						<include>AspectCodecFlaggingConditions</include>
+						<include>VideoTypeHackFlaggingConditions</include>
+					</control>
+					<control type="image">
+						<posx>450</posx>
+						<posy>580</posy>
+						<width>60</width>
+						<height>40</height>
+						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
+						<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
+					</control>
+					<control type="image">
+						<posx>450</posx>
+						<posy>580</posy>
+						<width>60</width>
+						<height>40</height>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/]</texture>
+						<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>	
+</includes>		

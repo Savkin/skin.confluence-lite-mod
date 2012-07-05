@@ -1135,6 +1135,7 @@
 		<texture fallback="disc-bluray.png" diffuse="disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
 		<visible>!stringcompare(ListItem.Label,..)</visible>
 	</include>
+
 	<include name="KBurnsAnimateFanart">
 		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanArt)">Conditional</animation>
 		<animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanArt)">Conditional</animation>
