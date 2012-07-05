@@ -497,13 +497,12 @@
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
-				<visible>Control.IsVisible(729) | Control.IsVisible(57)</visible>
+				<visible>Control.IsVisible(57)</visible>
 				<control type="image">
 					<posx>50</posx>
 					<posy>40</posy>
 					<width>1180</width>
 					<height>620</height>
-					<include condition="!Skin.HasSetting(MediaNotTransparent)">TransparentEffect</include>
 					<texture border="15">ContentPanel.png</texture>
 					</control>
 				<control type="image">
