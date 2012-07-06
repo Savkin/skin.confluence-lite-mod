@@ -207,7 +207,7 @@
 					<selected>!Skin.HasSetting(HideMovieCDArt)</selected>
 					<visible>Control.IsVisible(57)</visible>
 				</control>
-				<control type="radiobutton" id="96">
+				<control type="radiobutton" id="102">
 					<description>Show Logos Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
@@ -215,6 +215,16 @@
 					<onclick>Skin.ToggleSetting(View516ShowLogos)</onclick>
 					<selected>Skin.HasSetting(View516ShowLogos)</selected>
 					<visible>Control.IsVisible(516) + Container.Content(TVShows)</visible>
+				</control>
+				<control type="radiobutton" id="103">
+					<description>Toggle Case</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31930]</label>
+					<label>Toggle Cases</label>
+					<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
+					<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
+					<visible>Control.IsVisible(57) | Control.IsVisible(516)</visible>
 				</control>
 				<control type="label" id="201">
 					<width>250</width>

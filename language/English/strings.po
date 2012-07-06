@@ -755,6 +755,9 @@ msgid "Fetching forecast info..."
 msgstr ""
 
 #Confluence.lite.mod
+msgctxt "#31930"
+msgid "Use Disk Cases"
+msgstr ""
 
 msgctxt "#31931"
 msgid "Animated Cases"
