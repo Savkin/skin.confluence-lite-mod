@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,57,500,550,551,560,501,508,504,503,505,511,515,720,722,723,724,725,737,728,529</views>
+	<views>50,51,57,500,550,551,560,501,508,504,503,505,511,515,516,720,722,723,724,725,737,728,529</views>
 	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<onload condition="Library.HasContent(Movies) + System.HasAddon(script.moviesets)+ IsEmpty(Window(10025).Property(MovieSets.IsAlive))">RunScript(script.moviesets,containerId=7000)</onload>
 	<controls>
@@ -21,6 +21,7 @@
 			<include>WideIconView</include> <!-- view id = 505 -->
 			<include>MusicVideoInfoListView</include> <!-- view id = 511 -->
 			<include>MediaListView4</include> <!-- view id = 515 -->
+			<include>MediaListView5</include> <!-- view id = 516 -->
 			<include>AddonInfoListView1</include> 	<!-- view id = 550 -->
 			<include>AddonInfoThumbView1</include> 	<!-- view id = 551 -->
 			<include>LiveTVView1</include> 			<!-- view id = 560 -->
@@ -205,7 +206,16 @@
 					<onclick>Skin.ToggleSetting(HideMovieCDArt)</onclick>
 					<selected>!Skin.HasSetting(HideMovieCDArt)</selected>
 					<visible>Control.IsVisible(57)</visible>
-				</control>	
+				</control>
+				<control type="radiobutton" id="96">
+					<description>Show Logos Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31974]</label>
+					<onclick>Skin.ToggleSetting(View516ShowLogos)</onclick>
+					<selected>Skin.HasSetting(View516ShowLogos)</selected>
+					<visible>Control.IsVisible(516) + Container.Content(TVShows)</visible>
+				</control>
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>
