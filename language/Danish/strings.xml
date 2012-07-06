@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Project: Mod of Confluence lite -->
-<!-- translation date: 2012-06-25 19:15+0000 -->
+<!-- translation date: 2012-07-06 11:00+0000 -->
 <!-- translator: Henrik Gotfredsen -->
-<!-- translation date: 2012-07-06 08:17+0000 -->
-<!-- translator: Johann Valdimarsson -->
 <strings>
   <string id="31000">Ændr din</string>
   <string id="31001">Elsker</string>
@@ -100,7 +98,7 @@
   <string id="31308">Filmdetaljer</string>
   <string id="31309">Hukommelse i brug:</string>
   <string id="31310">Spor nummer</string>
-  <string id="31311">FANKUNST BILLDE[CR][CR]IKKE TILGÆNGELIG[CR][CR]TRYK FOR AT VÆLGE</string>
+  <string id="31311">FANKUNST BILLEDE[CR][CR]IKKE TILGÆNGELIG[CR][CR]TRYK FOR AT VÆLGE</string>
   <string id="31312">Nuværende Scraper</string>
   <string id="31313">Vælg en Scraper</string>
   <string id="31314">Indstillinger til indholdsskanning</string>
@@ -162,20 +160,20 @@
   <string id="31620">Kort</string>
   <string id="31621">Sport</string>
   <string id="31622">Spænding</string>
-  <string id="31623">Thri</string>
+  <string id="31623">Thriller</string>
   <string id="31624">Krigs</string>
-  <string id="31625">wester</string>
+  <string id="31625">western</string>
   <string id="31900">Vejr kort</string>
   <string id="31901">36 timers vejrudsigt</string>
   <string id="31902">Timelig vejrudsigt</string>
   <string id="31903">Weekend vejrudsigt</string>
   <string id="31904">10 Dages vejrudsigt</string>
   <string id="31905">Vejrudsigt</string>
-  <string id="31906">Kort & Video</string>
+  <string id="31906">Kort og Video</string>
   <string id="31907">Video vejrudsigt [COLOR=grey2](Fullscreen Playback)[/COLOR]</string>
   <string id="31908">Chance for nedbør</string>
   <string id="31909">Henter vejrudsigts info...</string>
-  <string id="31931">Animated Cases</string>
+  <string id="31931">Animerede covere</string>
   <string id="31932">Brug Sæsonkunst - TVShow/season */fanart.jpg</string>
   <string id="31933">Et Niveau Op</string>
   <string id="31934">Bred Liste</string>
@@ -193,7 +191,7 @@
   <string id="31946">Panel gennemsigtighed</string>
   <string id="31947">Film sæt info</string>
   <string id="31948">Se det senere</string>
-  <string id="31949">Vis bibliotes info</string>
+  <string id="31949">Vis bibliotekets info</string>
   <string id="31950">Hjemme menu dele</string>
   <string id="31951">Menu del</string>
   <string id="31952">Vælg menu type</string>
@@ -206,7 +204,7 @@
   <string id="31959">Foreslået</string>
   <string id="31960">Tilfældig</string>
   <string id="31961">Biograf</string>
-  <string id="31962">Db redigering</string>
+  <string id="31962">Db Redigering</string>
   <string id="31963">Slå Album Art baggrundsvæg til</string>
   <string id="31964">Næste numre</string>
   <string id="31965">Hjemme medie panel</string>
