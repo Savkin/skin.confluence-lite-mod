@@ -1163,6 +1163,12 @@
 		<value condition="!IsEmpty(ListItem.Year) + Container.Content(Movies)">$INFO[ListItem.label] ($INFO[ListItem.Year])</value>
 		<value condition="Container(7000).ListItem.Property(IsSet)">$INFO[Container(7000).ListItem.Label]</value>
 		<value>$INFO[ListItem.label]</value>
+	</variable>
+	<variable name="ListItemTwo" type="text">
+		<value condition="!IsEmpty(ListItem.Year) + Container.Content(Movies)">($INFO[ListItem.Year])</value>
+		<value condition="!IsEmpty(ListItem.date) + SubString(Container.FolderPath,plugin.video.live.streams)">($INFO[ListItem.date])</value>
+		<value condition="!IsEmpty(ListItem.premiered) + SubString(Container.FolderPath,program.advanced.launcher)">($INFO[ListItem.premiered])</value>
+		<value>$INFO[ListItem.Label2]</value>
 	</variable>	
 	<variable name="NextFiveScroller" type="text">
 		<value condition="!IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">     [COLOR blue][B]$LOCALIZE[31964]   1:[/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR blue][B]2:[/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]    [COLOR blue][B]3:[/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]    [COLOR blue][B]4:[/B][/COLOR]  $INFO[MusicPlayer.offset(4).Artist] - $INFO[MusicPlayer.offset(4).Title]    [COLOR blue][B]5:[/B][/COLOR]  $INFO[MusicPlayer.offset(5).Artist] - $INFO[MusicPlayer.offset(5).Title]</value>
