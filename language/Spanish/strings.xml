@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Language file translated with Team XBMC Translator-->
-<!--Translator: Juanjo-->
-<!--Date of translation: 01/14/2012-->
-<!--$Revision$-->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Project: Mod of Confluence lite -->
+<!-- translation date: 2012-07-06 08:17+0000 -->
+<!-- translator: rasensi -->
 <strings>
   <string id="31000">Cambiar tus</string>
   <string id="31001">Me gusta</string>
@@ -13,6 +12,7 @@
   <string id="31006">Opciones de vista</string>
   <string id="31007">Plugins</string>
   <string id="31008">Pantalla completa</string>
+  <string id="31009">Duración Total</string>
   <string id="31020">Añadido recientemente</string>
   <string id="31021">Archivos - vídeo</string>
   <string id="31022">Archivos - música</string>
@@ -45,12 +45,10 @@
   <string id="31059">Lista de reproducción actual</string>
   <string id="31060">Este archivo está agrupado, seleccione la parte que desee reproducir.</string>
   <string id="31061">Seleccionado</string>
-  <string id="31100"></string>
   <string id="31101">Opciones de la pantalla principal</string>
   <string id="31102">Fondo</string>
-  <string id="31103">Ver "Pausa" en modo presentación de imágenes</string>
+  <string id="31103">Ver \</string>
   <string id="31104">Reproducir trailers en ventana [COLOR=grey3](Sólo diálogo de información de vídeo)[/COLOR] </string>
-  <string id="31105"></string>
   <string id="31106">Opciones de miscelánea</string>
   <string id="31107">Ocultar marcas de lectura de archivos de vídeo [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]</string>
   <string id="31108">Ocultar botones de la pantalla principal</string>
@@ -61,22 +59,18 @@
   <string id="31113">Una imagen</string>
   <string id="31114">Multi-imagen</string>
   <string id="31115">Personalizado</string>
-  <string id="31116"></string>
+  <string id="31116">Mostrar Álbums Recién añadidos</string>
   <string id="31117">Mostrar últimos vídeos añadidos</string>
   <string id="31118">Submenús de programas de la pantalla principal</string>
   <string id="31119">Ocultar el Fanart del fondo</string>
   <string id="31120">ETIQUETA DEL BOTON</string>
-  <string id="31121"></string>
   <string id="31122">El Clima</string>
-  <string id="31123">Usar "Posters" en lugar de "Banners" para las Series de TV</string>
+  <string id="31123">Usar \</string>
   <string id="31124">Mostrar vídeo en reproducción en el fondo</string>
   <string id="31125">Mostrar visualización en el fondo</string>
-  <string id="31126"></string>
-  <string id="31127"></string>
+  <string id="31126">Reproducir Tema de Serie en libreria de videos (Add-on TvTunes)</string>
+  <string id="31127">TvTunes</string>
   <string id="31128">Letras</string>
-  <string id="31129"></string>
-  <string id="31130"></string>
-  <string id="31131"></string>
   <string id="31132">Add-on para letras</string>
   <string id="31133">Add-on para subtitulos</string>
   <string id="31134">Submenú de vídeos de la pantalla principal</string>
@@ -90,6 +84,9 @@
   <string id="31203">Elige tu canción</string>
   <string id="31204">Sección de links</string>
   <string id="31205">Fuente para letras</string>
+  <string id="31206">Encontrado(s)</string>
+  <string id="31207">Buscar más Elementos</string>
+  <string id="31208">Próximos Episodios</string>
   <string id="31300">Temperatura</string>
   <string id="31301">Última actualización</string>
   <string id="31302">Menú</string>
@@ -106,7 +103,6 @@
   <string id="31313">Elige un scraper</string>
   <string id="31314">Opciones de escanéo de contenido</string>
   <string id="31315">Básico</string>
-  <string id="31316"></string>
   <string id="31317">Selecciona ruta del fanart</string>
   <string id="31318">Fanart pequeño</string>
   <string id="31319">Perfil seleccionado</string>
@@ -128,7 +124,6 @@
   <string id="31354">Retroceder</string>
   <string id="31355">Menú película</string>
   <string id="31356">Descargar subtítulos</string>
-  <string id="31357"></string>
   <string id="31390">Por defecto</string>
   <string id="31391">Por defecto sin Mayúsculas</string>
   <string id="31392">Basada en Arial</string>
@@ -137,11 +132,37 @@
   <string id="31402">[B]Configura las opciones de MUSICA[/B][CR][CR]Administra tu biblioteca musical - Ajusta reproducción de música - Cambia opciones de listas de música[CR[Configura sumisión de canciones - Configura el karaoke</string>
   <string id="31403">[B]Configura las opciones de IMAGEN[/B][CR][CR]Cambia opciones de listas de imágenes - Configura presentación de diapositivas</string>
   <string id="31404">[B]Configura las opciones de EL TIEMPO[/B][CR][CR]Establece tres ciudades para información metereológica</string>
-  <string id="31405">[B]Configura las opciones de RED[/B][CR][CR]Configura el control del XBMC mediante UPnP y HTTP - Configura el uso compartido de archivos[CR]Establece opciones de acceso a Internet</string>
   <string id="31406">[B]Configura las opciones de SISTEMA[/B][CR][CR]Configura y calibra la pantalla - Configura salida de audio - Configura mandos a distancia[CR]Establece las opciones de ahorro de energía - Habilita depuración de errores - Configura bloqueo maestro</string>
   <string id="31407">[B]Configura las opciones de la SKIN[/B][CR][CR]Configura Confluence - Añade y elimina elementos del menú Inicio[CR]Cambia los fondos de la skin</string>
   <string id="31408">[B]Configura los ADD-ONS[/B][CR][CR]Administra tus addons instalados · Busca e instala addons desde xbmc.org[CR]Modifica la configuración de los addons</string>
+  <string id="31409">[B]CONFIGURAR SERVICE SETTINGS[/B][CR][CR]Permitir control de XBMC via UPnP y HTTP · Configurar compartición de archivos[CR]Activar Zeroconf · Configurar AirPlay</string>
   <string id="31421">Seleccione su perfil de usuario de XBMC[CR]para ingresar y continuar</string>
+  <string id="31600">Acción</string>
+  <string id="31601">Aventura</string>
+  <string id="31602">Animación</string>
+  <string id="31603">Biografía</string>
+  <string id="31604">Niños</string>
+  <string id="31605">Comedia</string>
+  <string id="31606">Crimen</string>
+  <string id="31607">Desastres</string>
+  <string id="31608">Documental</string>
+  <string id="31609">Drama</string>
+  <string id="31610">Familiar</string>
+  <string id="31611">Fantasía</string>
+  <string id="31612">Histórico</string>
+  <string id="31613">Vacaciones</string>
+  <string id="31614">Terror</string>
+  <string id="31615">Indie</string>
+  <string id="31616">Musical</string>
+  <string id="31617">Misterio</string>
+  <string id="31618">Romance</string>
+  <string id="31619">Ciencia Ficción</string>
+  <string id="31620">Corto</string>
+  <string id="31621">Deportes</string>
+  <string id="31622">Suspense</string>
+  <string id="31623">Intriga</string>
+  <string id="31624">Bélica</string>
+  <string id="31625">Oeste</string>
   <string id="31900">Mapas de clima</string>
   <string id="31901">Pronóstico de 36 hs</string>
   <string id="31902">Pronóstico por hora</string>
@@ -152,4 +173,73 @@
   <string id="31907">Pronóstico de video [COLOR=grey2](A pantalla completa)[/COLOR]</string>
   <string id="31908">Probabilidada de precipitación</string>
   <string id="31909">Obteniendo información</string>
+  <string id="31931">Animated Cases</string>
+  <string id="31932">Usar Arte de Temporada - Serie/temporada */fanart.jpg</string>
+  <string id="31933">Subir Un Nivel</string>
+  <string id="31934">Lista Amplia</string>
+  <string id="31935">Información</string>
+  <string id="31936">Filmografía</string>
+  <string id="31937">Seleccionar Conjunto de Submenús</string>
+  <string id="31938">Ninguno</string>
+  <string id="31939">Tipo de Submenús en Menú de Inicio</string>
+  <string id="31940">Extraer CD</string>
+  <string id="31941">Elemento Submenú de Usuario</string>
+  <string id="31942">ha sido visto</string>
+  <string id="31943">han sido vistos</string>
+  <string id="31944">Películas agrupadas de las cuales</string>
+  <string id="31945">Vista Grupo de Películas</string>
+  <string id="31946">Transparencia del Panel</string>
+  <string id="31947">Info de Grupo de Películas</string>
+  <string id="31948">Ver Más Tarde</string>
+  <string id="31949">Estadísticas de Librería</string>
+  <string id="31950">Elementos del Menú Inicio</string>
+  <string id="31951">Menú Inicio</string>
+  <string id="31952">Seleccione Tipo de Opciones de Menú</string>
+  <string id="31953">Borrar Opciones de Menú</string>
+  <string id="31954">XBMC</string>
+  <string id="31955">Instalado</string>
+  <string id="31956">Medios Stream</string>
+  <string id="31957">NB. Sin Favoritos</string>
+  <string id="31958">Usuario</string>
+  <string id="31959">Sugerencias</string>
+  <string id="31960">Aleatorio</string>
+  <string id="31961">Cine</string>
+  <string id="31962">Edición de Base de Datos</string>
+  <string id="31963">Activar Muro de Fondo Portadas</string>
+  <string id="31964">Canciones Siguientes</string>
+  <string id="31965">Panel de Medios de Inicio</string>
+  <string id="31966">Permitir Sugerencias al Script de Lista de Visionado </string>
+  <string id="31967">Permitir Sugerencias al Script de Lista de Reproducción </string>
+  <string id="31968">Script de Lista de Visionado Muestra Recientes, no Aleatorios</string>
+  <string id="31969">Script de Lista de Visionado Muestra Sólo No Vistos</string>
+  <string id="31970">Mostrar Argumento al Pausar</string>
+  <string id="31971">Series usa Logos, no ClearArt</string>
+  <string id="31972">Ocultar Mayúsculas</string>
+  <string id="31973">Lista Baja</string>
+  <string id="31974">Mostrar Logos</string>
+  <string id="31975">Mostrar ClearArt</string>
+  <string id="31976">Ocultar Iconos de Género</string>
+  <string id="31977">Mostrar ExtraFanArt</string>
+  <string id="31978">Reproducir</string>
+  <string id="31979">Consultar, no Reproducir - Lista de Favoritos Añade al Menú Principal</string>
+  <string id="31980">Elementos Recientes</string>
+  <string id="31981">Elementos Aleatorios</string>
+  <string id="31982">AddOns</string>
+  <string id="31983">Mostrar Bandera de Idioma en Subtítulos</string>
+  <string id="31984">Vista de Medios - Global</string>
+  <string id="31985">Usar Iconos Externos para Estado VISTO [COLOR=grey3](Sólo en Miniaturas de Medios)[/COLOR]</string>
+  <string id="31986">Usar Iconos Externos para Estado NO VISTO</string>
+  <string id="31987">Muro en Flujo</string>
+  <string id="31988">Oscurecer los VISTOS</string>
+  <string id="31989">Álbumes Recientes</string>
+  <string id="31990">Ocultar el Fondo del Skin</string>
+  <string id="31991">Detener Animación de Fondo de FanArt</string>
+  <string id="31992">Permitir Panel de Previsión del Tiempo</string>
+  <string id="31993">Panel de Previsión del Tiempo Encima de Paneles de Add-Ons</string>
+  <string id="31994">Ocultar FanArt en Panel de Inicio</string>
+  <string id="31995">Activar Botón \</string>
+  <string id="31996">Activar Modo Kisko</string>
+  <string id="31997">Lista a la Derecha</string>
+  <string id="31998">Fondo Global</string>
+  <string id="31999">Addons Panel de Inicio</string>
 </strings>

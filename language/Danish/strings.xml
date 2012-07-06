@@ -2,6 +2,8 @@
 <!--Project: Mod of Confluence lite -->
 <!-- translation date: 2012-06-25 19:15+0000 -->
 <!-- translator: Henrik Gotfredsen -->
+<!-- translation date: 2012-07-06 08:17+0000 -->
+<!-- translator: Johann Valdimarsson -->
 <strings>
   <string id="31000">Ændr din</string>
   <string id="31001">Elsker</string>
@@ -173,6 +175,10 @@
   <string id="31907">Video vejrudsigt [COLOR=grey2](Fullscreen Playback)[/COLOR]</string>
   <string id="31908">Chance for nedbør</string>
   <string id="31909">Henter vejrudsigts info...</string>
+  <string id="31931">Animated Cases</string>
+  <string id="31932">Brug Sæsonkunst - TVShow/season */fanart.jpg</string>
+  <string id="31933">Et Niveau Op</string>
+  <string id="31934">Bred Liste</string>
   <string id="31935">Information</string>
   <string id="31936">Filmografi</string>
   <string id="31937">Vælg undermenu sæt</string>
