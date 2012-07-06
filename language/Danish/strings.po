@@ -5,14 +5,15 @@
 # Addon Provider: C-Team
 # Translators:
 # Henrik Gotfredsen <>, 2012.
+# Johann Valdimarsson <johann.valdimarsson@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Mod of Confluence lite\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: 2012-06-24 05:20+0000\n"
-"PO-Revision-Date: 2012-06-25 19:15+0000\n"
-"Last-Translator: Henrik Gotfredsen <>\n"
-"Language-Team: Danish (http://www.transifex.net/projects/p/Confluence-Lite-Mod/language/da/)\n"
+"PO-Revision-Date: 2012-07-06 08:17+0000\n"
+"Last-Translator: Johann Valdimarsson <johann.valdimarsson@gmail.com>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/Confluence-Lite-Mod/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -738,6 +739,22 @@ msgstr "Chance for nedbør"
 msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr "Henter vejrudsigts info..."
+
+msgctxt "#31931"
+msgid "Animated Cases"
+msgstr ""
+
+msgctxt "#31932"
+msgid "Use Season Art - TVShow/season */fanart.jpg"
+msgstr "Brug Sæsonkunst - TVShow/season */fanart.jpg"
+
+msgctxt "#31933"
+msgid "Up One Level"
+msgstr "Et Niveau Op"
+
+msgctxt "#31934"
+msgid "Wide List"
+msgstr "Bred Liste"
 
 msgctxt "#31935"
 msgid "information"

@@ -4,13 +4,14 @@
 # Addon version: 1.1.3
 # Addon Provider: C-Team
 # Translators:
+#   <rasensi@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: Mod of Confluence lite\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: 2012-06-24 05:20+0000\n"
-"PO-Revision-Date: 2012-06-24 15:33+0000\n"
-"Last-Translator: Bruce Pauw <prisoner@mudisle.fsnet.co.uk>\n"
+"PO-Revision-Date: 2012-07-06 08:17+0000\n"
+"Last-Translator: rasensi <rasensi@gmail.com>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/Confluence-Lite-Mod/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +33,7 @@ msgstr "Confluence es la skin por defecto de XBMC 9.11 y posteriores. Es una com
 
 msgctxt "Addon Disclaimer"
 msgid "Confluence is the default skin for XBMC, removing it may cause issues"
-msgstr ""
+msgstr "Confluence es el skin por defecto para XBMC, si lo borra podría causar conflictos"
 
 msgctxt "#31000"
 msgid "Change Your"
@@ -72,7 +73,7 @@ msgstr "Pantalla completa"
 
 msgctxt "#31009"
 msgid "Total Duration"
-msgstr ""
+msgstr "Duración Total"
 
 msgctxt "#31020"
 msgid "Recently Added"
@@ -264,7 +265,7 @@ msgstr "Personalizado"
 
 msgctxt "#31116"
 msgid "Show Recently added Albums"
-msgstr ""
+msgstr "Mostrar Álbums Recién añadidos"
 
 msgctxt "#31117"
 msgid "Show Recently added Videos"
@@ -300,11 +301,11 @@ msgstr "Mostrar visualización en el fondo"
 
 msgctxt "#31126"
 msgid "Play TV theme songs in video library (TvTunes add-on)"
-msgstr ""
+msgstr "Reproducir Tema de Serie en libreria de videos (Add-on TvTunes)"
 
 msgctxt "#31127"
 msgid "TvTunes"
-msgstr ""
+msgstr "TvTunes"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -364,15 +365,15 @@ msgstr "Fuente para letras"
 
 msgctxt "#31206"
 msgid "Found"
-msgstr ""
+msgstr "Encontrado(s)"
 
 msgctxt "#31207"
 msgid "Find More Items"
-msgstr ""
+msgstr "Buscar más Elementos"
 
 msgctxt "#31208"
 msgid "Upcoming Episodes"
-msgstr ""
+msgstr "Próximos Episodios"
 
 msgctxt "#31300"
 msgid "Current Temp"
@@ -588,7 +589,7 @@ msgctxt "#31409"
 msgid ""
 "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of XBMC via UPnP and "
 "HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
-msgstr ""
+msgstr "[B]CONFIGURAR SERVICE SETTINGS[/B][CR][CR]Permitir control de XBMC via UPnP y HTTP · Configurar compartición de archivos[CR]Activar Zeroconf · Configurar AirPlay"
 
 msgctxt "#31421"
 msgid "Select your XBMC user Profile[CR]to login and continue"
@@ -596,107 +597,107 @@ msgstr "Seleccione su perfil de usuario de XBMC[CR]para ingresar y continuar"
 
 msgctxt "#31600"
 msgid "Action"
-msgstr ""
+msgstr "Acción"
 
 msgctxt "#31601"
 msgid "Adventure"
-msgstr ""
+msgstr "Aventura"
 
 msgctxt "#31602"
 msgid "Animation"
-msgstr ""
+msgstr "Animación"
 
 msgctxt "#31603"
 msgid "Biography"
-msgstr ""
+msgstr "Biografía"
 
 msgctxt "#31604"
 msgid "Children"
-msgstr ""
+msgstr "Niños"
 
 msgctxt "#31605"
 msgid "Comedy"
-msgstr ""
+msgstr "Comedia"
 
 msgctxt "#31606"
 msgid "Crime"
-msgstr ""
+msgstr "Crimen"
 
 msgctxt "#31607"
 msgid "Disaster"
-msgstr ""
+msgstr "Desastres"
 
 msgctxt "#31608"
 msgid "Documentary"
-msgstr ""
+msgstr "Documental"
 
 msgctxt "#31609"
 msgid "Drama"
-msgstr ""
+msgstr "Drama"
 
 msgctxt "#31610"
 msgid "Family"
-msgstr ""
+msgstr "Familiar"
 
 msgctxt "#31611"
 msgid "Fantasy"
-msgstr ""
+msgstr "Fantasía"
 
 msgctxt "#31612"
 msgid "History"
-msgstr ""
+msgstr "Histórico"
 
 msgctxt "#31613"
 msgid "Holiday"
-msgstr ""
+msgstr "Vacaciones"
 
 msgctxt "#31614"
 msgid "Horror"
-msgstr ""
+msgstr "Terror"
 
 msgctxt "#31615"
 msgid "Indie"
-msgstr ""
+msgstr "Indie"
 
 msgctxt "#31616"
 msgid "Musical"
-msgstr ""
+msgstr "Musical"
 
 msgctxt "#31617"
 msgid "Mystery"
-msgstr ""
+msgstr "Misterio"
 
 msgctxt "#31618"
 msgid "Romance"
-msgstr ""
+msgstr "Romance"
 
 msgctxt "#31619"
 msgid "Sci-Fi"
-msgstr ""
+msgstr "Ciencia Ficción"
 
 msgctxt "#31620"
 msgid "Short"
-msgstr ""
+msgstr "Corto"
 
 msgctxt "#31621"
 msgid "Sport"
-msgstr ""
+msgstr "Deportes"
 
 msgctxt "#31622"
 msgid "Suspense"
-msgstr ""
+msgstr "Suspense"
 
 msgctxt "#31623"
 msgid "Thriller"
-msgstr ""
+msgstr "Intriga"
 
 msgctxt "#31624"
 msgid "War"
-msgstr ""
+msgstr "Bélica"
 
 msgctxt "#31625"
 msgid "Western"
-msgstr ""
+msgstr "Oeste"
 
 msgctxt "#31900"
 msgid "Weather Maps"
@@ -738,263 +739,279 @@ msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr "Obteniendo información"
 
+msgctxt "#31931"
+msgid "Animated Cases"
+msgstr ""
+
+msgctxt "#31932"
+msgid "Use Season Art - TVShow/season */fanart.jpg"
+msgstr "Usar Arte de Temporada - Serie/temporada */fanart.jpg"
+
+msgctxt "#31933"
+msgid "Up One Level"
+msgstr "Subir Un Nivel"
+
+msgctxt "#31934"
+msgid "Wide List"
+msgstr "Lista Amplia"
+
 msgctxt "#31935"
 msgid "information"
-msgstr ""
+msgstr "Información"
 
 msgctxt "#31936"
 msgid "Filmography"
-msgstr ""
+msgstr "Filmografía"
 
 msgctxt "#31937"
 msgid "Select Submenu Set"
-msgstr ""
+msgstr "Seleccionar Conjunto de Submenús"
 
 msgctxt "#31938"
 msgid "None"
-msgstr ""
+msgstr "Ninguno"
 
 msgctxt "#31939"
 msgid "Home Menu Submenu Type"
-msgstr ""
+msgstr "Tipo de Submenús en Menú de Inicio"
 
 msgctxt "#31940"
 msgid "Rip CD"
-msgstr ""
+msgstr "Extraer CD"
 
 msgctxt "#31941"
 msgid "User Submenu Item"
-msgstr ""
+msgstr "Elemento Submenú de Usuario"
 
 msgctxt "#31942"
 msgid "has been watched"
-msgstr ""
+msgstr "ha sido visto"
 
 msgctxt "#31943"
 msgid "have been watched"
-msgstr ""
+msgstr "han sido vistos"
 
 msgctxt "#31944"
 msgid "Movies in set of which"
-msgstr ""
+msgstr "Películas agrupadas de las cuales"
 
 msgctxt "#31945"
 msgid "Movie Set View"
-msgstr ""
+msgstr "Vista Grupo de Películas"
 
 msgctxt "#31946"
 msgid "Panel Transparency"
-msgstr ""
+msgstr "Transparencia del Panel"
 
 msgctxt "#31947"
 msgid "Movie Set Info"
-msgstr ""
+msgstr "Info de Grupo de Películas"
 
 msgctxt "#31948"
 msgid "Watch it Later"
-msgstr ""
+msgstr "Ver Más Tarde"
 
 msgctxt "#31949"
 msgid "Show Library Stats"
-msgstr ""
+msgstr "Estadísticas de Librería"
 
 msgctxt "#31950"
 msgid "Home Menu Items"
-msgstr ""
+msgstr "Elementos del Menú Inicio"
 
 msgctxt "#31951"
 msgid "Menu Item"
-msgstr ""
+msgstr "Menú Inicio"
 
 msgctxt "#31952"
 msgid "Select Menu Option Type"
-msgstr ""
+msgstr "Seleccione Tipo de Opciones de Menú"
 
 msgctxt "#31953"
 msgid "Clear Menu Option"
-msgstr ""
+msgstr "Borrar Opciones de Menú"
 
 msgctxt "#31954"
 msgid "XBMC"
-msgstr ""
+msgstr "XBMC"
 
 msgctxt "#31955"
 msgid "Installed"
-msgstr ""
+msgstr "Instalado"
 
 msgctxt "#31956"
 msgid "Streaming Media"
-msgstr ""
+msgstr "Medios Stream"
 
 msgctxt "#31957"
 msgid "NB! No Favourites Found"
-msgstr ""
+msgstr "NB. Sin Favoritos"
 
 msgctxt "#31958"
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 msgctxt "#31959"
 msgid "Suggested"
-msgstr ""
+msgstr "Sugerencias"
 
 msgctxt "#31960"
 msgid "Random"
-msgstr ""
+msgstr "Aleatorio"
 
 msgctxt "#31961"
 msgid "Cinema"
-msgstr ""
+msgstr "Cine"
 
 msgctxt "#31962"
 msgid "DB Edit"
-msgstr ""
+msgstr "Edición de Base de Datos"
 
 msgctxt "#31963"
 msgid "Enable Album Art Background Wall"
-msgstr ""
+msgstr "Activar Muro de Fondo Portadas"
 
 msgctxt "#31964"
 msgid "Next Tracks"
-msgstr ""
+msgstr "Canciones Siguientes"
 
 msgctxt "#31965"
 msgid "Home Media Panel"
-msgstr ""
+msgstr "Panel de Medios de Inicio"
 
 msgctxt "#31966"
 msgid "Allow Watchlist Script Suggestions"
-msgstr ""
+msgstr "Permitir Sugerencias al Script de Lista de Visionado "
 
 msgctxt "#31967"
 msgid "Allow Playlist Script Suggestions"
-msgstr ""
+msgstr "Permitir Sugerencias al Script de Lista de Reproducción "
 
 msgctxt "#31968"
 msgid "Playlist Script Shows Recent not Random Items"
-msgstr ""
+msgstr "Script de Lista de Visionado Muestra Recientes, no Aleatorios"
 
 msgctxt "#31969"
 msgid "Playlist Script Only Shows UnWatched Items"
-msgstr ""
+msgstr "Script de Lista de Visionado Muestra Sólo No Vistos"
 
 msgctxt "#31970"
 msgid "Show Story Plot on Pause"
-msgstr ""
+msgstr "Mostrar Argumento al Pausar"
 
 msgctxt "#31971"
 msgid "TVshows use Logos not ClearArt"
-msgstr ""
+msgstr "Series usa Logos, no ClearArt"
 
 msgctxt "#31972"
 msgid "Hide Cases"
-msgstr ""
+msgstr "Ocultar Mayúsculas"
 
 msgctxt "#31973"
 msgid "Low List"
-msgstr ""
+msgstr "Lista Baja"
 
 msgctxt "#31974"
 msgid "Show Logos"
-msgstr ""
+msgstr "Mostrar Logos"
 
 msgctxt "#31975"
 msgid "Show ClearArt"
-msgstr ""
+msgstr "Mostrar ClearArt"
 
 msgctxt "#31976"
 msgid "Hide Genre Icons"
-msgstr ""
+msgstr "Ocultar Iconos de Género"
 
 msgctxt "#31977"
 msgid "Show ExtraFanArt"
-msgstr ""
+msgstr "Mostrar ExtraFanArt"
 
 msgctxt "#31978"
 msgid "Play"
-msgstr ""
+msgstr "Reproducir"
 
 msgctxt "#31979"
 msgid "Browse not Play - Favourite Playlist Added to Main Menu"
-msgstr ""
+msgstr "Consultar, no Reproducir - Lista de Favoritos Añade al Menú Principal"
 
 msgctxt "#31980"
 msgid "Recently Added Items"
-msgstr ""
+msgstr "Elementos Recientes"
 
 msgctxt "#31981"
 msgid "Random Items"
-msgstr ""
+msgstr "Elementos Aleatorios"
 
 msgctxt "#31982"
 msgid "AddOns"
-msgstr ""
+msgstr "AddOns"
 
 msgctxt "#31983"
 msgid "Show SubTitle Country Flag"
-msgstr ""
+msgstr "Mostrar Bandera de Idioma en Subtítulos"
 
 msgctxt "#31984"
 msgid "Media Views - Global"
-msgstr ""
+msgstr "Vista de Medios - Global"
 
 msgctxt "#31985"
 msgid ""
 "Use External Watch Status Icons [COLOR=grey3](Media Thumbnails Only)[/COLOR]"
-msgstr ""
+msgstr "Usar Iconos Externos para Estado VISTO [COLOR=grey3](Sólo en Miniaturas de Medios)[/COLOR]"
 
 msgctxt "#31986"
 msgid "Allow External \"UnWatched\" Icon"
-msgstr ""
+msgstr "Usar Iconos Externos para Estado NO VISTO"
 
 msgctxt "#31987"
 msgid "Wallstream"
-msgstr ""
+msgstr "Muro en Flujo"
 
 msgctxt "#31988"
 msgid "Darken Watched"
-msgstr ""
+msgstr "Oscurecer los VISTOS"
 
 msgctxt "#31989"
 msgid "Latest Albums"
-msgstr ""
+msgstr "Álbumes Recientes"
 
 msgctxt "#31990"
 msgid "Hide Skin Floor"
-msgstr ""
+msgstr "Ocultar el Fondo del Skin"
 
 msgctxt "#31991"
 msgid "Stop Background Fanart Animation"
-msgstr ""
+msgstr "Detener Animación de Fondo de FanArt"
 
 msgctxt "#31992"
 msgid "Allow Weather Forecast Panel"
-msgstr ""
+msgstr "Permitir Panel de Previsión del Tiempo"
 
 msgctxt "#31993"
 msgid "Prefer Weather Panel over Add-Ons Panel"
-msgstr ""
+msgstr "Panel de Previsión del Tiempo Encima de Paneles de Add-Ons"
 
 msgctxt "#31994"
 msgid "Hide Home Panel FanArt"
-msgstr ""
+msgstr "Ocultar FanArt en Panel de Inicio"
 
 msgctxt "#31995"
 msgid "Enable Return Home Button"
-msgstr ""
+msgstr "Activar Botón \"Volver a Inicio\""
 
 msgctxt "#31996"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Activar Modo Kisko"
 
 msgctxt "#31997"
 msgid "Right List"
-msgstr ""
+msgstr "Lista a la Derecha"
 
 msgctxt "#31998"
 msgid "Global Background"
-msgstr ""
+msgstr "Fondo Global"
 
 msgctxt "#31999"
 msgid "Home Panel Addons"
-msgstr ""
+msgstr "Addons Panel de Inicio"
