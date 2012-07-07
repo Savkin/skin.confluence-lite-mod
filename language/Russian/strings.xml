@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Project: Mod of Confluence lite -->
+<!-- translation date: 2012-07-07 11:09+0000 -->
+<!-- translator: Konstantin savkin -->
 <strings>
-  <!-- Misc labels -->
   <string id="31000">Измените</string>
   <string id="31001">Нравится</string>
   <string id="31002">Не нравится</string>
@@ -10,7 +12,7 @@
   <string id="31006">Настройки просмотра</string>
   <string id="31007">Дополнения</string>
   <string id="31008">Полный экран</string>
-
+  <string id="31009">Общая Продолжительность</string>
   <string id="31020">Последние</string>
   <string id="31021">Видео - файлы</string>
   <string id="31022">Музыка - файлы</string>
@@ -19,18 +21,13 @@
   <string id="31025">в списке</string>
   <string id="31026">Другие параметры</string>
   <string id="31027">Расположение</string>
- 
-  <!-- View Type labels -->
   <string id="31028">Карусель постеров</string>
   <string id="31029">Фанарт</string>
   <string id="31030">Полный список</string>
   <string id="31031">Миниатюры</string>
   <string id="31032">Карусель картинок</string>
   <string id="31033">Информация</string>
-
-  <!-- Extra labels -->
   <string id="31040">Сейчас воспроизводится:</string>
-
   <string id="31042">ВОСПРОИЗВЕДЕНИЕ</string>
   <string id="31043">ПАУЗА</string>
   <string id="31044">ПЕРЕМОТКА ВПЕРЕД</string>
@@ -41,9 +38,6 @@
   <string id="31049">Время окончания</string>
   <string id="31050">По возрастанию</string>
   <string id="31051">По убыванию</string>
-
-
-  <!-- Playlist Editor labels -->
   <string id="31055">Открыть плейлист</string>
   <string id="31056">Сохранить плейлист</string>
   <string id="31057">Закрыть плейлист</string>
@@ -51,14 +45,10 @@
   <string id="31059">Текущий плейлист</string>
   <string id="31060">Составной файл; выберите часть для проигрывания.</string>
   <string id="31061">Текущее выделение</string>
-  
-  <!-- Skin Settings labels -->
-  <string id="31100"></string>
   <string id="31101">Настройки главного экрана</string>
   <string id="31102">Фон</string>
-  <string id="31103">Показывать "Пауза" в режиме слайдшоу</string>
+  <string id="31103">Показывать \</string>
   <string id="31104">Воспроизводить трейлеры в окне [COLOR=grey3](только для окна сведений)[/COLOR]</string>
-  <string id="31105">Кнопка "Видео" всегда открывает "Файлы"</string>
   <string id="31106">Различные параметры</string>
   <string id="31107">Скрыть флаги, полученные из имени видеофайла [COLOR=grey3](BluRray, HDTV)[/COLOR]</string>
   <string id="31108">Скрыть кнопки главного меню</string>
@@ -69,42 +59,34 @@
   <string id="31113">Одна картинка</string>
   <string id="31114">Набор картинок</string>
   <string id="31115">Выбор</string>
-  <string id="31116"></string>
+  <string id="31116">Показать Последние добавленные Альбомы</string>
   <string id="31117">Показывать последнее добавленное видео</string>
   <string id="31118">Подменю программ главного экрана</string>
   <string id="31119">Скрыть фоновый фанарт</string>
   <string id="31120">НАЗВАНИЕ КНОПКИ</string>
-  <string id="31121"></string>  <!-- blanked 2010-11-12 -->
   <string id="31122">Страница погоды</string>
   <string id="31123">Использовать постеры вместо баннеров для сериалов</string>
   <string id="31124">Воспроизводимое видео в качестве фона</string>
   <string id="31125">Музыкальная визуализация в качестве фона</string>
-
   <string id="31126">Играть мелодию сериала в медиатеке (дополнение TvTunes)</string>
   <string id="31127">TvTunes</string>
   <string id="31128">Тексты</string>
-  <string id="31129"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31130"></string>  <!-- blanked 2010-11-12 -->
-  
-<string id="31131"></string> <!-- blanked 2010-12-23 -->
   <string id="31132">Дополнение текстов песен</string>
   <string id="31133">Дополнение субтитров</string>
   <string id="31134">Подменю видео главного экрана</string>
   <string id="31135">Подменю музыки главного экрана</string>
   <string id="31136">Подменю фото главного экрана</string>
-
   <string id="31140">OSD музыки</string>
   <string id="31141">OSD видео</string>
-
-  <!-- Script labels -->
   <string id="31200">Ярлыки</string>
   <string id="31201">Категории</string>
   <string id="31202">Показывать роли</string>
   <string id="31203">Выберите песню</string>
   <string id="31204">Ссылки разделов</string>
   <string id="31205">Источник текстов песен</string>
-
-  <!-- Extra labels -->
+  <string id="31206">Найдено</string>
+  <string id="31207">Найти больше элементов</string>
+  <string id="31208">Ожидаемые эпизоды</string>
   <string id="31300">Текущая температура</string>
   <string id="31301">Последнее обновление</string>
   <string id="31302">Меню</string>
@@ -121,7 +103,6 @@
   <string id="31313">Выбрать инфоресурс</string>
   <string id="31314">Параметры сканирования содержимого</string>
   <string id="31315">Базовый</string>
-  <string id="31316"></string>
   <string id="31317">Выбрать расположение фанарта</string>
   <string id="31318">Маленький фанарт</string>
   <string id="31319">Выбранный профиль</string>
@@ -137,35 +118,51 @@
   <string id="31329">[B]Установлен таймер![/B] [COLOR=grey2] - Автоматическое отключение через[/COLOR]</string>
   <string id="31330">Нажмите кнопку,[CR][CR]чтобы посмотреть кино-трейлер</string>
   <string id="31331">Сведения об альбоме</string>
-
-  <!-- Video and Music OSD Labels  -->
   <string id="31351">Пауза</string>
   <string id="31352">Стоп</string>
   <string id="31353">Перемотка вперед</string>
   <string id="31354">Перемотка назад</string>
   <string id="31355">Меню фильма</string>
   <string id="31356">Скачать субтитры</string>
-  <string id="31357"></string>
-
-  <!-- Skin Fontsets -->
   <string id="31390">Стандартные</string>
   <string id="31391">Стандартные без ПРОПИСНЫХ</string>
   <string id="31392">Стиль Arial</string>
-
-  <!-- Description Labels  -->
   <string id="31400">[B]НАСТРОЙКА ВНЕШНЕГО ВИДА[/B][CR][CR]Изменение обложки • Выбор языка и региона • Изменение настроек списка файлов[CR]Настройка хранителя экрана</string>
   <string id="31401">[B]НАСТРОЙКА ПАРАМЕТРОВ ВИДЕО[/B][CR][CR]Управление медиатекой видео • Параметры воспроизведения видео[CR]Настройка списка видео • Настройка шрифта субтитров</string>
   <string id="31402">[B]НАСТРОЙКА ПАРАМЕТРОВ МУЗЫКИ[/B][CR][CR]Управление медиатекой аудио • Параметры воспроизведения аудио[CR]Настройка списка аудио • Настройка добавления песен • Настройка караоке</string>
   <string id="31403">[B]НАСТРОЙКА ПАРАМЕТРОВ ФОТО[/B][CR][CR]Параметры списка фото • Настройка слайд-шоу</string>
   <string id="31404">[B]НАСТРОЙКА ПАРАМЕТРОВ ПОГОДЫ[/B][CR][CR]Выбор трех городов для получения информации о погоде</string>
-  <string id="31405">[B]НАСТРОЙКА ПАРАМЕТРОВ СЕТИ[/B][CR][CR]Настройки управления XBMC по UPnP и HTTP • Настройки доступа к файлам[CR]Настройки доступа в Интернет</string>
   <string id="31406">[B]НАСТРОЙКА ПАРАМЕТРОВ СИСТЕМЫ[/B][CR][CR]Настройка и калибровка дисплеев • Настройка вывода аудио • Настройка[CR]дистанционного управления • Настройка параметров энергосбережения • Включение отладки • Настройка блокировки</string>
   <string id="31407">[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки Confluence • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки</string>
   <string id="31408">[B]НАСТРОЙКА ДОПОЛНЕНИЙ[/B][CR][CR]Управление установленными дополнениями • Установка дополнений с xbmc.org[CR]Изменение настроек дополнений</string>
-
+  <string id="31409">[B]НАСТРОЙКА ПАРАМЕТРОВ СЕТИ[/B][CR][CR]Настройки управления XBMC через UPnP и HTTP · Настройки доступа к файлам[CR]Включение Zeroconf · Настройка AirPlay</string>
   <string id="31421">Выберите профиль пользователя XBMC,[CR]чтобы войти в систему</string>
-  
-  <!-- Weather plugin -->
+  <string id="31600">Боевик</string>
+  <string id="31601">Приключения</string>
+  <string id="31602">Анимация</string>
+  <string id="31603">Биография</string>
+  <string id="31604">Детский</string>
+  <string id="31605">Комедия</string>
+  <string id="31606">Криминал</string>
+  <string id="31607">Катастрофа</string>
+  <string id="31608">Документальный</string>
+  <string id="31609">Драма</string>
+  <string id="31610">Семейный</string>
+  <string id="31611">Фэнтези</string>
+  <string id="31612">Исторический</string>
+  <string id="31613">Каникулы</string>
+  <string id="31614">Ужасы</string>
+  <string id="31615">Индийский</string>
+  <string id="31616">Музыкальный</string>
+  <string id="31617">Мистика</string>
+  <string id="31618">Романтический</string>
+  <string id="31619">Фантастика</string>
+  <string id="31620">Короткометражный</string>
+  <string id="31621">Спорт</string>
+  <string id="31622">Suspense</string>
+  <string id="31623">Триллер</string>
+  <string id="31624">Военный</string>
+  <string id="31625">Вестерн</string>
   <string id="31900">Карты погоды</string>
   <string id="31901">Прогноз на 36 ч.</string>
   <string id="31902">Ежечасный прогноз</string>
@@ -176,5 +173,74 @@
   <string id="31907">Видео-прогноз [COLOR=grey2](полный экран)[/COLOR]</string>
   <string id="31908">Возможны осадки</string>
   <string id="31909">Получение прогноза…</string>
-
-  </strings>
+  <string id="31930">Использовать Коробки Дисков</string>
+  <string id="31931">Анимированные Обложки</string>
+  <string id="31932">Использовать Season Art - TVShow/season */fanart.jpg</string>
+  <string id="31933">Вверх на Один Уровень</string>
+  <string id="31934">Широкий Список</string>
+  <string id="31935">Информация</string>
+  <string id="31936">Фильмография</string>
+  <string id="31937">Выберите Набор Подменю</string>
+  <string id="31938">None</string>
+  <string id="31939">Тип Подменю Главного Меню</string>
+  <string id="31940">Скопировать CD</string>
+  <string id="31941">Пользовательский Пункт Подменю</string>
+  <string id="31942">был просмотрен</string>
+  <string id="31943">было просмотрено</string>
+  <string id="31944">Фильмы в коллекции из которых</string>
+  <string id="31945">Просмотр Коллекции</string>
+  <string id="31946">Прозрачность панели</string>
+  <string id="31947">Movie Set Info</string>
+  <string id="31948">Посмотреть Позже</string>
+  <string id="31949">Показать Статистику Библиотеки</string>
+  <string id="31950">Элементы Главного Меню</string>
+  <string id="31951">Элемент Меню</string>
+  <string id="31952">Выберите Тип Меню</string>
+  <string id="31953">Очистить Пункт Меню</string>
+  <string id="31954">XBMC</string>
+  <string id="31955">Установлено</string>
+  <string id="31956">Потоковое Вещание</string>
+  <string id="31957">NB! No Favourites Found</string>
+  <string id="31958">Пользователь</string>
+  <string id="31959">Рекомендуемые</string>
+  <string id="31960">Случайные</string>
+  <string id="31961">Cinema</string>
+  <string id="31962">Редактор БД</string>
+  <string id="31963">Включить Album Art Background Wall</string>
+  <string id="31964">Следующие Дорожки</string>
+  <string id="31965">Виджет Главного Меню</string>
+  <string id="31966">Разрешить Рекомендации Watchlist Script </string>
+  <string id="31967">Разрешить Рекомендации Playlist Script</string>
+  <string id="31968">Для Плейлиста Показывать Последние Добавленные но не Случайные Элементы</string>
+  <string id="31969">Для Плейлиста Показывать только Непросмотренные Элементы</string>
+  <string id="31970">Показывать Описание при Паузе</string>
+  <string id="31971">Сериалы используют Логотипы но не ClearArt</string>
+  <string id="31972">Спрятать Коробки обложек</string>
+  <string id="31973">Низкий Список</string>
+  <string id="31974">Показывать Логотипы</string>
+  <string id="31975">Показывать ClearArt</string>
+  <string id="31976">Скрыть Иконки Жанров</string>
+  <string id="31977">Показывать доп ФанАрт</string>
+  <string id="31978">Воспроизвести</string>
+  <string id="31979">Показать содержание Плейлиста в Главном меню вместо Воспроизведения</string>
+  <string id="31980">Последние Добавленные</string>
+  <string id="31981">Случайные</string>
+  <string id="31982">Дополнения</string>
+  <string id="31983">Показать Флаг Страны Субтитров</string>
+  <string id="31984">Media Views - Global</string>
+  <string id="31985">Использовать Сторонние Иконки Статуса Просмотра[COLOR=grey3](только для обложек)[/COLOR]</string>
+  <string id="31986">Разрешить Сторонние иконки \</string>
+  <string id="31987">Стена</string>
+  <string id="31988">Затемнить Просмотренные</string>
+  <string id="31989">Последние Добавленные Альбомы</string>
+  <string id="31990">Скрыть Нижнюю Панель</string>
+  <string id="31991">Остановить Фоновую Анимацию ФанАрт</string>
+  <string id="31992">Отображать Виджет Погоды</string>
+  <string id="31993">Заменить Виджет Дополнений на Виджет Погоды</string>
+  <string id="31994">Скрыть Фанарт Виджета в Главном Меню</string>
+  <string id="31995">Активировать кнопку \</string>
+  <string id="31996">Включить Режим \</string>
+  <string id="31997">Список справа</string>
+  <string id="31998">Общее Фоновое Изображение</string>
+  <string id="31999">Виджет Дополнений</string>
+</strings>
