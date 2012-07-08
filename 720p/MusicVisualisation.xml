@@ -59,7 +59,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<textcolor>white</textcolor>
+				<textcolor>HomeInfoClock</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$LOCALIZE[589]</label>
 				<visible>MusicPartyMode.Enabled</visible>
@@ -73,7 +73,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<textcolor>white</textcolor>
+				<textcolor>HomeInfoClock</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
 				<visible>!MusicPartyMode.Enabled</visible>
@@ -87,7 +87,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
-				<textcolor>white</textcolor>
+				<textcolor>HomeInfoClock</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[System.Time]</label>
 				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(MusicOSD)">conditional</animation>
@@ -100,7 +100,7 @@
 				<texture>HomeNowPlayingBack.png</texture>
 			</control>
 			<control type="image">
-				<posx>310</posx>
+				<posx>330</posx>
 				<posy>230r</posy>
 				<width>200</width>
 				<height>78</height>
@@ -111,10 +111,9 @@
 				<description>Cd overlay</description>
 				<posx>120</posx>
 				<posy>220r</posy>>
-				<animation effect="slide" start="-70" end="0" time="900" tween="cubic" easing="out" delay="2000">WindowOpen</animation>
-				<animation effect="rotate" end="-360" center="auto" time="2250" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
 				<width>170</width>
 				<height>175</height>
+				<include>CDArtSpinner</include>
 				<texture fallback="DefaultCDArt.png">$INFO[Player.FolderPath,,cdart.png]</texture>
 				<aspectratio align="bottom">keep</aspectratio>
 			</control>
@@ -141,18 +140,18 @@
 				<posy>175r</posy>
 				<control type="label" id="1">
 					<description>Artist label</description>
-					<posx>20</posx>
+					<posx>0</posx>
 					<posy>30</posy>
 					<width>910</width>
 					<height>25</height>
 					<align>left</align>
-					<font>font12</font>
+					<font>font13_title</font>
 					<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
-					<textcolor>grey2</textcolor>
+					<textcolor>NowPlayAlbum</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="grouplist">
-					<posx>20</posx>
+					<posx>0</posx>
 					<posy>60</posy>
 					<width>910</width>
 					<height>35</height>
