@@ -53,7 +53,7 @@
 		<width min="0" max="800">auto</width>
 		<height>30</height>
 		<font>font14</font>
-		<textcolor>white</textcolor>
+		<textcolor>HomeInfoClock</textcolor>
 		<shadowcolor>black</shadowcolor>
 		<scroll>false</scroll>
 		<align>left</align>
