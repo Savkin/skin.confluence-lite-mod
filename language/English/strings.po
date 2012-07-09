@@ -755,6 +755,11 @@ msgid "Fetching forecast info..."
 msgstr ""
 
 #Confluence.lite.mod
+
+msgctxt "#31929"
+msgid "Use Fanart from Directory - Artist/extrafanart/"
+msgstr ""
+
 msgctxt "#31930"
 msgid "Use Disk Cases"
 msgstr ""
