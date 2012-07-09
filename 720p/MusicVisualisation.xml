@@ -6,10 +6,7 @@
 		<include condition="Skin.HasSetting(ShowBackgroundAlbumWall)">AlbumArtMusicVizWall</include>
 		<control type="image">
 			<description>XBMC DB FanArt Background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>Dimensions_Fullscreen</include>
 			<aspectratio>keep</aspectratio>
 			<texture fallback="special://skin/backgrounds/default.jpg" background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 			<include>KBurnsAnimateFanart</include>
@@ -18,10 +15,7 @@
 		</control>
 		<control type="multiimage">
 			<description>Artist SlideShow FanArt Background</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>Dimensions_Fullscreen</include>
 			<imagepath fallback="special://skin/backgrounds/default.jpg" background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 			<aspectratio>keep</aspectratio>
 			<timeperimage>9000</timeperimage>
@@ -31,6 +25,19 @@
 			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 			<include>KBurnsAnimateFanart</include> 
 			<visible>Player.HasAudio + Skin.HasSetting(ShowArtistSlideShow) + System.HasAddon(script.artistslideshow)</visible>
+		</control>
+			<control type="multiimage">
+			<description>Artist ExtraFanArt Multi-image Background</description>
+			<include>Dimensions_Fullscreen</include> 
+			<imagepath fallback="special://skin/backgrounds/default.jpg" background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
+			<aspectratio>keep</aspectratio>
+			<timeperimage>9000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>4000</fadetime>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+			<include>KBurnsAnimateFanart</include>
+			<visible>Player.HasAudio + Skin.HasSetting(MusicVizXtraFanart)</visible>
 		</control>
 		<control type="visualisation" id="2">
 			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
