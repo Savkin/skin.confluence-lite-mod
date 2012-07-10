@@ -756,6 +756,66 @@ msgstr ""
 
 #Confluence.lite.mod
 
+msgctxt "#31914"
+msgid "Home Panel Options"
+msgstr ""
+
+msgctxt "#31915"
+msgid "Random Script Only Shows UnWatched Items"
+msgstr ""
+
+msgctxt "#31916"
+msgid "Allow Random Script Suggestions"
+msgstr ""
+
+msgctxt "#31917"
+msgid "Random Concerts"
+msgstr ""
+
+msgctxt "#31918"
+msgid "Recent Concerts"
+msgstr ""
+
+msgctxt "#31919"
+msgid "Random Albums"
+msgstr ""
+
+msgctxt "#31920"
+msgid "Suggested Albums"
+msgstr ""
+
+msgctxt "#31921"
+msgid "Recent Albums"
+msgstr ""
+msgctxt "#31922"
+
+msgid "Random Episodes"
+msgstr ""
+
+msgctxt "#31923"
+msgid "Suggested Episodes"
+msgstr ""
+
+msgctxt "#31924"
+msgid "Recent Episodes"
+msgstr ""
+
+msgctxt "#31925"
+msgid "Random Movies"
+msgstr ""
+
+msgctxt "#31926"
+msgid "Suggested Movies"
+msgstr ""
+
+msgctxt "#31927"
+msgid "Recent Movies"
+msgstr ""
+
+msgctxt "#31928"
+msgid "Home Media Panel Type"
+msgstr ""
+
 msgctxt "#31929"
 msgid "Use Fanart from Directory - Artist/extrafanart/"
 msgstr ""
@@ -1006,14 +1066,6 @@ msgstr ""
 
 msgctxt "#31991"
 msgid "Stop Background Fanart Animation"
-msgstr ""
-
-msgctxt "#31992"
-msgid "Allow Weather Forecast Panel"
-msgstr ""
-
-msgctxt "#31993"
-msgid "Prefer Weather Panel over Add-Ons Panel"
 msgstr ""
 
 msgctxt "#31994"
