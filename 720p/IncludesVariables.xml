@@ -2,7 +2,7 @@
 	<variable name="DefaultUnSetBackground" type="text">
 		<value condition="!IsEmpty(Skin.String(HomeGlobalBackground))">$INFO[Skin.String(HomeGlobalBackground)]</value>
 		<value condition="!IsEmpty(Skin.CurrentTheme) + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109])">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</value>
-		<value>special://skin/backgrounds/background.jpg</value>
+		<value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
 	</variable>
 	<variable name="CommonScreenBackground" type="text">
 		<value condition="!IsEmpty(Window(home).Property(SubMenuBackground))">$INFO[Window(home).Property(SubMenuBackground)]</value>
@@ -20,7 +20,7 @@
 		<!--value condition="!IsEmpty(Skin.String(WeatherFanartDir))">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</value-->
 		<value condition="!IsEmpty(Skin.String(HomeGlobalBackground))">$INFO[Skin.String(HomeGlobalBackground)]</value>
 		<value condition="!IsEmpty(Skin.CurrentTheme)  + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109])">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</value>
-		<value>special://skin/backgrounds/background.jpg</value>
+		<value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
 	</variable>
 	<variable name="SubMenuItemBackground">
 		<value condition="Container(9000).Hasfocus(1) + !IsEmpty(Skin.String(HomeItemOneBackground))">$INFO[Skin.String(HomeItemOneBackground)]</value>

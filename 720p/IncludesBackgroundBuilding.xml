@@ -2,7 +2,7 @@
 	<include name="CommonBackground">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
-			<texture background="true" fallback="special://skin/backgrounds/background.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
+			<texture background="true" fallback="special://skin/backgrounds/SKINDEFAULT.jpg">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</texture>
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>Window_OpenClose_Animation</include>
