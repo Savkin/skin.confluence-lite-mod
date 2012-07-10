@@ -1,0 +1,267 @@
+<includes>
+	<include name="ShowNowPlayingMedia">
+		<!-- Music Info -->
+		<control type="group">
+			<posx>0</posx>
+			<posy>250</posy>
+			<visible>Player.HasAudio</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<animation effect="slide" start="-1000,0" end="0,0" time="1200" delay="500" condition="Player.HasMedia">conditional</animation>
+			<control type="image">
+				<description>Cd overlay</description>
+				<posx>80</posx>
+				<posy>206</posy>
+				<include>CDArtSpinner</include>
+				<width>125</width>
+				<height>125</height>
+				<texture fallback="DefaultCDArt.png">$INFO[Player.FolderPath]cdart.png</texture>
+				<aspectratio align="bottom">keep</aspectratio>
+				<visible>Player.HasAudio</visible>
+				<visible>!SubString(Player.FolderPath,http://,Left)</visible> 
+			</control>
+			<control type="image">
+				<description>Cover image</description>
+				<posx>18</posx>
+				<posy>200</posy>
+				<width>132</width>
+				<height>134</height>
+				<aspectratio aligny="bottom">stretch</aspectratio>
+				<texture fallback="FallBackAlbumCover.png" diffuse="CDCase/cdcase-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
+			</control>
+			<control type="image">
+				<description>CD Case</description>
+				<posx>5</posx>
+				<posy>198</posy>
+				<width>148</width>
+				<height>137</height>
+				<aspectratio aligny="bottom">stretch</aspectratio>
+				<texture>CDCase/cdcase.png</texture>
+				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
+			</control>	
+			<control type="image">
+				<posx>5</posx>
+				<posy>117</posy>
+				<width>200</width>
+				<height>78</height>
+				<texture fallback="DefaultNoImage.png">$INFO[Player.FolderPath,,../logo.png]</texture>
+				<aspectratio align="bottom">keep</aspectratio>
+			</control>
+			<control type="label">
+				<description>Album Label</description>
+				<posx>220</posx>
+				<posy>250</posy>
+				<height>25</height>
+				<width>1000</width>
+				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>NowPlayAlbum</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
+			</control>
+			<control type="label">
+				<description>Album Label</description>
+				<posx>220</posx>
+				<posy>250</posy>
+				<height>25</height>
+				<width>1000</width>
+				<label>$LOCALIZE[460] $LOCALIZE[31040]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>NowPlayAlbum</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>SubString(Player.FolderPath,http://,Left)</visible>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>220</posx>
+				<posy>275</posy>				
+				<height>30</height>
+				<width>540</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>NowPlayTitle</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time Label</description>
+				<posx>220</posx>
+				<posy>305</posy>				
+				<height>30</height>
+				<width>300</width>
+				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>NowPlayTime</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
+			</control>
+		</control>
+		<!-- Video Info -->
+		<control type="group">
+			<posx>0</posx>
+			<posy>50</posy>
+			<visible>Player.HasVideo</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<control type="group">
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
+				<control type="image">
+					<description>Cover image</description>
+					<posx>20</posx>
+					<posy>235</posy>				
+					<width>120</width>
+					<height>300</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<bordertexture border="8">ThumbBorder.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<posx>160</posx>
+					<posy>480</posy>
+					<height>30</height>
+					<width>580</width>					
+					<label>$INFO[VideoPlayer.Title]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>NowPlayTitle</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<posx>160</posx>
+					<posy>505</posy>					
+					<height>30</height>
+					<width>300</width>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=FF0084ff] / [/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>NowPlayTime</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<visible>VideoPlayer.Content(Movies)</visible>
+				<control type="image">
+					<description>Cover image</description>
+					<posx>30</posx>
+					<posy>305</posy>
+					<width>160</width>
+					<height>225</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[VideoPlayer.Cover]</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>295</posy>
+					<width>194</width>
+					<height>245</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>$VAR[VideoPlayerCase,ClearCase/,.png]</texture>
+				</control>	
+				<control type="label">
+					<description>Studio label</description>
+					<posx>205</posx>
+					<posy>450</posy>
+					<height>25</height>
+					<width>1000</width>
+					<label>$INFO[VideoPlayer.Studio]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>NowPlayAlbum</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<posx>205</posx>
+					<posy>475</posy>
+					<height>30</height>
+					<width>550</width>					
+					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>NowPlayTitle</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<posx>205</posx>
+					<posy>505</posy>
+					<height>30</height>
+					<width>300</width>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>NowPlayTime</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<visible>VideoPlayer.Content(Episodes)</visible>
+				<control type="image">
+					<description>Cover image</description>
+					<posx>20</posx>
+					<posy>415</posy>
+					<width>180</width>
+					<height>120</height>
+					<aspectratio aligny="bottom">scale</aspectratio>
+					<texture>$INFO[VideoPlayer.Cover]</texture>
+					<bordertexture border="8">ThumbBorder.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<description>TV Show Season Ep Label</description>
+					<posx>220</posx>
+					<posy>450</posy>
+					<height>25</height>
+					<width>1000</width>
+					<label>$INFO[VideoPlayer.TVShowTitle] ($LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode])</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>NowPlayAlbum</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<posx>220</posx>
+					<posy>475</posy>					
+					<height>30</height>
+					<width>540</width>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>NowPlayTitle</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<posx>220</posx>
+					<posy>505</posy>					
+					<height>30</height>
+					<width>300</width>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>NowPlayTime</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

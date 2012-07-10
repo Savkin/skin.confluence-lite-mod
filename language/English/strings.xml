@@ -210,6 +210,22 @@
 	<string id="31909">Fetching forecast info...</string>
   
 	<!-- Confluence.lite.mod -->
+	
+	<string id="31914">Home Panel Options</string>
+	<string id="31915">Random Script Only Shows UnWatched Items</string>
+	<string id="31916">Allow Random Script Suggestions</string>
+	<string id="31917">Random Concerts</string>
+	<string id="31918">Recent Concerts</string>
+	<string id="31919">Random Albums</string>
+	<string id="31920">Suggested Albums</string>
+	<string id="31921">Recent Albums</string>
+	<string id="31922">Random Episodes</string>
+	<string id="31923">Suggested Episodes</string>
+	<string id="31924">Recent Episodes</string>
+	<string id="31925">Random Movies</string>
+	<string id="31926">Suggested Movies</string>
+	<string id="31927">Recent Movies</string>
+	<string id="31928">Home Media Panel Type</string>
 	<string id="31929">Use Fanart from Directory - Artist/extrafanart/</string>
 	<string id="31930">Use Disk Cases</string>
 	<string id="31931">Animated Cases</string>
@@ -246,7 +262,9 @@
 	<string id="31962">DB Edit</string>
 	<string id="31963">Enable Album Art Background Wall</string>
 	<string id="31964">Next Tracks</string>
-	<string id="31965">Home Media Panel</string>
+	
+	<!--string id="31965">Home Media Panel</string-->
+	
 	<string id="31966">Allow Watchlist Script Suggestions</string>
 	<string id="31967">Allow Playlist Script Suggestions</string>
 	<string id="31968">Playlist Script Shows Recent not Random Items</string>
@@ -273,8 +291,8 @@
 	<string id="31989">Latest Albums</string>
 	<string id="31990">Hide Skin Floor</string>
 	<string id="31991">Stop Background Fanart Animation</string>
-	<string id="31992">Allow Weather Forecast Panel</string>
-	<string id="31993">Prefer Weather Panel over Add-Ons Panel</string>
+	<!--string id="31992">Allow Weather Forecast Panel</string-->
+	<!--string id="31993">Prefer Weather Panel over Add-Ons Panel</string-->
 	<string id="31994">Hide Home Panel FanArt</string>
 	<string id="31995">Enable Return Home Button</string>
 	<string id="31996">Enable Kiosk Mode</string>

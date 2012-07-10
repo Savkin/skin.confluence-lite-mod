@@ -47,6 +47,10 @@
 		<value condition="Skin.HasSetting(UseUnWatchedPlaylist)">True</value>
 		<value>False</value>
 	</variable>	
+	<variable name="RandomUnWatchedItems" type="text">
+		<value condition="Skin.HasSetting(UseUnWatchedRandom)">True</value>
+		<value>False</value>
+	</variable>
 	<variable name="UsrHomePlaylistTitleOne" type="text">
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)">$INFO[Window(home).Property(HomePlayListOne.1.Title)]</value>
 		<value condition="Container(9000).Hasfocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Movie)">$INFO[Window(home).Property(HomePlayListTwo.1.Title)]</value>

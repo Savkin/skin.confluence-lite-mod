@@ -2,14 +2,7 @@
 	<include name="HomeWeatherForecast">
 		<control type="group">
 			<visible>Weather.IsFetched + !IsEmpty(Weather.Conditions)</visible>	
-			<visible>	
-				StringCompare(Container(9000).ListItem.Label2,Weather) |
-				[Skin.HasSetting(HideHomeMediaPanel) + Skin.HasSetting(StickyWeatherPanel)] |
-				[!Skin.HasSetting(HideHomeMediaPanel) + Skin.HasSetting(StickyWeatherPanel)  + !StringCompare(Container(9000).ListItem.Label2,Movies) +
-				!StringCompare(Container(9000).ListItem.Label2,AddOn) + !StringCompare(Container(9000).ListItem.Label2,TVShows) + !StringCompare(Container(9000).ListItem.Label2,Music) +
-				!StringCompare(Container(9000).ListItem.Label2,Concerts) + !StringCompare(Container(9000).ListItem.Label2,Videos) + !StringCompare(Container(9000).ListItem.Label2,Playlist)] |
-				[StringCompare(Container(9000).ListItem.Label2,Playlist) + Skin.HasSetting(HideWatchPlaylist) + Skin.HasSetting(StickyWeatherPanel)]
-			</visible>	
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[8])</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>

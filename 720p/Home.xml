@@ -28,287 +28,29 @@
 			<include>Window_OpenClose_Animation</include>
 			<visible>IsEmpty(Weather.Conditions) | !Weather.IsFetched | Skin.HasSetting(homepageWeatherinfo)</visible>
 		</control>
-		<!-- Music Info -->
-		<control type="group">
-			<posx>0</posx>
-			<posy>250</posy>
-			<visible>Player.HasAudio</visible>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<animation effect="slide" start="-1000,0" end="0,0" time="1200" delay="500" condition="Player.HasMedia">conditional</animation>
-			<control type="image">
-				<description>Cd overlay</description>
-				<posx>80</posx>
-				<posy>206</posy>
-				<include>CDArtSpinner</include>
-				<width>125</width>
-				<height>125</height>
-				<texture fallback="DefaultCDArt.png">$INFO[Player.FolderPath]cdart.png</texture>
-				<aspectratio align="bottom">keep</aspectratio>
-				<visible>Player.HasAudio</visible>
-				<visible>!SubString(Player.FolderPath,http://,Left)</visible> 
-			</control>
-			<control type="image">
-				<description>Cover image</description>
-				<posx>18</posx>
-				<posy>200</posy>
-				<width>132</width>
-				<height>134</height>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<texture fallback="FallBackAlbumCover.png" diffuse="CDCase/cdcase-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
-			</control>
-			<control type="image">
-				<description>CD Case</description>
-				<posx>5</posx>
-				<posy>198</posy>
-				<width>148</width>
-				<height>137</height>
-				<aspectratio aligny="bottom">stretch</aspectratio>
-				<texture>CDCase/cdcase.png</texture>
-				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
-			</control>	
-			<control type="image">
-				<posx>5</posx>
-				<posy>117</posy>
-				<width>200</width>
-				<height>78</height>
-				<texture fallback="DefaultNoImage.png">$INFO[Player.FolderPath,,../logo.png]</texture>
-				<aspectratio align="bottom">keep</aspectratio>
-			</control>
-			<control type="label">
-				<description>Album Label</description>
-				<posx>220</posx>
-				<posy>250</posy>
-				<height>25</height>
-				<width>1000</width>
-				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>NowPlayAlbum</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
-			</control>
-			<control type="label">
-				<description>Album Label</description>
-				<posx>220</posx>
-				<posy>250</posy>
-				<height>25</height>
-				<width>1000</width>
-				<label>$LOCALIZE[460] $LOCALIZE[31040]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>NowPlayAlbum</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>SubString(Player.FolderPath,http://,Left)</visible>
-			</control>
-			<control type="label">
-				<description>Title label</description>
-				<posx>220</posx>
-				<posy>275</posy>				
-				<height>30</height>
-				<width>540</width>
-				<label>$INFO[MusicPlayer.Title]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>NowPlayTitle</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Time Label</description>
-				<posx>220</posx>
-				<posy>305</posy>				
-				<height>30</height>
-				<width>300</width>
-				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>NowPlayTime</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
-			</control>
-		</control>
-		<!-- Video Info -->
-		<control type="group">
-			<posx>0</posx>
-			<posy>50</posy>
-			<visible>Player.HasVideo</visible>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<control type="group">
-				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
-				<control type="image">
-					<description>Cover image</description>
-					<posx>20</posx>
-					<posy>235</posy>				
-					<width>120</width>
-					<height>300</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture>$INFO[VideoPlayer.Cover]</texture>
-					<bordertexture border="8">ThumbBorder.png</bordertexture>
-					<bordersize>5</bordersize>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>160</posx>
-					<posy>480</posy>
-					<height>30</height>
-					<width>580</width>					
-					<label>$INFO[VideoPlayer.Title]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font13_title</font>
-					<textcolor>NowPlayTitle</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<description>Time Label</description>
-					<posx>160</posx>
-					<posy>505</posy>					
-					<height>30</height>
-					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=FF0084ff] / [/COLOR]]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<textcolor>NowPlayTime</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-			</control>
-			<control type="group">
-				<visible>VideoPlayer.Content(Movies)</visible>
-				<control type="image">
-					<description>Cover image</description>
-					<posx>30</posx>
-					<posy>305</posy>
-					<width>160</width>
-					<height>225</height>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[VideoPlayer.Cover]</texture>
-				</control>
-				<control type="image">
-					<posx>5</posx>
-					<posy>295</posy>
-					<width>194</width>
-					<height>245</height>
-					<aspectratio>stretch</aspectratio>
-					<texture>$VAR[VideoPlayerCase,ClearCase/,.png]</texture>
-				</control>	
-				<control type="label">
-					<description>Studio label</description>
-					<posx>205</posx>
-					<posy>450</posy>
-					<height>25</height>
-					<width>1000</width>
-					<label>$INFO[VideoPlayer.Studio]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<textcolor>NowPlayAlbum</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>205</posx>
-					<posy>475</posy>
-					<height>30</height>
-					<width>550</width>					
-					<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font13_title</font>
-					<textcolor>NowPlayTitle</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<description>Time Label</description>
-					<posx>205</posx>
-					<posy>505</posy>
-					<height>30</height>
-					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<textcolor>NowPlayTime</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-			</control>
-			<control type="group">
-				<visible>VideoPlayer.Content(Episodes)</visible>
-				<control type="image">
-					<description>Cover image</description>
-					<posx>20</posx>
-					<posy>415</posy>
-					<width>180</width>
-					<height>120</height>
-					<aspectratio aligny="bottom">scale</aspectratio>
-					<texture>$INFO[VideoPlayer.Cover]</texture>
-					<bordertexture border="8">ThumbBorder.png</bordertexture>
-					<bordersize>5</bordersize>
-				</control>
-				<control type="label">
-					<description>TV Show Season Ep Label</description>
-					<posx>220</posx>
-					<posy>450</posy>
-					<height>25</height>
-					<width>1000</width>
-					<label>$INFO[VideoPlayer.TVShowTitle] ($LOCALIZE[20373] $INFO[VideoPlayer.Season] - $LOCALIZE[20359] $INFO[VideoPlayer.episode])</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<textcolor>NowPlayAlbum</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>220</posx>
-					<posy>475</posy>					
-					<height>30</height>
-					<width>540</width>
-					<label>$INFO[VideoPlayer.Title]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font13_title</font>
-					<textcolor>NowPlayTitle</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<description>Time Label</description>
-					<posx>220</posx>
-					<posy>505</posy>					
-					<height>30</height>
-					<width>300</width>
-					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=HomeInfoTwo] / [/COLOR]]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12</font>
-					<textcolor>NowPlayTime</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-			</control>
-		</control>
+		<include>ShowNowPlayingMedia</include>
+		<include>HomeWeatherForecast</include>
 		<include condition="!Skin.HasSetting(HideHomeStats)">HomeContentPanelStats</include>
-		<include condition="!Skin.HasSetting(HideHomeMediaPanel)">HomeContentPanelInfo</include>
-		<include condition="!Skin.HasSetting(HideHomeWeatherPanel)">HomeWeatherForecast</include>
-		<control type="button" id="9003">
-			<description>Hidden Button to pass through navigation when recently added is disabled</description>
-			<posx>-20</posx>
-			<posy>-20</posy>
-			<width>1</width>
-			<height>1</height>
-			<label>-</label>
-			<font>-</font>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
+		<control type="group" id="9003">
 			<onup>20</onup>
 			<ondown>607</ondown>
-			<visible>false</visible>
+			<visible>!Window.IsVisible(Favourites)</visible>
+			<include>VisibleFadeEffect</include>		
+			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<include condition="Library.HasContent(Movies)">RecentMoviePanel</include>			
+			<include condition="Library.HasContent(Movies) + System.HasAddon(script.randomitems)">RandomMoviePanel</include>			
+			<include condition="Library.HasContent(Movies) + System.HasAddon(script.watchlist)">SuggestedMoviePanel</include>
+			<include condition="Library.HasContent(TVShows)">RecentTVShowPanel</include>	
+			<include condition="Library.HasContent(TVShows) + System.HasAddon(script.watchlist)">SuggestedTVShowPanel</include>	
+			<include condition="Library.HasContent(TVShows) + System.HasAddon(script.randomitems)">RandomTVShowPanel</include>
+			<include condition="Library.HasContent(Music)">RecentAlbumsPanel</include>
+			<include condition="Library.HasContent(Music) + System.HasAddon(script.watchlist)">SuggestedAlbumsPanel</include>
+			<include condition="Library.HasContent(Music) + System.HasAddon(script.randomitems)">RandomAlbumPanel</include>
+			<include condition="Library.HasContent(MusicVideos)">RecentConcertsPanel</include>		
+			<include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertsPanel</include>		
+			<include condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)">PlayListContentPanel</include>			
+			<include>AddonsHomePanel</include>			
 		</control>
 		<control type="group">
 			<description>Controls for currently playing media</description>
@@ -570,27 +312,27 @@
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
 				<onfocus>Skin.SetString(HomeItemOneLabel,$LOCALIZE[8])</onfocus>
-				<onfocus>Skin.SetString(HomeItemOneWidget,Weather)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemOneWidget,$LOCALIZE[8])</onfocus>	
 				<onfocus>Skin.SetString(HomeItemOneSub,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemOneAction,ActivateWindow(Weather))</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoLabel,$LOCALIZE[1])</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoWidget,AddOn)</onfocus>
+				<onfocus>Skin.SetString(HomeItemTwoWidget,$LOCALIZE[31999])</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoSub,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeWidget,Videos)</onfocus>
+				<onfocus>Skin.SetString(HomeItemThreeWidget,$LOCALIZE[31927])</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeSub,$LOCALIZE[3])</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
-				<onfocus>Skin.SetString(HomeItemFourWidget,Music)</onfocus>	
+				<onfocus>Skin.SetString(HomeItemFourWidget,$LOCALIZE[31921])</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFourSub,$LOCALIZE[2])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourAction,ActivateWindow(Music))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFiveLabel,$LOCALIZE[0])</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveWidget,AddOn)</onfocus>
+				<onfocus>Skin.SetString(HomeItemFiveWidget,$LOCALIZE[31999])</onfocus>
 				<onfocus>Skin.SetString(HomeItemfiveSub,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFiveAction,ActivateWindow(Programs,Addons,return))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemSixLabel,$LOCALIZE[427])</onfocus>
-				<onfocus>Skin.SetString(HomeItemSixWidget,DiscMedia)</onfocus>
+				<onfocus>Skin.SetString(HomeItemSixWidget,$LOCALIZE[31938])</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixSub,$LOCALIZE[446])</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixAction,XBMC.PlayDVD())</onfocus>
 				<onfocus>Skin.SetBool(InitialSetUpRun)</onfocus>
@@ -600,10 +342,12 @@
 			<control type="button" id="8999">
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onfocus condition="System.HasAddon(script.watchlist) + !Skin.HasSetting(HideWatchlist) + !Skin.HasSetting(HideHomeMediaPanel) + IsEmpty(Window(home).Property(Watchlist_Control))">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onfocus>
-				<onfocus condition="System.HasAddon(script.watchlist) + !Skin.HasSetting(HideWatchlist) + !Skin.HasSetting(HideHomeMediaPanel) + IsEmpty(Window(home).Property(Watchlist_Control))">SetProperty(Watchlist_Control,True)</onfocus>
+				<onfocus condition="System.HasAddon(script.watchlist) + !Skin.HasSetting(HideWatchlist) + IsEmpty(Window(home).Property(Watchlist_Control))">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onfocus>
+				<onfocus condition="System.HasAddon(script.watchlist) + !Skin.HasSetting(HideWatchlist) + IsEmpty(Window(home).Property(Watchlist_Control))">SetProperty(Watchlist_Control,True)</onfocus>
 				<onfocus condition="System.HasAddon(script.watchlist) + Skin.HasSetting(HideWatchlist) + !IsEmpty(Window(home).Property(WatchList_Running))">ClearProperty(WatchList_Running,Home)</onfocus>
 				<onfocus condition="System.HasAddon(script.watchlist) + Skin.HasSetting(HideWatchlist) + !IsEmpty(Window(home).Property(Watchlist_Control))">ClearProperty(Watchlist_Control,Home)</onfocus>
+				<onfocus condition="System.HasAddon(script.randomitems) + !Skin.HasSetting(HideRandomList) + IsEmpty(Window(home).Property(Randomlist_Control))">XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=$VAR[RandomUnWatchedItems]&amp;alarm=30)</onfocus>
+				<onfocus condition="System.HasAddon(script.randomitems) + !Skin.HasSetting(HideRandomList) + IsEmpty(Window(home).Property(Randomlist_Control))">SetProperty(Randomlist_Control,True)</onfocus>
 				<onfocus condition="System.HasAddon(script.favourites) + Skin.HasSetting(FavPlaysPlayList)">XBMC.RunScript(script.favourites,playlists=play)</onfocus>
 				<onfocus condition="System.HasAddon(script.favourites) + !Skin.HasSetting(FavPlaysPlayList)">XBMC.RunScript(script.favourites)</onfocus>
 				<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItemOnePlaylist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItemOnePlaylist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListOne)</onfocus>
@@ -704,121 +448,122 @@
 					<item id="1">
 						<description>Home Menu Item One</description>
 						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemOneWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemOneAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemOneBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemOneSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemOneWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemOneAction))</visible>
 					</item>
 					<item id="2">
 						<description>Home Menu Item Two</description>
 						<label>$INFO[Skin.String(HomeItemTwoLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemTwoWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemTwo,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemTwoAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemTwoBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemTwoSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemTwoWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemTwoAction))</visible>
 					</item>
 					<item id="3">
 						<description>Home Menu Item Three</description>
 						<label>$INFO[Skin.String(HomeItemThreeLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemThreeWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemThree,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemThreeAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemThreeBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemThreeSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemThreeWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemThreeAction))</visible>
 					</item>
 					<item id="4">
 						<description>Home Menu Item Four</description>
 						<label>$INFO[Skin.String(HomeItemFourLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemFourWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemFour,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemFourAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemFourBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemFourSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemFourWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemFourAction))</visible>
 					</item>
 					<item id="5">
 						<description>Home Menu Item Five</description>
 						<label>$INFO[Skin.String(HomeItemFiveLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemFiveWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemFive,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemFiveAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemFiveBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemFiveSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemFiveWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemFiveAction))</visible>
 					</item>
 					<item id="6">
 						<description>Home Menu Item Six</description>
 						<label>$INFO[Skin.String(HomeItemSixLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemSixWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemSix,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemSixAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemSixBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemSixSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemsSixWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSixAction))</visible>
 					</item>
 					<item id="7">
 						<description>Home Menu Item Seven</description>
 						<label>$INFO[Skin.String(HomeItemSevenLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemSevenWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemSeven,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemSevenAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemSevenBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemSevenSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemSevenWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSevenAction))</visible>
 					</item>
 					<item id="8">
 						<description>Home Menu Item Eight</description>
 						<label>$INFO[Skin.String(HomeItemEightLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemEightWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemEight,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemEightAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemEightBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemEightSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemEightWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemEightAction))</visible>
 					</item>
 					<item id="9">
 						<description>Home Menu Item Nine</description>
 						<label>$INFO[Skin.String(HomeItemNineLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemNineWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemNine,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemNineAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemNineBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemNineSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemNineWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemNineAction))</visible>
 					</item>
 					<item id="10">
 						<description>Home Menu Item Ten</description>
 						<label>$INFO[Skin.String(HomeItemTenLabel)]</label>
-						<label2>$INFO[Skin.String(HomeItemTenWidget)]</label2>
 						<onclick>SetProperty(MenuItemActive,ItemTen,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemTenAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemTenBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemTenSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemTenWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemTenAction))</visible>
 					</item>
 					<item id="11">
 						<description>Home Menu Settings</description>
 						<label>$LOCALIZE[13000]</label>
-						<label2>$LOCALIZE[5]</label2>
 						<onclick>SetProperty(MenuItemActive,Settings,Home)</onclick>
 						<onclick>ActivateWindow(Settings)</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeSystemBackground)]</thumb>
+						<property name="SubMenu">$INFO[Skin.String(HomeSettingsSub)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeSettingsWidget)]</property>
 						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</item>
 				</content>

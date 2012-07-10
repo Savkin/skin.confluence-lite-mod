@@ -18,6 +18,11 @@
 	<!--include file="Viewtype_Musicwallstream.xml" /-->
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
+	<include file="IncludesHomeRandomMedia.xml" />
+	<include file="IncludesHomeSuggestedMedia.xml" />
+	<include file="IncludesHomePlaylistMedia.xml" />
+	<include file="IncludesHomeAddons.xml" />
+	<include file="IncludesHomeNowPlaying.xml" />
 	<include file="IncludesHomeLibraryStats.xml" />
 	<include file="IncludesHomeSystemStats.xml" />
 	<include file="IncludesHomeMenuItems.xml" />

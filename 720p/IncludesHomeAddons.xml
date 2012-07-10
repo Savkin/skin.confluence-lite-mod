@@ -1,0 +1,193 @@
+<includes>
+	<include name="AddonsHomePanel">
+		<control type="group">
+			<!-- Home Panel Addons -->
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31999])</visible>
+			<visible>
+				!IsEmpty(Skin.String(HomeAddonOneLabel)) | !IsEmpty(Skin.String(HomeAddonTwoLabel)) | !IsEmpty(Skin.String(HomeAddonThreeLabel)) |
+				!IsEmpty(Skin.String(HomeAddonFourLabel)) | !IsEmpty(Skin.String(HomeAddonFiveLabel)) | !IsEmpty(Skin.String(HomeAddonSixLabel)) | !IsEmpty(Skin.String(HomeAddonSevenLabel)) |
+				!IsEmpty(Skin.String(HomeAddonEightLabel)) | !IsEmpty(Skin.String(HomeAddonNineLabel)) | !IsEmpty(Skin.String(HomeAddonTenLabel))
+			</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>215</posx>
+			<posy>50</posy>
+			<control type="image">
+				<description>background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>850</width>
+				<height>435</height>
+				<texture border="20">ContentPanel.png</texture>
+				<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>850</width>
+				<height>90</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassTitleBar.png</texture>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>10</posx>
+				<posy>18</posy>
+				<height>20</height>
+				<width>830</width>
+				<label>$LOCALIZE[31999]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>HomeInfoOne</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!Control.HasFocus(8007)</visible>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>10</posx>
+				<posy>18</posy>
+				<height>20</height>
+				<width>830</width>
+				<label>$INFO[Container(8007).ListItem.Label]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>HomeInfoOne</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Control.HasFocus(8007)</visible>
+			</control>
+			<control type="panel" id="8007">
+				<posx>30</posx>
+				<posy>85</posy>
+				<width>800</width>
+				<height>320</height>
+				<onleft>8007</onleft>
+				<onright>8007</onright>
+				<onup>20</onup>
+				<ondown>607</ondown>
+				<preloaditems>4</preloaditems>
+				<scrolltime>150</scrolltime>
+				<pagecontrol>-</pagecontrol>
+				<itemlayout height="160" width="160">
+					<control type="image">
+						<posx>7</posx>
+						<posy>7</posy>
+						<width>134</width>
+						<height>134</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" diffuse="AddonCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true">AddonCase.png</texture>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="160" width="160">
+					<control type="group">
+						<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+						<control type="image">
+						<posx>7</posx>
+						<posy>7</posy>
+						<width>134</width>
+						<height>134</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true" diffuse="AddonCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>150</width>
+						<height>150</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<fadetime>IconCrossfadeTime</fadetime>
+						<texture background="true">AddonCase.png</texture>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					</control>
+				</focusedlayout>
+				<content>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonOneLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonOne)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonOne))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonOne))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonTwoLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonTwo)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonTwo))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonTwo))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonThreeLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonThree)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonThree))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonThree))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonFourLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonFour)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonFour))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonFour))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonFiveLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonFive)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonFive))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonFive))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonSixLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonSix)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonSix))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonSix))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonSevenLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonSeven)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonSeven))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonSeven))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonEightLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonEight)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonEight))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonEight))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonNineLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonNine)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonNine))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonNine))</visible>
+				</item>
+				<item>
+					<label>$INFO[Skin.String(HomeAddonTenLabel)]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButtonTen)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButtonTen))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButtonTen))</visible>
+				</item>
+				</content>
+			</control>	
+		</control>
+	</include>
+</includes>

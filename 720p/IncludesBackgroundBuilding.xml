@@ -149,6 +149,48 @@
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8006) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
 		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8008).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8008) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8009).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8009) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8010).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8010) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8011).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8011) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8012).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8012) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8013).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8013) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8014).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8014) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
 	</include>
 	<include name="ContentPanelBackgrounds">
 		<control type="image">

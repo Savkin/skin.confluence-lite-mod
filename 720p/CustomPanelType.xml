@@ -1,0 +1,379 @@
+<window type="dialog" id="2117">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<animation effect="slide" start="400,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="400,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+			<control type="image">
+				<posx>400r</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>720</height>
+				<texture border="15,0,0,0" flipx="true">HomeBladeSub.png</texture>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<posx>380r</posx>
+				<posy>0</posy>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<onup>450</onup>
+				<ondown>450</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
+			<control type="label">
+	            <posx>380r</posx>
+	            <posy>35</posy>
+	            <width>360</width>
+	            <height>40</height>
+	            <font>font13_title</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+                <label>$LOCALIZE[31937]</label>
+			</control>
+			<control type="list" id="450">
+                <posx>390r</posx>
+                <posy>130</posy>
+                <width>440</width>
+      			<height>480</height>
+				<onup>450</onup>
+                <onleft>Dialog.Close(2117)</onleft>
+                <onright>60</onright>
+                <ondown>450</ondown>
+                <pagecontrol>60</pagecontrol>
+                <scrolltime>200</scrolltime>
+				<itemlayout height="40">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>360</width>
+                        <height>40</height>
+                        <texture border="5">button-nofocus.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>10</posx>
+                        <posy>0</posy>
+                        <width>340</width>
+                        <height>40</height>
+                        <font>font12_title</font>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <selectedcolor>selected</selectedcolor>
+                        <info>ListItem.Label</info>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="40">
+                    <control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>360</width>
+						<height>40</height>
+	                     <visible>!Control.HasFocus(450)</visible>
+	                     <texture border="3">button-nofocus.png</texture>
+	                </control>
+	                <control type="image">
+	                    <posx>0</posx>
+	                    <posy>0</posy>
+	                    <width>360</width>
+	                    <height>40</height>
+	                    <visible>Control.HasFocus(450)</visible>
+	                    <texture border="3">button-focus.png</texture>
+	                </control>
+	                <control type="label">
+	                    <posx>10</posx>
+	                    <posy>0</posy>
+	                    <width>340</width>
+	                    <height>40</height>
+	                    <font>font12_title</font>
+	                    <align>left</align>
+	                    <aligny>center</aligny>
+	                    <selectedcolor>selected</selectedcolor>
+	                    <info>ListItem.Label</info>
+	                </control>
+	            </focusedlayout>
+				<content>
+					<item id="1">
+						<description>Clear Setting</description>
+						<label>$LOCALIZE[31938]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="2">
+						<description>Weather</description>
+						<label>$LOCALIZE[8]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[8])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="3">
+						<description>Recent Movies</description>
+						<label>$LOCALIZE[31927]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31927])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="4">
+						<description>Suggested Movies</description>
+						<label>$LOCALIZE[31926]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31926])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="5">
+						<description>Random Movies</description>
+						<label>$LOCALIZE[31925]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31925])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="6">
+						<description>Recent TVShows</description>
+						<label>$LOCALIZE[31924]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31924])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="7">
+						<description>Suggested TVShows</description>
+						<label>$LOCALIZE[31923]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31923])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="8">
+						<description>Random TVShows</description>
+						<label>$LOCALIZE[31922]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31922])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					
+					
+					
+					
+					
+					
+					<item id="9">
+						<description>User Playlists</description>
+						<label>$LOCALIZE[136]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[136])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>
+							!IsEmpty(Skin.String(HomeItemOnePlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemOne) |
+							!IsEmpty(Skin.String(HomeItemTwoPlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemTwo) |
+							!IsEmpty(Skin.String(HomeItemThreePlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemThree) |
+							!IsEmpty(Skin.String(HomeItemFourPlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemFour) |
+							!IsEmpty(Skin.String(HomeItemFivePlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemFive) |
+							!IsEmpty(Skin.String(HomeItemSixPlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemSix) |
+							!IsEmpty(Skin.String(HomeItemSevenPlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemSeven) |
+							!IsEmpty(Skin.String(HomeItemEightPlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemEight) |
+							!IsEmpty(Skin.String(HomeItemNinePlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemNine) |
+							!IsEmpty(Skin.String(HomeItemTenPlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemTen)
+						</visible>
+					</item>
+					
+					
+					
+					
+					
+					
+					<item id="10">
+						<description>User Addons</description>
+						<label>$LOCALIZE[31999]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31999])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					
+					
+					
+					
+					<item id="11">
+						<description>Recent Music</description>
+						<label>$LOCALIZE[31921]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31921])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="12">
+						<description>Suggested Music</description>
+						<label>$LOCALIZE[31920]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31920])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="13">
+						<description>Random Music</description>
+						<label>$LOCALIZE[31919]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31919])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="14">
+						<description>Recent Concerts</description>
+						<label>$LOCALIZE[31918]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31918])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="15">
+						<description>Random Concerts</description>
+						<label>$LOCALIZE[31917]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31917])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					
+					
+					
+					
+					<!--
+					<item id="2">
+						<description>Playlist</description>
+						<label>$LOCALIZE[559]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[559])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="3">
+						<description>Add On</description>
+						<label>$LOCALIZE[31982]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="4">
+						<description>Video</description>
+						<label>$LOCALIZE[3]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[3])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="5">
+						<description>Movie</description>
+						<label>$LOCALIZE[342]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[342])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="6">
+						<description>TVShows</description>
+						<label>$LOCALIZE[20364]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[20364])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="7">
+						<description>Music</description>
+						<label>$LOCALIZE[2]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[2])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="8">
+						<description>DVD</description>
+						<label>$LOCALIZE[446]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[446])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="9">
+						<description>Shutdown</description>
+						<label>$LOCALIZE[13005]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[13005])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item id="10">
+						<description>Favourites</description>
+						<label>$LOCALIZE[1036]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[1036])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					-->
+				</content>				
+			</control>
+			<control type="button">
+				<description>Up Arrow</description>
+				 <posx>390r</posx>
+				<posy>95</posy>
+				<width>30</width>
+				<height>40</height>
+				<texturefocus>arrow-big-up.png</texturefocus>
+				<texturenofocus>arrow-big-up.png</texturenofocus>
+				<onclick>Control.Move(450,-1)</onclick>
+				<visible>Container(450).HasPrevious</visible>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="button">
+				<description>Up Arrow</description>
+				<posx>60r</posx>
+				<posy>95</posy>
+				<width>30</width>
+				<height>40</height>
+				<texturefocus>arrow-big-up.png</texturefocus>
+				<texturenofocus>arrow-big-up.png</texturenofocus>
+				<onclick>Control.Move(450,-1)</onclick>
+				<visible>Container(450).HasPrevious</visible>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="button">
+				<description>Down Arrow</description>
+				<posx>390r</posx>
+				<posy>605</posy>
+				<width>30</width>
+				<height>40</height>
+				<texturefocus>arrow-big-down.png</texturefocus>
+				<texturenofocus>arrow-big-down.png</texturenofocus>
+				<onclick>Control.Move(450,1)</onclick>
+				<visible>Container(450).HasNext</visible>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="button">
+				<description>Down Arrow</description>
+				<posx>60r</posx>
+				<posy>605</posy>
+				<width>30</width>
+				<height>40</height>
+				<texturefocus>arrow-big-down.png</texturefocus>
+				<texturenofocus>arrow-big-down.png</texturenofocus>
+				<onclick>Control.Move(450,1)</onclick>
+				<visible>Container(450).HasNext</visible>
+				<include>VisibleFadeEffect</include>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>1250</posx>
+				<posy>95</posy>
+				<width>25</width>
+				<height>550</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(450)</visible>
+			</control>
+		</control>
+	</controls>
+</window>
