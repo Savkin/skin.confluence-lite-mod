@@ -213,7 +213,7 @@
 						<onclick>Dialog.Close(2114)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 	                </item>
-										<item id="9">
+					<item id="9">
 	                    <description>Concerts</description>
 						<label>$LOCALIZE[31954] - $LOCALIZE[20391]</label>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
@@ -274,31 +274,12 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Programs,Addons,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31999])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[31982])</onclick>	
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[0])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<onclick>Dialog.Close(2114)</onclick>
 	                </item>	
-					
-					
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-					
-					
 					<item id="14">
 	                    <description>Disc</description>
 						<label>$LOCALIZE[31954] - $LOCALIZE[341]</label>
@@ -306,7 +287,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,XBMC.PlayDVD())</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,DiscMedia)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[446])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[341])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -319,7 +300,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,XBMC.Shutdown())</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Shutdown)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[13005])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[13005])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -332,7 +313,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Videos,Addons,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Videos)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31982])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -345,7 +326,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(MusicLibrary,Addons,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOn)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31982])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -358,7 +339,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Pictures,Addons,return))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOn)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[31982])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31982])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -375,7 +356,7 @@
 						<onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.video,xbmc.addon.audio,xbmc.addon.image,xbmc.addon.executable)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>	
 						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>		
-						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOn)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
 						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[31982])</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<onclick>Skin.Reset(UsrSelectAddon)</onclick>
@@ -388,7 +369,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Action)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Favourite)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[1036])</onclick>
 						<onclick>Dialog.Close(2114)</onclick>
 						<onclick>ActivateWindow(1114)</onclick>
@@ -403,7 +384,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Favourites))</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Favourite)</onclick>	
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>	
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[1036])</onclick>	
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[1036])</onclick>	
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -490,7 +471,7 @@
 						 <onclick>Skin.SetFile(UsrSelectAddon,.strm,/)</onclick> 
 						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[33002])</onclick>	
 						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,PlayMedia(&quot;$INFO[Skin.String(UsrSelectAddon)]&quot;))</onclick>
-						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Stream)</onclick>												
+						<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>												
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,$LOCALIZE[31938])</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<onclick>Skin.Reset(UsrSelectAddon)</onclick>
