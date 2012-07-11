@@ -508,7 +508,7 @@
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemSixBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemSixSub)]</property>
-						<property name="PanelType">$INFO[Skin.String(HomeItemsSixWidget)]</property>
+						<property name="PanelType">$INFO[Skin.String(HomeItemSixWidget)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSixAction))</visible>
 					</item>
 					<item id="7">
