@@ -639,7 +639,8 @@
 				<label>1036</label>
 				<font>-</font>
 				<aligny>-</aligny>
-				<onclick>ActivateWindow(Favourites)</onclick>
+				<onclick condition="IsEmpty(Skin.String(HomeButtonOneAction))">ActivateWindow(Favourites)</onclick>
+				<onclick condition="!IsEmpty(Skin.String(HomeButtonOneAction))">$INFO[Skin.String(HomeButtonOneAction)]</onclick>
 				<texturefocus border="5">home-favourites-FO.png</texturefocus>
 				<texturenofocus border="5">home-favourites.png</texturenofocus>
 				<onleft>22</onleft>

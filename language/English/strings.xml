@@ -211,6 +211,8 @@
   
 	<!-- Confluence.lite.mod -->
 	
+	<string id="31912">User Defined Button</string>
+	<string id="31913">Home Button Action</string>
 	<string id="31914">Home Panel Options</string>
 	<string id="31915">Random Script Only Shows UnWatched Items</string>
 	<string id="31916">Allow Random Script Suggestions</string>

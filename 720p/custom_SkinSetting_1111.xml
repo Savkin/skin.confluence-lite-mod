@@ -2178,13 +2178,37 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
+						<label>$LOCALIZE[31913]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="button" id="433">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31912]</label>
+						<label2>[COLOR=selected]$VAR[UsrDefButtonOne][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeButtonOne,home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+						<onclick condition="!IsEmpty(Skin.String(HomeButtonOneLabel))">Skin.SetString(HomeButtonOneLabel)</onclick>
+					</control>	
+					<control type="label" id="434">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
 						<label>$LOCALIZE[31101]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="433">
+					<control type="radiobutton" id="435">
 						<description>enable weather info</description>
 						<width>750</width>
 						<height>40</height>
@@ -2197,7 +2221,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="434">
+					<control type="radiobutton" id="436">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>
