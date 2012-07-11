@@ -363,6 +363,126 @@
 						<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 						<onclick>Dialog.Close(2115)</onclick>
                     </item>
+					<item id="27">
+	                    <description>Update Library Video</description>
+						<label>$LOCALIZE[20342] - $LOCALIZE[653]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,UpdateLibrary(video))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[24069])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="28">
+	                    <description>Update Library Music</description>
+						<label>$LOCALIZE[2] - $LOCALIZE[653]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,UpdateLibrary(music))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[24069])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="29">
+	                    <description>Recently played albums</description>
+						<label>$LOCALIZE[2] - $LOCALIZE[517]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(MusicLibrary,RecentlyPlayedAlbums))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31921])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+						<visible>Library.HasContent(Music)</visible>
+	                </item>
+					<item id="30">
+	                    <description>List Music Playlists</description>
+						<label>$LOCALIZE[2] - $LOCALIZE[20006]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(MusicLibrary,playlists,return))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[136])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+						<visible>Library.HasContent(Music)</visible>
+	                </item>
+					<item id="31">
+	                    <description>Rip CD</description>
+						<label>$LOCALIZE[2] - $LOCALIZE[31940]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,RipCD)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31940])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="32">
+	                    <description>Eject Tray</description>
+						<label>$LOCALIZE[13391]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,EjectTray())</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[31306])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="33">
+	                    <description>Profiles</description>
+						<label>$LOCALIZE[13200]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Profiles))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[13200])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="34">
+	                    <description>Openelec Settings</description>
+						<label>OpenELEC OS</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,RunAddon(os.openelec.settings))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,OpenELEC OS)</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+						<visible>System.HasAddon(os.openelec.settings)</visible>
+					</item>
+					<item id="35">
+	                    <description>Sys Info</description>
+						<label>$LOCALIZE[130]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(SystemInfo))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[130])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="36">
+	                    <description>Addon Browser</description>
+						<label>$LOCALIZE[10040]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(AddonBrowser))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[24001])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="37">
+	                    <description>File Manager</description>
+						<label>$LOCALIZE[7]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(FileManager))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[7])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="37">
+	                    <description>Skin Settings</description>
+						<label>$LOCALIZE[166] $LOCALIZE[5]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(1111),return)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[166])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
+					<item id="38">
+	                    <description>System Settings</description>
+						<label>$LOCALIZE[10016]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Settings))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[5])</onclick>	
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Dialog.Close(2115)</onclick>
+					</item>
 				</content>				
 			</control>
 			<control type="button">
