@@ -2,7 +2,7 @@
 	<include name="AddonsHomePanel">
 		<control type="group">
 			<!-- Home Panel Addons -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31982])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),AddOns)</visible>
 			<visible>
 				!IsEmpty(Skin.String(HomeAddonOneLabel)) | !IsEmpty(Skin.String(HomeAddonTwoLabel)) | !IsEmpty(Skin.String(HomeAddonThreeLabel)) |
 				!IsEmpty(Skin.String(HomeAddonFourLabel)) | !IsEmpty(Skin.String(HomeAddonFiveLabel)) | !IsEmpty(Skin.String(HomeAddonSixLabel)) | !IsEmpty(Skin.String(HomeAddonSevenLabel)) |

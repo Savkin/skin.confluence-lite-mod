@@ -110,14 +110,14 @@
 						<description>Clear Setting</description>
 						<label>$LOCALIZE[31938]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31938])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,None)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
 					<item id="2">
 						<description>User Playlists</description>
 						<label>$LOCALIZE[136]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[136])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Playlists)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>
 							!IsEmpty(Skin.String(HomeItemOnePlaylist)) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItemOne) |
@@ -136,21 +136,21 @@
 						<description>User Addons</description>
 						<label>$LOCALIZE[31982]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31982])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOns)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
 					<item id="4">
 						<description>Weather</description>
 						<label>$LOCALIZE[8]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[8])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Weather)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
 					<item id="5">
 						<description>Recent Movies</description>
 						<label>$LOCALIZE[31927]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31927])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentMovies)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Movies)</visible>
 					</item>
@@ -158,7 +158,7 @@
 						<description>Suggested Movies</description>
 						<label>$LOCALIZE[31926]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31926])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,SuggestedMovies)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Movies) + System.HasAddon(script.watchlist)</visible>
 					</item>
@@ -166,7 +166,7 @@
 						<description>Random Movies</description>
 						<label>$LOCALIZE[31925]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31925])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomMovies)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Movies) + System.HasAddon(script.randomitems)</visible>
 					</item>
@@ -174,7 +174,7 @@
 						<description>Recent TVShows</description>
 						<label>$LOCALIZE[31924]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31924])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 					</item>
@@ -182,7 +182,7 @@
 						<description>Suggested TVShows</description>
 						<label>$LOCALIZE[31923]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31923])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,SuggestedEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows) + System.HasAddon(script.watchlist)</visible>
 					</item>
@@ -190,7 +190,7 @@
 						<description>Random TVShows</description>
 						<label>$LOCALIZE[31922]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31922])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows) + System.HasAddon(script.randomitems)</visible>
 					</item>
@@ -198,7 +198,7 @@
 						<description>Recent Music</description>
 						<label>$LOCALIZE[31921]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31921])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Music)</visible>
 					</item>
@@ -206,7 +206,7 @@
 						<description>Suggested Music</description>
 						<label>$LOCALIZE[31920]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31920])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,SuggestedAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Music) + System.HasAddon(script.watchlist)</visible>
 					</item>
@@ -214,7 +214,7 @@
 						<description>Random Music</description>
 						<label>$LOCALIZE[31919]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31919])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Music) + System.HasAddon(script.randomitems)</visible>
 					</item>
@@ -222,7 +222,7 @@
 						<description>Recent Concerts</description>
 						<label>$LOCALIZE[31918]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31918])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentConcerts)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
@@ -230,7 +230,15 @@
 						<description>Random Concerts</description>
 						<label>$LOCALIZE[31917]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,$LOCALIZE[31917])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomConcerts)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)</visible>
+					</item>
+					<item id="16">
+						<description>Random Concerts thumbs</description>
+						<label>$LOCALIZE[31911]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomConcertThumbs)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)</visible>
 					</item>

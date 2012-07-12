@@ -604,7 +604,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemOneSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemOneSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -618,7 +618,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemTwoLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemTwoSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemTwoSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -632,7 +632,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemThreeLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemThreeSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemThreeSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -646,7 +646,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemFourLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemFourSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemFourSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -660,7 +660,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemFiveLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemFiveSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemFiveSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -674,7 +674,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemSixLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemSixSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemSixSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -688,7 +688,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemSevenLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemSevenSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemSevenSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -702,7 +702,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemEightLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemEightSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemEightSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -716,7 +716,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemNineLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemNineSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemNineSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -730,7 +730,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemTenLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemTenSub)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemTenSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -738,6 +738,20 @@
 						<onclick>SetProperty(UsrSelectBtn,HomeItemTen,home)</onclick>
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemTenLabel))</visible>
+					</control>
+					<control type="button" id="223">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[13000]</label>
+						<label2>[COLOR=selected]$VAR[UsrDefSettingsSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItemEleven,home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</control>	
 				</control>				
 				<control type="scrollbar" id="60">
@@ -1882,7 +1896,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemOneWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemOneWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1896,7 +1910,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemTwoLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemTwoWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemTwoWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1910,7 +1924,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemThreeLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemThreeWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemThreeWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1924,7 +1938,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemFourLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemFourWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemFourWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1938,7 +1952,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemFiveLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemFiveWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemFiveWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1952,7 +1966,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemSixLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemSixWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemSixWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1966,7 +1980,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemSevenLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemSevenWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemSevenWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1980,7 +1994,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemEightLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemEightWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemEightWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1994,7 +2008,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemNineLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemNineWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemNineWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2008,7 +2022,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$INFO[Skin.String(HomeItemTenLabel)]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemTenWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefItemTenWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2022,12 +2036,12 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[13000]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeSettingsWidget)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[UsrDefSettingsWidgetLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,HomeSettings,home)</onclick>
+						<onclick>SetProperty(UsrSelectBtn,HomeItemEleven,home)</onclick>
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</control>

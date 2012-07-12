@@ -1,7 +1,7 @@
 <includes>
 	<include name="PlayListContentPanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[136])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists)</visible>
 			<control type="group">
 				<!-- Music Playlist -->
 				<visible>

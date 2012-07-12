@@ -2,7 +2,7 @@
 	<include name="RecentMoviePanel"> 
 		<control type="group">
 			<!-- Recently Added Movies -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31927])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -137,7 +137,7 @@
 	<include name="RecentTVShowPanel"> 
 		<control type="group">
 			<!-- Recent TV Shows -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31924])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentEpisodes)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>205</posx>
 			<posy>50</posy>
@@ -276,7 +276,7 @@
 	<include name="RecentAlbumsPanel"> 
 		<control type="group">
 			<!-- Recent Music -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31921])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -391,7 +391,7 @@
 	<include name="RecentConcertsPanel"> 
 		<control type="group">
 			<!-- Recent Concerts -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31918])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentConcerts)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>

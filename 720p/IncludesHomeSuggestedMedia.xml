@@ -2,7 +2,7 @@
 	<include name="SuggestedMoviePanel"> 
 		<!-- Suggested Movies -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31926])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedMovies)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -153,7 +153,7 @@
 	<include name="SuggestedTVShowPanel">
 		<!-- Suggested TV Shows -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31923])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedEpisodes)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>205</posx>
 			<posy>50</posy>
@@ -308,7 +308,7 @@
 	<include name="SuggestedAlbumsPanel">
 		<!-- Suggested Music -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31920])</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedAlbums)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>

@@ -2,7 +2,7 @@
 	<include name="RandomMoviePanel">  
 		<!-- Random Movies -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31925]) + !IsEmpty(Window.Property(RandomMovie.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMovies) + !IsEmpty(Window.Property(RandomMovie.1.Title))</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -137,7 +137,7 @@
 	<include name="RandomTVShowPanel"> 
 		<!-- Random TV Shows -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31922]) + !IsEmpty(Window.Property(RandomEpisode.1.EpisodeTitle))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomEpisodes) + !IsEmpty(Window.Property(RandomEpisode.1.EpisodeTitle))</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>205</posx>
 			<posy>50</posy>
@@ -276,7 +276,7 @@
 	<include name="RandomAlbumPanel">
 		<!-- Random Albums -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31919]) + !IsEmpty(Window.Property(RandomAlbum.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomAlbums) + !IsEmpty(Window.Property(RandomAlbum.1.Title))</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -391,7 +391,7 @@
 	<include name="RandomConcertsPanel">
 		<!-- Random Concerts -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),$LOCALIZE[31917]) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcerts) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -522,6 +522,145 @@
 				<include>HomeContentRandomConcerts</include>	
 			</control>	
 		</control>
+	</include>
+	<include name="RandomConcertThumbPanel"> 
+		<!-- Random Concert Thumbs -->
+		<control type="group">
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcertThumbs) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>205</posx>
+			<posy>50</posy>
+			<control type="image">
+				<description>background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>860</width>
+				<height>410</height>
+				<texture border="20">ContentPanel.png</texture>
+				<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>850</width>
+				<height>90</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassTitleBar.png</texture>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>10</posx>
+				<posy>18</posy>
+				<height>20</height>
+				<width>830</width>
+				<label>$LOCALIZE[31917]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>HomeInfoOne</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!Control.HasFocus(8015)</visible>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<posx>10</posx>
+				<posy>18</posy>
+				<height>20</height>
+				<width>830</width>
+				<label>$INFO[Container(8015).ListItem.Label]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>HomeInfoOne</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Control.HasFocus(8015)</visible>
+			</control>
+			<control type="panel" id="8015">
+				<posx>25</posx>
+				<posy>80</posy>
+				<width>840</width>
+				<height>330</height>
+				<onleft>8015</onleft>
+				<onright>8015</onright>
+				<onup>20</onup>
+				<ondown>607</ondown>
+				<preloaditems>4</preloaditems>
+				<scrolltime>150</scrolltime>
+				<pagecontrol>-</pagecontrol>
+				<itemlayout height="165" width="280">
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>3</posx>
+						<posy>3</posy>
+						<width>224</width>
+						<height>114</height>
+						<texture background="true" diffuse="episodematte.png">$INFO[ListItem.ActualIcon]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>230</width>
+						<height>120</height>
+						<texture background="true">EpisodeFrame.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>120</posy>
+						<height>20</height>
+						<width>224</width>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>left</align>
+						<font>font12_title</font>
+						<textcolor>HomeInfoOne</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="165" width="280">
+					<control type="group">
+						<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+						<control type="image">
+							<description>Main Icon</description>
+							<posx>4</posx>
+							<posy>3</posy>
+							<width>222</width>
+							<height>114</height>
+							<texture background="true" diffuse="episodematte.png">$INFO[ListItem.ActualIcon]</texture>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
+						<control type="image">
+							<description>Main Icon</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>230</width>
+							<height>120</height>
+							<texture background="true">EpisodeFrame.png</texture>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>125</posy>
+						<height>20</height>
+						<width>250</width>
+						<label>$INFO[ListItem.Label2]</label>
+						<align>left</align>
+						<font>font13_title</font>
+						<textcolor>HomeInfoTwo</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</focusedlayout>
+				<include>HomeContentRandomConcerts</include>		
+			</control>	
+		</control>	
 	</include>
 	<include name="HomeContentRandomMovies">
 		<content>
