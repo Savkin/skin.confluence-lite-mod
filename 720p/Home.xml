@@ -48,8 +48,12 @@
 			<include condition="Library.HasContent(Music) + System.HasAddon(script.watchlist)">SuggestedAlbumsPanel</include>
 			<include condition="Library.HasContent(Music) + System.HasAddon(script.randomitems)">RandomAlbumPanel</include>
 			<include condition="Library.HasContent(MusicVideos)">RecentConcertsPanel</include>		
-			<include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertsPanel</include>		
-			<include condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)">PlayListContentPanel</include>			
+			<include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertsPanel</include>
+			<!--include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertThumbPanel</include-->		
+			<include condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)">PlayListContentPanel</include>	
+			
+ <include>RandomConcertThumbPanel</include>		
+ 
 			<include>AddonsHomePanel</include>			
 		</control>
 		<control type="group">
@@ -312,28 +316,35 @@
 				<onfocus>Skin.SetString(HomeItemOneLabel,$LOCALIZE[8])</onfocus>
 				<onfocus>Skin.SetString(HomeItemOneWidget,Weather)</onfocus>	
 				<onfocus>Skin.SetString(HomeItemOneSub,None)</onfocus>
+				<onfocus>Skin.SetString(HomeItemOneStats,Weather)</onfocus>
 				<onfocus>Skin.SetString(HomeItemOneAction,ActivateWindow(Weather))</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoLabel,$LOCALIZE[1])</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoWidget,None)</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoSub,None)</onfocus>
+				<onfocus>Skin.SetString(HomeItemTwoStats,None)</onfocus>
 				<onfocus>Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeWidget,RecentMovies)</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeSub,Videos)</onfocus>
+				<onfocus>Skin.SetString(HomeItemThreeStats,Videos)</onfocus>
 				<onfocus>Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourWidget,RecentAlbums)</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFourSub,Music)</onfocus>
+				<onfocus>Skin.SetString(HomeItemFourStats,Music)</onfocus>
 				<onfocus>Skin.SetString(HomeItemFourAction,ActivateWindow(Music))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemFiveLabel,$LOCALIZE[0])</onfocus>
 				<onfocus>Skin.SetString(HomeItemFiveWidget,AddOns)</onfocus>
-				<onfocus>Skin.SetString(HomeItemfiveSub,None)</onfocus>
+				<onfocus>Skin.SetString(HomeItemFiveSub,None)</onfocus>
+				<onfocus>Skin.SetString(HomeItemFiveStats,None)</onfocus>
 				<onfocus>Skin.SetString(HomeItemFiveAction,ActivateWindow(Programs,Addons,return))</onfocus>	
 				<onfocus>Skin.SetString(HomeItemSixLabel,$LOCALIZE[427])</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixWidget,None)</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixSub,PlayDisc)</onfocus>
+				<onfocus>Skin.SetString(HomeItemSixStats,PlayDisc)</onfocus>
 				<onfocus>Skin.SetString(HomeItemSixAction,XBMC.PlayDVD())</onfocus>
 				<onfocus>Skin.SetString(HomeItemElevenSub,Settings)</onfocus>
+				<onfocus>Skin.SetString(HomeItemElevenStats,Settings)</onfocus>
 				<onfocus>Skin.SetBool(InitialSetUpRun)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
@@ -453,6 +464,7 @@
 						<thumb>$INFO[Skin.String(HomeItemOneBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemOneSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemOneWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemOneStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemOneAction))</visible>
 					</item>
 					<item id="2">
@@ -464,6 +476,7 @@
 						<thumb>$INFO[Skin.String(HomeItemTwoBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemTwoSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemTwoWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemTwoStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemTwoAction))</visible>
 					</item>
 					<item id="3">
@@ -475,6 +488,7 @@
 						<thumb>$INFO[Skin.String(HomeItemThreeBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemThreeSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemThreeWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemThreeStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemThreeAction))</visible>
 					</item>
 					<item id="4">
@@ -486,6 +500,7 @@
 						<thumb>$INFO[Skin.String(HomeItemFourBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemFourSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemFourWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemFourStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemFourAction))</visible>
 					</item>
 					<item id="5">
@@ -497,6 +512,7 @@
 						<thumb>$INFO[Skin.String(HomeItemFiveBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemFiveSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemFiveWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemFiveStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemFiveAction))</visible>
 					</item>
 					<item id="6">
@@ -508,6 +524,7 @@
 						<thumb>$INFO[Skin.String(HomeItemSixBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemSixSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemSixWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemSixStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSixAction))</visible>
 					</item>
 					<item id="7">
@@ -519,6 +536,7 @@
 						<thumb>$INFO[Skin.String(HomeItemSevenBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemSevenSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemSevenWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemSevenStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemSevenAction))</visible>
 					</item>
 					<item id="8">
@@ -530,6 +548,7 @@
 						<thumb>$INFO[Skin.String(HomeItemEightBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemEightSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemEightWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemEightStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemEightAction))</visible>
 					</item>
 					<item id="9">
@@ -541,6 +560,7 @@
 						<thumb>$INFO[Skin.String(HomeItemNineBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemNineSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemNineWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemNineStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemNineAction))</visible>
 					</item>
 					<item id="10">
@@ -552,6 +572,7 @@
 						<thumb>$INFO[Skin.String(HomeItemTenBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemTenSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemTenWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemTenStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemTenAction))</visible>
 					</item>
 					<item id="11">
@@ -563,6 +584,7 @@
 						<thumb>$INFO[Skin.String(HomeSystemBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemElevenSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemElevenWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemElevenStats)]</property>
 						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</item>
 				</content>

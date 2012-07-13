@@ -10,15 +10,11 @@
 				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
-			
-			
-			
-			
 			<control type="group">
 				<description>Video Stats Display</description>
 				<posx>1285</posx>
 				<posy>550</posy>
-				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Videos)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Videos)">conditional</animation>
 				<control type="image">
 					<description>Background End image</description>
 					<posx>0</posx>
@@ -76,19 +72,11 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
-			
-			
-			
-			
-			
-			
-			
-			
 			<control type="group">
 				<description>Movie Stats Display</description>
 				<posx>1285</posx>
 				<posy>550</posy>
-				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Movies)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Movies)">conditional</animation>
 				<control type="image">
 					<description>Background End image</description>
 					<posx>0</posx>
@@ -150,7 +138,7 @@
 				<description>TVShow Stats Display</description>
 				<posx>1285</posx>
 				<posy>550</posy>
-				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,TVShows)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)">conditional</animation>
 				<control type="image">
 					<description>Background End image</description>
 					<posx>0</posx>
@@ -212,7 +200,7 @@
 				<description>Concerts Stats Display</description>
 				<posx>1285</posx>
 				<posy>550</posy>
-				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Concerts)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)">conditional</animation>
 				<control type="image">
 					<description>Background End image</description>
 					<posx>0</posx>
@@ -274,7 +262,7 @@
 				<description>Music Stats Display</description>
 				<posx>1285</posx>
 				<posy>550</posy>
-				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Music)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Music)">conditional</animation>
 				<control type="image">
 					<description>Background End image</description>
 					<posx>0</posx>
@@ -336,7 +324,7 @@
 				<description>Playlist Stats Display</description>
 				<posx>1285</posx>
 				<posy>550</posy>
-				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Label2,Playlist)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)">conditional</animation>
 				<control type="image">
 					<description>Background End image</description>
 					<posx>0</posx>
@@ -392,6 +380,161 @@
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>System Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Settings)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>600</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>180</width>
+					<label>IP:[COLOR StatsAmnt] $INFO[Network.IPAddress][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<posx>270</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<align>left</align>
+					<width>220</width>
+					<label>CPU:[COLOR StatsAmnt] $INFO[System.CPUUsage][/COLOR]</label>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<posx>445</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>180</width>
+					<label>RAM:[COLOR StatsAmnt] $INFO[system.memory(used.percent)][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="group">
+				<description>DVD Disk Stats Display</description>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>600</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>580</width>
+					<label>$LOCALIZE[427]:[COLOR StatsAmnt] $INFO[System.DVDLabel][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+					<visible>System.HasMediaDVD</visible>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>580</width>
+					<label>$LOCALIZE[427]:[COLOR StatsAmnt] $LOCALIZE[31305][/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
+					<visible>!System.HasMediaDVD</visible>
+				</control>
+			</control>
+			<control type="group">
+				<description>Weather Stats Display</description>
+				<visible>!IsEmpty(Weather.Conditions) + Weather.IsFetched</visible>
+				<posx>1285</posx>
+				<posy>550</posy>
+				<animation effect="slide" start="0,0" end="-640,0" time="300" condition="StringCompare(Container(9000).ListItem.Property(LibStats),Weather)">conditional</animation>
+				<control type="image">
+					<description>Background End image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>35</width>
+					<height>35</height>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
+				</control>
+				<control type="image">
+					<description></description>
+					<posx>35</posx>
+					<posy>0</posy>
+					<height>35</height>
+					<width>600</width>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+					<texture flipy="true" border="5" flipx="true">HomeSubNF.png</texture>
+				</control>
+				<control type="label">
+					<posx>45</posx>
+					<posy>7</posy>
+					<height>20</height>
+					<width>580</width>
+					<label>$LOCALIZE[143][COLOR StatsAmnt] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR] $INFO[Window(Weather).Property(Current.Condition)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>StatsName</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scrollout>false</scrollout>
+					<pauseatend>2000</pauseatend>
 				</control>
 			</control>
 		</control>
