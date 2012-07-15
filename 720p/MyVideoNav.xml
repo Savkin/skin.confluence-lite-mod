@@ -193,7 +193,7 @@
 					<description>Show Fanart in 720 Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>Test</label>
+					<label>$LOCALIZE[31650]</label>
 					<onclick>Skin.ToggleSetting(720transparent)</onclick>
 					<selected>Skin.HasSetting(720transparent)</selected>
 					<visible>Control.IsVisible(720)</visible>

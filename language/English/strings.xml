@@ -197,6 +197,9 @@
 	<string id="31624">War</string>	
 	<string id="31625">Western</string>
 	
+	
+	<string id="31650">Show Fanart</string>
+	
 	<!-- Weather plugin -->
 	<string id="31900">Weather Maps</string>
 	<string id="31901">36 Hour Forecast</string>
@@ -210,6 +213,7 @@
 	<string id="31909">Fetching forecast info...</string>
   
 	<!-- Confluence.lite.mod -->
+	
 	
 	<string id="31910">Menu Item - 1 - Remembers Last Submenu Action Used</string>
 	<string id="31911">Use Item Fanart as Panel Thumb (Not TVShows)</string>
