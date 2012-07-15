@@ -1856,17 +1856,20 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>System.HasAddon(script.randomitems) + !Skin.HasSetting(HideRandomList)</enable>
 					</control>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-						<control type="radiobutton" id="407">
+					<control type="radiobutton" id="407">
+						<description>Home Panel - Use Fanart as Thumb</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31911]</label>
+						<onclick>Skin.ToggleSetting(UseFanartThumbPanel)</onclick>
+						<selected>Skin.HasSetting(UseFanartThumbPanel)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="408">
 						<description>Hide Home Panel Fanart</description>
 						<width>750</width>
 						<height>40</height>
@@ -1879,9 +1882,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					<control type="label" id="408">
+					<control type="label" id="409">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1891,7 +1892,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="409">
+					<control type="button" id="410">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1905,7 +1906,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemOneLabel))</visible>
 					</control>	
-					<control type="button" id="410">
+					<control type="button" id="411">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1919,7 +1920,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemTwoLabel))</visible>
 					</control>	
-					<control type="button" id="411">
+					<control type="button" id="412">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1933,7 +1934,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemThreeLabel))</visible>
 					</control>
-					<control type="button" id="412">
+					<control type="button" id="413">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1947,7 +1948,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemFourLabel))</visible>
 					</control>
-					<control type="button" id="413">
+					<control type="button" id="414">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1961,7 +1962,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemFiveLabel))</visible>
 					</control>
-					<control type="button" id="414">
+					<control type="button" id="415">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1975,7 +1976,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemSixLabel))</visible>
 					</control>						
-					<control type="button" id="415">
+					<control type="button" id="416">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1989,7 +1990,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemSevenLabel))</visible>
 					</control>
-					<control type="button" id="416">
+					<control type="button" id="417">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2003,7 +2004,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemEightLabel))</visible>
 					</control>	
-					<control type="button" id="417">
+					<control type="button" id="418">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2017,7 +2018,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemNineLabel))</visible>
 					</control>	
-					<control type="button" id="418">
+					<control type="button" id="419">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2031,7 +2032,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItemTenLabel))</visible>
 					</control>
-					<control type="button" id="419">
+					<control type="button" id="420">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2045,7 +2046,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</control>
-					<control type="label" id="420">
+					<control type="label" id="421">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2055,18 +2056,18 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>	
-					<control type="group" id="421">
+					<control type="group" id="422">
 						<width>750</width>
 						<height>40</height>
-						<control type="grouplist" id="411">
+						<control type="grouplist" id="423">
 							<orientation>horizontal</orientation>
 							<width>750</width>
 							<height>40</height>
 							<itemgap>0</itemgap>
-							<onup>419</onup>
-							<ondown>433</ondown>
+							<onup>420</onup>
+							<ondown>435</ondown>
 							<align>center</align>
-							<control type="radiobutton" id="422">
+							<control type="radiobutton" id="424">
 								<description>Transparency Level 90</description>
 								<width>70</width>
 								<height>40</height>
@@ -2078,7 +2079,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,18FFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),18FFFFFF)</selected>								
 							</control>
-							<control type="radiobutton" id="423">
+							<control type="radiobutton" id="425">
 								<description>Transparency Level 80</description>
 								<width>70</width>
 								<height>40</height>
@@ -2090,7 +2091,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,2FFFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),2FFFFFFF)</selected>		
 							</control>
-							<control type="radiobutton" id="424">
+							<control type="radiobutton" id="426">
 								<description>Transparency Level 70</description>
 								<width>70</width>
 								<height>40</height>
@@ -2102,7 +2103,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,48FFFFFF)</onclick>		
 								<selected>stringcompare(Skin.String(HomePanelTrans),48FFFFFF)</selected>	
 							</control>
-							<control type="radiobutton" id="425">
+							<control type="radiobutton" id="427">
 								<description>Transparency Level 60</description>
 								<width>70</width>
 								<height>40</height>
@@ -2114,7 +2115,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,5FFFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),5FFFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="426">
+							<control type="radiobutton" id="428">
 								<description>Transparency Level 50</description>
 								<width>70</width>
 								<height>40</height>
@@ -2126,7 +2127,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,78FFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),78FFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="427">
+							<control type="radiobutton" id="429">
 								<description>Transparency Level 40</description>
 								<width>70</width>
 								<height>40</height>
@@ -2138,7 +2139,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,8FFFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),8FFFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="428">
+							<control type="radiobutton" id="430">
 								<description>Transparency Level 30</description>
 								<width>70</width>
 								<height>40</height>
@@ -2150,7 +2151,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,A8FFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),A8FFFFFF)</selected>
 								</control>
-							<control type="radiobutton" id="429">
+							<control type="radiobutton" id="431">
 								<description>Transparency Level 20</description>
 								<width>70</width>
 								<height>40</height>
@@ -2162,7 +2163,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,BFFFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),BFFFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="430">
+							<control type="radiobutton" id="432">
 								<description>Transparency Level 10</description>
 								<width>70</width>
 								<height>40</height>
@@ -2174,7 +2175,7 @@
 								<onclick>Skin.SetString(HomePanelTrans,DFFFFFFF)</onclick>	
 								<selected>stringcompare(Skin.String(HomePanelTrans),DFFFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="431">
+							<control type="radiobutton" id="433">
 								<description>Transparency Level 0</description>
 								<width>60</width>
 								<height>40</height>
@@ -2188,7 +2189,7 @@
 							</control>
 						</control>
 					</control>
-					<control type="label" id="432">
+					<control type="label" id="434">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2198,7 +2199,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="433">
+					<control type="button" id="435">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2212,7 +2213,7 @@
 						<onclick>ActivateWindow(2115)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeButtonOneLabel))">Skin.SetString(HomeButtonOneLabel)</onclick>
 					</control>	
-					<control type="label" id="434">
+					<control type="label" id="436">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2222,7 +2223,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="435">
+					<control type="radiobutton" id="437">
 						<description>enable weather info</description>
 						<width>750</width>
 						<height>40</height>
@@ -2235,7 +2236,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="436">
+					<control type="radiobutton" id="438">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>

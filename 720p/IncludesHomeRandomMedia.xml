@@ -526,7 +526,10 @@
 	<include name="RandomConcertThumbPanel"> 
 		<!-- Random Concert Thumbs -->
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcertThumbs) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible>
+			<!--visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcertThumbs) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible-->
+			
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcertThumbs)</visible>
+			
 			<include>VisibleFadeEffect</include>
 			<posx>205</posx>
 			<posy>50</posy>
@@ -594,7 +597,8 @@
 						<posy>3</posy>
 						<width>224</width>
 						<height>114</height>
-						<texture background="true" diffuse="episodematte.png">$INFO[ListItem.ActualIcon]</texture>
+						<!--texture background="true" diffuse="episodematte.png">$INFO[ListItem.ActualIcon]</texture-->
+<texture background="true" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture>						
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>
@@ -630,7 +634,8 @@
 							<posy>3</posy>
 							<width>222</width>
 							<height>114</height>
-							<texture background="true" diffuse="episodematte.png">$INFO[ListItem.ActualIcon]</texture>
+							<!--texture background="true" diffuse="episodematte.png">$INFO[ListItem.ActualIcon]</texture-->
+<texture background="true" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture>							
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
@@ -658,7 +663,8 @@
 						<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>
 				</focusedlayout>
-				<include>HomeContentRandomConcerts</include>		
+				<!--include>HomeContentRandomConcerts</include-->
+<include>HomeContentRandomTVShows</include>					
 			</control>	
 		</control>	
 	</include>

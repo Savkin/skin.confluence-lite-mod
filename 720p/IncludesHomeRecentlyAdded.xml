@@ -1,8 +1,8 @@
 <includes>
 	<include name="RecentMoviePanel"> 
 		<control type="group">
-			<!-- Recently Added Movies -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies)</visible>
+			<!-- Recently Added Movies Posters -->
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies) + !Skin.HasSetting(UseFanartThumbPanel)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -132,6 +132,128 @@
 				</focusedlayout>
 				<include>HomeContentRecentMovies</include>	
 			</control>	
+		</control>
+		<control type="group">
+			<!-- Recently Added Movies Fanart -->
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies) + Skin.HasSetting(UseFanartThumbPanel)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>205</posx>
+			<posy>50</posy>
+			<control type="image">
+				<description>background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>860</width>
+				<height>410</height>
+				<texture border="20">ContentPanel.png</texture>
+				<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>850</width>
+				<height>90</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassTitleBar.png</texture>
+			</control>
+			<control type="label">
+				<description>Latest Movies Title label</description>
+				<posx>10</posx>
+				<posy>18</posy>
+				<height>20</height>
+				<width>830</width>
+				<label>$LOCALIZE[31323]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>HomeInfoOne</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="panel" id="8016">
+				<posx>25</posx>
+				<posy>80</posy>
+				<width>840</width>
+				<height>330</height>
+				<onleft>8016</onleft>
+				<onright>8016</onright>
+				<onup>20</onup>
+				<ondown>607</ondown>
+				<preloaditems>4</preloaditems>
+				<scrolltime>150</scrolltime>
+				<pagecontrol>-</pagecontrol>
+				<itemlayout height="165" width="280">
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>3</posx>
+						<posy>3</posy>
+						<width>224</width>
+						<height>114</height>
+						<texture fallback="special://skin/backgrounds/default.jpg" background="true" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>230</width>
+						<height>120</height>
+						<texture background="true">EpisodeFrame.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>120</posy>
+						<height>20</height>
+						<width>224</width>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+						<font>font12_title</font>
+						<textcolor>HomeInfoOne</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="165" width="280">
+					<control type="group">
+						<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+						<control type="image">
+							<description>Main Icon</description>
+							<posx>4</posx>
+							<posy>3</posy>
+							<width>222</width>
+							<height>114</height>
+							<texture fallback="special://skin/backgrounds/default.jpg" background="true" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
+						<control type="image">
+							<description>Main Icon</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>230</width>
+							<height>120</height>
+							<texture background="true">EpisodeFrame.png</texture>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>125</posy>
+						<height>20</height>
+						<width>250</width>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+						<font>font13_title</font>
+						<textcolor>HomeInfoTwo</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</focusedlayout>
+				<include>HomeContentRecentMovies</include>	
+			</control>
 		</control>
 	</include>
 	<include name="RecentTVShowPanel"> 
@@ -275,8 +397,8 @@
 	</include>
 	<include name="RecentAlbumsPanel"> 
 		<control type="group">
-			<!-- Recent Music -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums)</visible>
+			<!-- Recent Music CDCases-->
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums) + !Skin.HasSetting(UseFanartThumbPanel)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>
@@ -386,7 +508,129 @@
 				</focusedlayout>
 				<include>HomeContentRecentAlbums</include>	
 			</control>	
-		</control>
+		</control>	
+		<control type="group">
+			<!-- Recently Added Albums Fanart -->
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums) + Skin.HasSetting(UseFanartThumbPanel)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>205</posx>
+			<posy>50</posy>
+			<control type="image">
+				<description>background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>860</width>
+				<height>410</height>
+				<texture border="20">ContentPanel.png</texture>
+				<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>850</width>
+				<height>90</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassTitleBar.png</texture>
+			</control>
+			<control type="label">
+				<description>Latest Movies Title label</description>
+				<posx>10</posx>
+				<posy>18</posy>
+				<height>20</height>
+				<width>830</width>
+				<label>$LOCALIZE[31323]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>HomeInfoOne</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="panel" id="8016">
+				<posx>25</posx>
+				<posy>80</posy>
+				<width>840</width>
+				<height>330</height>
+				<onleft>8016</onleft>
+				<onright>8016</onright>
+				<onup>20</onup>
+				<ondown>607</ondown>
+				<preloaditems>4</preloaditems>
+				<scrolltime>150</scrolltime>
+				<pagecontrol>-</pagecontrol>
+				<itemlayout height="165" width="280">
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>3</posx>
+						<posy>3</posy>
+						<width>224</width>
+						<height>114</height>
+						<texture fallback="special://skin/backgrounds/default.jpg" background="true" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="image">
+						<description>Main Icon</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>230</width>
+						<height>120</height>
+						<texture background="true">EpisodeFrame.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+					<control type="label">
+						<posx>5</posx>
+						<posy>120</posy>
+						<height>20</height>
+						<width>224</width>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+						<font>font12_title</font>
+						<textcolor>HomeInfoOne</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="165" width="280">
+					<control type="group">
+						<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+						<control type="image">
+							<description>Main Icon</description>
+							<posx>4</posx>
+							<posy>3</posy>
+							<width>222</width>
+							<height>114</height>
+							<texture fallback="special://skin/backgrounds/default.jpg" background="true" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
+						<control type="image">
+							<description>Main Icon</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>230</width>
+							<height>120</height>
+							<texture background="true">EpisodeFrame.png</texture>
+							<aspectratio scalediffuse="false">stretch</aspectratio>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
+					</control>
+					<control type="label">
+						<posx>0</posx>
+						<posy>125</posy>
+						<height>20</height>
+						<width>250</width>
+						<label>$INFO[ListItem.Label]</label>
+						<align>left</align>
+						<font>font13_title</font>
+						<textcolor>HomeInfoTwo</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(ListItem.Label)</visible>
+					</control>
+				</focusedlayout>
+				<include>HomeContentRecentAlbums</include>	
+			</control>
+		</control>	
 	</include>
 	<include name="RecentConcertsPanel"> 
 		<control type="group">
@@ -603,7 +847,7 @@
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMovie.10.Path)])</onclick>
 				<icon>$INFO[Window.Property(LatestMovie.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMovie.10.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(LatestMovie.10.Title))</visible>
+				<visible>!IsEmpty(Window.Property(LatestMovie.10.Title)) + !Skin.HasSetting(UseFanartThumbPanel)</visible>
 			</item>
 		</content>
 	</include>
@@ -773,7 +1017,7 @@
 				<onclick>PlayMedia(&quot;$INFO[Window.Property(LatestAlbum.10.Path)]&quot;)</onclick>
 				<icon>$INFO[Window.Property(LatestAlbum.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestAlbum.10.Fanart)]</thumb>
-				<visible>!IsEmpty(Window.Property(LatestAlbum.10.Title))</visible>
+				<visible>!IsEmpty(Window.Property(LatestAlbum.10.Title)) + !Skin.HasSetting(UseFanartThumbPanel)</visible>
 			</item>
 		</content>
 	</include>					
