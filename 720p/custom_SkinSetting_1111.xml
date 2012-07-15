@@ -247,12 +247,27 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="101">
+					<control type="radiobutton" id="101">
+						<description>sticky Menu #1 Action</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31910]</label>
+						<onclick>Skin.Reset(HomeItemOneAction)</onclick>
+						<onclick>Skin.Reset(HomeItemOneLabel)</onclick>
+						<onclick>Skin.ToggleSetting(StickyHomeMenuAction)</onclick>
+						<selected>Skin.HasSetting(StickyHomeMenuAction)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="button" id="102">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31951] - 1</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(HomeItemOneLabel)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[MenuItemOneLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -260,8 +275,9 @@
 						<onclick>SetProperty(UsrSelectBtn,HomeItemOne,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemOneLabel))">Skin.SetString(HomeItemOneLabel)</onclick>
+						<enable>!Skin.HasSetting(StickyHomeMenuAction)</enable>
 					</control>	
-					<control type="button" id="102">
+					<control type="button" id="103">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -275,7 +291,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemTwoLabel))">Skin.SetString(HomeItemTwoLabel)</onclick>
 					</control>	
-					<control type="button" id="103">
+					<control type="button" id="104">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -289,7 +305,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemThreeLabel))">Skin.SetString(HomeItemThreeLabel)</onclick>
 					</control>	
-					<control type="button" id="104">
+					<control type="button" id="105">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -303,7 +319,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemFourLabel))">Skin.SetString(HomeItemFourLabel)</onclick>
 					</control>	
-					<control type="button" id="105">
+					<control type="button" id="106">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -317,7 +333,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemFiveLabel))">Skin.SetString(HomeItemFiveLabel)</onclick>
 					</control>	
-					<control type="button" id="106">
+					<control type="button" id="107">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -331,7 +347,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemSixLabel))">Skin.SetString(HomeItemSixLabel)</onclick>
 					</control>	
-					<control type="button" id="107">
+					<control type="button" id="108">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -345,7 +361,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemSevenLabel))">Skin.SetString(HomeItemSevenLabel)</onclick>
 					</control>	
-					<control type="button" id="108">
+					<control type="button" id="109">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -359,7 +375,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemEightLabel))">Skin.SetString(HomeItemEightLabel)</onclick>
 					</control>	
-					<control type="button" id="109">
+					<control type="button" id="110">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -373,7 +389,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemNineLabel))">Skin.SetString(HomeItemNineLabel)</onclick>
 					</control>	
-					<control type="button" id="110">
+					<control type="button" id="111">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -387,7 +403,7 @@
 						<onclick>ActivateWindow(2114)</onclick>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemTenLabel))">Skin.SetString(HomeItemTenLabel)</onclick>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="112">
 						<description>Hide Settings Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -603,15 +619,16 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
+						<label>$VAR[MenuItemOneLabel]</label>
 						<label2>[COLOR=selected]$VAR[UsrDefItemOneSubLabel][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.Reset(HomeItemLastLabel)</onclick>
 						<onclick>SetProperty(UsrSelectBtn,HomeItemOne,home)</onclick>
 						<onclick>ActivateWindow(2116)</onclick>
-						<visible>!IsEmpty(Skin.String(HomeItemOneLabel))</visible>
+						<visible>!IsEmpty(Skin.String(HomeItemOneLabel)) | Skin.HasSetting(StickyHomeMenuAction)</visible>
 					</control>	
 					<control type="button" id="214">
 						<width>750</width>

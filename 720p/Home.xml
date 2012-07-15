@@ -458,6 +458,8 @@
 					<item id="1">
 						<description>Home Menu Item One</description>
 						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
+						<onclick condition="!IsEmpty(Skin.String(HomeItemLastLabel)">Skin.Reset(HomeItemLastLabel)</onclick>
+						
 						<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemOneAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
@@ -465,7 +467,26 @@
 						<property name="SubMenu">$INFO[Skin.String(HomeItemOneSub)]</property>
 						<property name="PanelType">$INFO[Skin.String(HomeItemOneWidget)]</property>
 						<property name="LibStats">$INFO[Skin.String(HomeItemOneStats)]</property>
-						<visible>!IsEmpty(Skin.String(HomeItemOneAction))</visible>
+						<visible>
+							[!IsEmpty(Skin.String(HomeItemOneAction)) + !Skin.HasSetting(StickyHomeMenuAction)]|
+							[IsEmpty(Skin.String(HomeItemLastAction)) + Skin.HasSetting(StickyHomeMenuAction)]
+						</visible>
+					</item>
+					<item id="1">
+						<description>Home Menu Item One</description>
+						<label>$VAR[MenuItemOneLabel]</label>
+						<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
+						<onclick>$INFO[Skin.String(HomeItemLastAction)]</onclick>
+						<icon>$VAR[CommonScreenBackground]</icon>
+						<thumb>$INFO[Skin.String(HomeItemOneBackground)]</thumb>
+						<property name="SubMenu">$INFO[Skin.String(HomeItemOneSub)]</property>
+						
+						<!--property name="PanelType">$INFO[Skin.String(HomeItemOneWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemOneStats)]</property-->
+						<property name="PanelType">None</property>
+						<property name="LibStats">None</property>
+						
+						<visible>!IsEmpty(Skin.String(HomeItemLastAction)) + Skin.HasSetting(StickyHomeMenuAction)</visible>
 					</item>
 					<item id="2">
 						<description>Home Menu Item Two</description>

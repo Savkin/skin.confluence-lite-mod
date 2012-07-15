@@ -55,6 +55,11 @@
 		<value condition="!IsEmpty(Skin.String(HomeButtonOneLabel))">$INFO[Skin.String(HomeButtonOneLabel)]</value>
 		<value>$LOCALIZE[1036]</value>
 	</variable>
+	<variable name="MenuItemOneLabel" type="text">
+		<value condition="!Skin.HasSetting(StickyHomeMenuAction)">$INFO[Skin.String(HomeItemOneLabel)]</value>
+		<value condition="Skin.HasSetting(StickyHomeMenuAction) + !IsEmpty(Skin.String(HomeItemLastLabel)">$INFO[Skin.String(HomeItemLastLabel)]</value>
+		<value>$LOCALIZE[13416]</value>
+	</variable>
 	<variable name="UsrDefItemOneWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItemOneWidget),Playlists)">$LOCALIZE[136]</value>
 		<value condition="stringcompare(Skin.String(HomeItemOneWidget),AddOns)">$LOCALIZE[31982]</value>

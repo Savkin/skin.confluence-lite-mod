@@ -211,6 +211,8 @@
   
 	<!-- Confluence.lite.mod -->
 	
+	<string id="31910">Menu Item - 1 - Remembers Last Submenu Action Used</string>
+	<string id="31911">Use Item Fanart as Panel Thumb (Not TVShows)</string>
 	<string id="31912">User Defined Button</string>
 	<string id="31913">Home Button Action</string>
 	<string id="31914">Home Panel Options</string>
@@ -295,7 +297,7 @@
 	<string id="31991">Stop Background Fanart Animation</string>
 	<!--string id="31992">Allow Weather Forecast Panel</string-->
 	<!--string id="31993">Prefer Weather Panel over Add-Ons Panel</string-->
-	<string id="31994">Hide Home Panel FanArt</string>
+	<string id="31994">Hide Home Panel Background FanArt</string>
 	<string id="31995">Enable Return Home Button</string>
 	<string id="31996">Enable Kiosk Mode</string>
 	<string id="31997">Right List</string>
