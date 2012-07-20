@@ -199,7 +199,8 @@
 	
 	
 	<string id="31650">Show Fanart</string>
-	
+	<string id="31651">Use External Genre Icons - media/MovieGenre/*.png</string>
+		
 	<!-- Weather plugin -->
 	<string id="31900">Weather Maps</string>
 	<string id="31901">36 Hour Forecast</string>
@@ -214,7 +215,7 @@
   
 	<!-- Confluence.lite.mod -->
 	
-	
+
 	<string id="31910">Menu Item - 1 - Remembers Last Submenu Action Used</string>
 	<string id="31911">Use Item Fanart as Panel Thumb (Not TVShows)</string>
 	<string id="31912">User Defined Button</string>

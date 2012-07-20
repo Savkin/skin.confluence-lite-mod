@@ -2428,6 +2428,18 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>$LOCALIZE[31651]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(UsrGenreFanArt)</onclick>
+						<selected>Skin.HasSetting(UsrGenreFanArt)</selected>
+					</control>
+					<control type="radiobutton" id="512">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>20189</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -2436,7 +2448,7 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="512">
+					<control type="radiobutton" id="513">
 						<description>Show Sub Flag Toggle</description>
 						<width>750</width>
 						<height>40</height>
@@ -2449,7 +2461,7 @@
 						<onclick>Skin.ToggleSetting(HideSubTitleFlags)</onclick>
 						<selected>!Skin.HasSetting(HideSubTitleFlags)</selected>
 					</control>
-					<control type="radiobutton" id="513">
+					<control type="radiobutton" id="514">
 						<description>Enable Media View Home Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -2462,7 +2474,7 @@
 						<onclick>Skin.ToggleSetting(HideMediaHomeButton)</onclick>
 						<selected>!Skin.HasSetting(HideMediaHomeButton)</selected>
 					</control>
-					<control type="radiobutton" id="514">
+					<control type="radiobutton" id="515">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2474,7 +2486,7 @@
 						<onclick>Skin.ToggleSetting(UseTvSeasonArt)</onclick>
 						<selected>Skin.HasSetting(UseTvSeasonArt)</selected>
 					</control>		
-					<control type="label" id="515">
+					<control type="label" id="516">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2484,7 +2496,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="516">
+					<control type="radiobutton" id="517">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2496,7 +2508,7 @@
 						<onclick>Skin.ToggleSetting(HidePauseInfo)</onclick>
 						<selected>!Skin.HasSetting(HidePauseInfo)</selected>
 					</control>
-					<control type="radiobutton" id="517">
+					<control type="radiobutton" id="518">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2508,7 +2520,7 @@
 						<onclick>Skin.ToggleSetting(TVShowUsesLogo)</onclick>
 						<selected>Skin.HasSetting(TVShowUsesLogo)</selected>
 					</control>
-					<control type="label" id="518">
+					<control type="label" id="519">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2518,7 +2530,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="519">
+					<control type="radiobutton" id="520">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2530,7 +2542,7 @@
 						<onclick>Skin.ToggleSetting(TVShowsUsePosters)</onclick>
 						<selected>Skin.HasSetting(TVShowsUsePosters)</selected>
 					</control>
-					<control type="radiobutton" id="520">
+					<control type="radiobutton" id="521">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2543,7 +2555,7 @@
 						<selected>Skin.HasSetting(ActivateTvTunes)</selected>
 						<visible>System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="label" id="521">
+					<control type="label" id="522">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2553,7 +2565,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="522">
+					<control type="radiobutton" id="523">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2567,7 +2579,7 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundAlbumWall)</onclick>
 						<selected>Skin.HasSetting(ShowBackgroundAlbumWall)</selected>
 					</control>
-					<control type="button" id="523">
+					<control type="button" id="524">
 						<description>CD Wall Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -2581,7 +2593,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(ShowBackgroundAlbumWall)</enable>
 					</control>
-					<control type="radiobutton" id="524">
+					<control type="radiobutton" id="525">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2595,7 +2607,7 @@
 						<onclick>Skin.ToggleSetting(ShowArtistSlideShow)</onclick>
 						<selected>Skin.HasSetting(ShowArtistSlideShow)</selected>
 					</control>
-					<control type="radiobutton" id="525">
+					<control type="radiobutton" id="526">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2609,7 +2621,7 @@
 						<onclick>Skin.ToggleSetting(MusicVizXtraFanart)</onclick>
 						<selected>Skin.HasSetting(MusicVizXtraFanart)</selected>
 					</control>
-					<control type="radiobutton" id="526">
+					<control type="radiobutton" id="527">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2621,7 +2633,7 @@
 						<onclick>Skin.ToggleSetting(NoAnimateFanArt)</onclick>
 						<selected>Skin.HasSetting(NoAnimateFanArt)</selected>
 					</control>
-					<control type="label" id="527">
+					<control type="label" id="528">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2631,7 +2643,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="528">
+					<control type="radiobutton" id="529">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2643,7 +2655,7 @@
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
-					<control type="button" id="529">
+					<control type="button" id="530">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
