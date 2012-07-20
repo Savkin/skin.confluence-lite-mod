@@ -140,7 +140,7 @@
 				<include>CDArtSpinner</include>
 				<texture fallback="DefaultCDArt.png">$INFO[Player.FolderPath,,cdart.png]</texture>
 				<aspectratio align="bottom">keep</aspectratio>
-				<visible>!SubString(Player.FolderPath,http://,Left)</visible>
+				<visible>!SubString(Player.FolderPath,http://,Left) + !Skin.HasSetting(HideCDArt)</visible>
 			</control>
 			<control type="image">
 				<description>Cover Image</description>

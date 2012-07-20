@@ -2643,7 +2643,19 @@
 						<onclick>Skin.ToggleSetting(NoAnimateFanArt)</onclick>
 						<selected>Skin.HasSetting(NoAnimateFanArt)</selected>
 					</control>
-					<control type="label" id="528">
+					<control type="radiobutton" id="528">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31652]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideCDArt)</onclick>
+						<selected>Skin.HasSetting(HideCDArt)</selected>
+					</control>
+					<control type="label" id="529">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2653,7 +2665,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="529">
+					<control type="radiobutton" id="530">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2665,7 +2677,7 @@
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>
-					<control type="button" id="530">
+					<control type="button" id="531">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -2942,6 +2954,8 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
+				
+				
 				
 				
 				
