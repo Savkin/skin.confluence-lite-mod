@@ -458,8 +458,7 @@
 					<item id="1">
 						<description>Home Menu Item One</description>
 						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
-						<onclick condition="!IsEmpty(Skin.String(HomeItemLastLabel)">Skin.Reset(HomeItemLastLabel)</onclick>
-						
+						<onclick condition="!IsEmpty(Skin.String(HomeItemLastLabel))">Skin.Reset(HomeItemLastLabel)</onclick>
 						<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemOneAction)]</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>

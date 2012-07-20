@@ -57,7 +57,7 @@
 	</variable>
 	<variable name="MenuItemOneLabel" type="text">
 		<value condition="!Skin.HasSetting(StickyHomeMenuAction)">$INFO[Skin.String(HomeItemOneLabel)]</value>
-		<value condition="Skin.HasSetting(StickyHomeMenuAction) + !IsEmpty(Skin.String(HomeItemLastLabel)">$INFO[Skin.String(HomeItemLastLabel)]</value>
+		<value condition="Skin.HasSetting(StickyHomeMenuAction) + !IsEmpty(Skin.String(HomeItemLastLabel))">$INFO[Skin.String(HomeItemLastLabel)]</value>
 		<value>$LOCALIZE[13416]</value>
 	</variable>
 	<variable name="UsrDefItemOneWidgetLabel" type="text">
