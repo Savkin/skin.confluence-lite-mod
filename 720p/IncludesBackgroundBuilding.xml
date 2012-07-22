@@ -6,7 +6,7 @@
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>Window_OpenClose_Animation</include>
-			<visible>IsEmpty(Container(9000).ListItem.Thumb) + !IsEmpty(Skin.CurrentTheme) + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109])</visible>
+			<visible>IsEmpty(Container(9000).ListItem.Thumb) + !IsEmpty(Skin.CurrentTheme) + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109]) + + !IsEmpty(Skin.String(HomeGlobalBackground))</visible>
 		</control>
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
