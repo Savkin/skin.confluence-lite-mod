@@ -201,6 +201,10 @@
 	<string id="31650">Show Fanart</string>
 	<string id="31651">Use External Genre Icons - media/MovieGenre/*.png</string>
 	<string id="31652">Hide Spinning CD Art</string>
+	<string id="31653">Dynamic Global Backgrounds</string>
+	<string id="31654">Movie DataBase Fanart</string>
+	<string id="31655">Music DataBase Fanart</string>
+	<string id="31656">Weather Fanart</string>
 		
 	<!-- Weather plugin -->
 	<string id="31900">Weather Maps</string>
