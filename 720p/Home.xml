@@ -2,10 +2,12 @@
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
 	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
 	<onload condition="IsEmpty(Skin.String(HomePanelTrans))">Skin.SetString(HomePanelTrans,48FFFFFF)</onload>
+	<onload condition="IsEmpty(Skin.String(MediaPanelTrans))">Skin.SetString(MediaPanelTrans,FFFFFFFF)</onload>
 	<defaultcontrol always="true">8999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 		<include>CommonBackground</include>
+		<include condition="Skin.HasSetting(UseLiveDisk)">InteractiveCasesBackground</include>	
 		<control type="image">
 			<posx>0</posx>
 			<posy>90r</posy>
@@ -38,23 +40,20 @@
 			<include>VisibleFadeEffect</include>		
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-			<include condition="Library.HasContent(Movies)">RecentMoviePanel</include>			
-			<include condition="Library.HasContent(Movies) + System.HasAddon(script.randomitems)">RandomMoviePanel</include>			
-			<include condition="Library.HasContent(Movies) + System.HasAddon(script.watchlist)">SuggestedMoviePanel</include>
-			<include condition="Library.HasContent(TVShows)">RecentTVShowPanel</include>	
-			<include condition="Library.HasContent(TVShows) + System.HasAddon(script.watchlist)">SuggestedTVShowPanel</include>	
-			<include condition="Library.HasContent(TVShows) + System.HasAddon(script.randomitems)">RandomTVShowPanel</include>
-			<include condition="Library.HasContent(Music)">RecentAlbumsPanel</include>
-			<include condition="Library.HasContent(Music) + System.HasAddon(script.watchlist)">SuggestedAlbumsPanel</include>
-			<include condition="Library.HasContent(Music) + System.HasAddon(script.randomitems)">RandomAlbumPanel</include>
-			<include condition="Library.HasContent(MusicVideos)">RecentConcertsPanel</include>		
-			<include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertsPanel</include>
-			<!--include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertThumbPanel</include-->		
-			<include condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)">PlayListContentPanel</include>	
-			
- <include>RandomConcertThumbPanel</include>		
- 
-			<include>AddonsHomePanel</include>			
+			<include condition="Library.HasContent(Movies) + !Skin.HasSetting(UseLiveDisk)">RecentMoviePanel</include>			
+			<include condition="Library.HasContent(Movies) + System.HasAddon(script.randomitems)+ !Skin.HasSetting(UseLiveDisk)">RandomMoviePanel</include>			
+			<include condition="Library.HasContent(Movies) + System.HasAddon(script.watchlist)+ !Skin.HasSetting(UseLiveDisk)">SuggestedMoviePanel</include>
+			<include condition="Library.HasContent(TVShows)+ !Skin.HasSetting(UseLiveDisk)">RecentTVShowPanel</include>	
+			<include condition="Library.HasContent(TVShows) + System.HasAddon(script.watchlist)+ !Skin.HasSetting(UseLiveDisk)">SuggestedTVShowPanel</include>	
+			<include condition="Library.HasContent(TVShows) + System.HasAddon(script.randomitems)+ !Skin.HasSetting(UseLiveDisk)">RandomTVShowPanel</include>
+			<include condition="Library.HasContent(Music)+ !Skin.HasSetting(UseLiveDisk)">RecentAlbumsPanel</include>
+			<include condition="Library.HasContent(Music) + System.HasAddon(script.watchlist)+ !Skin.HasSetting(UseLiveDisk)">SuggestedAlbumsPanel</include>
+			<include condition="Library.HasContent(Music) + System.HasAddon(script.randomitems)+ !Skin.HasSetting(UseLiveDisk)">RandomAlbumPanel</include>
+			<include condition="Library.HasContent(MusicVideos)+ !Skin.HasSetting(UseLiveDisk)">RecentConcertsPanel</include>		
+			<include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)+ !Skin.HasSetting(UseLiveDisk)">RandomConcertsPanel</include>
+			<include condition="Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)">RandomConcertThumbPanel</include>	
+			<include condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)+ !Skin.HasSetting(UseLiveDisk)">PlayListContentPanel</include>
+			<include>AddonsHomePanel</include>	
 		</control>
 		<control type="group">
 			<description>Controls for currently playing media</description>
@@ -313,38 +312,38 @@
 			<control type="button" id="8999">
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onfocus>Skin.SetString(HomeItemOneLabel,$LOCALIZE[8])</onfocus>
-				<onfocus>Skin.SetString(HomeItemOneWidget,Weather)</onfocus>	
-				<onfocus>Skin.SetString(HomeItemOneSub,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemOneStats,Weather)</onfocus>
-				<onfocus>Skin.SetString(HomeItemOneAction,ActivateWindow(Weather))</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoLabel,$LOCALIZE[1])</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoWidget,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoSub,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoStats,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeWidget,RecentMovies)</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeSub,Videos)</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeStats,Videos)</onfocus>
-				<onfocus>Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
-				<onfocus>Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
-				<onfocus>Skin.SetString(HomeItemFourWidget,RecentAlbums)</onfocus>	
-				<onfocus>Skin.SetString(HomeItemFourSub,Music)</onfocus>
-				<onfocus>Skin.SetString(HomeItemFourStats,Music)</onfocus>
-				<onfocus>Skin.SetString(HomeItemFourAction,ActivateWindow(Music))</onfocus>	
-				<onfocus>Skin.SetString(HomeItemFiveLabel,$LOCALIZE[0])</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveWidget,AddOns)</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveSub,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveStats,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemFiveAction,ActivateWindow(Programs,Addons,return))</onfocus>	
-				<onfocus>Skin.SetString(HomeItemSixLabel,$LOCALIZE[427])</onfocus>
-				<onfocus>Skin.SetString(HomeItemSixWidget,None)</onfocus>
-				<onfocus>Skin.SetString(HomeItemSixSub,PlayDisc)</onfocus>
-				<onfocus>Skin.SetString(HomeItemSixStats,PlayDisc)</onfocus>
-				<onfocus>Skin.SetString(HomeItemSixAction,XBMC.PlayDVD())</onfocus>
-				<onfocus>Skin.SetString(HomeItemElevenSub,Settings)</onfocus>
-				<onfocus>Skin.SetString(HomeItemElevenStats,Settings)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemOneLabel))">Skin.SetString(HomeItemOneLabel,$LOCALIZE[8])</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemOneWidget))">Skin.SetString(HomeItemOneWidget,Weather)</onfocus>	
+				<onfocus condition="IsEmpty(Skin.String(HomeItemOneSub))">Skin.SetString(HomeItemOneSub,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemOneStats))">Skin.SetString(HomeItemOneStats,Weather)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemOneAction))">Skin.SetString(HomeItemOneAction,ActivateWindow(Weather))</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemTwoLabel))">Skin.SetString(HomeItemTwoLabel,$LOCALIZE[1])</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemTwoWidget))">Skin.SetString(HomeItemTwoWidget,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemTwoSub))">Skin.SetString(HomeItemTwoSub,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemTwoStats))">Skin.SetString(HomeItemTwoStats,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemTwoAction))">Skin.SetString(HomeItemTwoAction,ActivateWindow(Pictures))</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemThreeLabel))">Skin.SetString(HomeItemThreeLabel,$LOCALIZE[3])</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemThreeWidget))">Skin.SetString(HomeItemThreeWidget,RecentMovies)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemThreeSub))">Skin.SetString(HomeItemThreeSub,Videos)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemThreeStats))">Skin.SetString(HomeItemThreeStats,Videos)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemThreeAction))">Skin.SetString(HomeItemThreeAction,ActivateWindow(Videos,Root,return))</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFourLabel))">Skin.SetString(HomeItemFourLabel,$LOCALIZE[2])</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFourWidget))">Skin.SetString(HomeItemFourWidget,RecentAlbums)</onfocus>	
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFourSub))">Skin.SetString(HomeItemFourSub,Music)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFourStats))">Skin.SetString(HomeItemFourStats,Music)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFourAction))">Skin.SetString(HomeItemFourAction,ActivateWindow(Music))</onfocus>	
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFiveLabel))">Skin.SetString(HomeItemFiveLabel,$LOCALIZE[0])</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFiveWidget))">Skin.SetString(HomeItemFiveWidget,AddOns)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFiveSub))">Skin.SetString(HomeItemFiveSub,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFiveStats))">Skin.SetString(HomeItemFiveStats,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemFiveAction))">Skin.SetString(HomeItemFiveAction,ActivateWindow(Programs,Addons,return))</onfocus>	
+				<onfocus condition="IsEmpty(Skin.String(HomeItemSixLabel))">Skin.SetString(HomeItemSixLabel,$LOCALIZE[427])</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemSixWidget))">Skin.SetString(HomeItemSixWidget,None)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemSixSub))">Skin.SetString(HomeItemSixSub,PlayDisc)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemSixStats))">Skin.SetString(HomeItemSixStats,PlayDisc)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemSixAction))">Skin.SetString(HomeItemSixAction,XBMC.PlayDVD())</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemElevenSub))">Skin.SetString(HomeItemElevenSub,Settings)</onfocus>
+				<onfocus condition="IsEmpty(Skin.String(HomeItemElevenStats))">Skin.SetString(HomeItemElevenStats,Settings)</onfocus>
 				<onfocus>Skin.SetBool(InitialSetUpRun)</onfocus>
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
@@ -373,10 +372,10 @@
 				<onfocus>SetFocus(9000)</onfocus>
 				<visible>Skin.HasSetting(InitialSetUpRun)</visible>
 			</control>	
-			<control type="fixedlist" id="9000">
-				<posx>-110</posx>
+			<control type="wraplist" id="9000">
+				<posx>-860</posx>
 				<posy>5</posy>
-				<width>1500</width>
+				<width>3000</width>
 				<height>60</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -387,7 +386,7 @@
 				<focusposition>2</focusposition>
 				<movement>1</movement>
 				<orientation>Horizontal</orientation>
-				<itemlayout height="60" width="300">
+				<itemlayout height="60" width="600">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
@@ -396,16 +395,16 @@
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>299</posx>
+						<posx>599</posx>
 						<posy>4</posy>
 						<width>1</width>
 						<height>52</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="label">
-						<posx>150</posx>
+						<posx>300</posx>
 						<posy>0</posy>
-						<width>290</width>
+						<width>600</width>
 						<height>60</height>
 						<font>font_MainMenu</font>
 						<textcolor>MenuNoFocus</textcolor>
@@ -414,7 +413,7 @@
 						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="60" width="300">
+				<focusedlayout height="60" width="600">
 					<control type="image">
 						<posx>0</posx>
 						<posy>4</posy>
@@ -423,16 +422,16 @@
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="image">
-						<posx>299</posx>
+						<posx>599</posx>
 						<posy>4</posy>
 						<width>1</width>
 						<height>52</height>
 						<texture>HomeSeperator.png</texture>
 					</control>
 					<control type="label">
-						<posx>150</posx>
+						<posx>300</posx>
 						<posy>0</posy>
-						<width>290</width>
+						<width>600</width>
 						<height>60</height>
 						<font>font_MainMenu</font>
 						<textcolor>MenuNoFocus</textcolor>
@@ -441,9 +440,9 @@
 						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
 					<control type="label">
-						<posx>150</posx>
+						<posx>300</posx>
 						<posy>0</posy>
-						<width>290</width>
+						<width>600</width>
 						<height>60</height>
 						<font>font_MainMenu</font>
 						<textcolor>MenuFocus</textcolor>
@@ -457,7 +456,7 @@
 				<content>
 					<item id="1">
 						<description>Home Menu Item One</description>
-						<label>$INFO[Skin.String(HomeItemOneLabel)]</label>
+						<label>$VAR[MenuItemOneLabel]</label>
 						<onclick condition="!IsEmpty(Skin.String(HomeItemLastLabel))">Skin.Reset(HomeItemLastLabel)</onclick>
 						<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 						<onclick>$INFO[Skin.String(HomeItemOneAction)]</onclick>
@@ -479,12 +478,8 @@
 						<icon>$VAR[CommonScreenBackground]</icon>
 						<thumb>$INFO[Skin.String(HomeItemOneBackground)]</thumb>
 						<property name="SubMenu">$INFO[Skin.String(HomeItemOneSub)]</property>
-						
-						<!--property name="PanelType">$INFO[Skin.String(HomeItemOneWidget)]</property>
-						<property name="LibStats">$INFO[Skin.String(HomeItemOneStats)]</property-->
-						<property name="PanelType">None</property>
-						<property name="LibStats">None</property>
-						
+						<property name="PanelType">$INFO[Skin.String(HomeItemOneWidget)]</property>
+						<property name="LibStats">$INFO[Skin.String(HomeItemOneStats)]</property>
 						<visible>!IsEmpty(Skin.String(HomeItemLastAction)) + Skin.HasSetting(StickyHomeMenuAction)</visible>
 					</item>
 					<item id="2">
@@ -597,7 +592,7 @@
 					</item>
 					<item id="11">
 						<description>Home Menu Settings</description>
-						<label>$LOCALIZE[13000]</label>
+						<label>$LOCALIZE[13000]</label><!---->
 						<onclick>SetProperty(MenuItemActive,Settings,Home)</onclick>
 						<onclick>ActivateWindow(Settings)</onclick>
 						<icon>$VAR[CommonScreenBackground]</icon>
@@ -737,7 +732,7 @@
 			<control type="grouplist">
 				<posx>70</posx>
 				<posy>20</posy>
-				<width>1000</width>
+				<width>210</width>
 				<height>30</height>
 				<orientation>horizontal</orientation>
 				<align>left</align>
@@ -769,6 +764,7 @@
 					<height>30</height>
 					<font>font10</font>
 					<aligny>center</aligny>
+					<scroll>true</scroll>
 					<label> $INFO[Window(Weather).Property(Current.Condition)]</label>
 					<textcolor>HomeInfoThree</textcolor>
 					<shadowcolor>black</shadowcolor>

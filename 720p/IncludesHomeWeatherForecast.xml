@@ -2,7 +2,7 @@
 	<include name="HomeWeatherForecast">
 		<control type="group">
 			<visible>Weather.IsFetched + !IsEmpty(Weather.Conditions)</visible>	
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Weather)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Weather) + !Skin.HasSetting(UseLiveDisk)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
 			<posy>50</posy>

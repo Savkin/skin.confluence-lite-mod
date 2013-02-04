@@ -2,8 +2,8 @@
 	<include name="AddonsHomePanel">
 		<control type="group">
 			<!-- Home Panel Addons -->
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),AddOns)</visible>
-			<visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),AddOns) + !Skin.HasSetting(UseLiveDisk)</visible>
+				<visible>
 				!IsEmpty(Skin.String(HomeAddonOneLabel)) | !IsEmpty(Skin.String(HomeAddonTwoLabel)) | !IsEmpty(Skin.String(HomeAddonThreeLabel)) |
 				!IsEmpty(Skin.String(HomeAddonFourLabel)) | !IsEmpty(Skin.String(HomeAddonFiveLabel)) | !IsEmpty(Skin.String(HomeAddonSixLabel)) | !IsEmpty(Skin.String(HomeAddonSevenLabel)) |
 				!IsEmpty(Skin.String(HomeAddonEightLabel)) | !IsEmpty(Skin.String(HomeAddonNineLabel)) | !IsEmpty(Skin.String(HomeAddonTenLabel))

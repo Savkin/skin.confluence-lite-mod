@@ -1,61 +1,54 @@
 <includes>
 	<include name="RecentMoviePanel"> 
-		<control type="group">
 			<!-- Recently Added Movies Posters -->
+		<control type="group">
 			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies) + !Skin.HasSetting(UseFanartThumbPanel)</visible>
 			<include>VisibleFadeEffect</include>
-			<posx>215</posx>
-			<posy>50</posy>
-			<control type="image">
-				<description>background</description>
 				<posx>0</posx>
-				<posy>0</posy>
-				<width>850</width>
-				<height>455</height>
-				<texture border="20">ContentPanel.png</texture>
-				<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
-			</control>
+				<posy>50</posy>
 			<control type="image">
-				<posx>0</posx>
-				<posy>10</posy>
-				<width>850</width>
-				<height>90</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>GlassTitleBar.png</texture>
+					<description>background</description>
+					<posx>300</posx>
+					<posy>-50</posy>
+					<width>680</width>
+					<height>50</height>
+					<texture border="20">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 			</control>
 			<control type="label">
-				<description>Latest Movies Title label</description>
-				<posx>10</posx>
-				<posy>18</posy>
-				<height>20</height>
-				<width>830</width>
+					<description>Recent Title label</description>
+					<posx>300</posx>
+					<posy>-50</posy>
+					<height>50</height>
+					<width>680</width>
 				<label>$LOCALIZE[31323]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>HomeInfoOne</textcolor>
-				<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>HomeInfoOne</textcolor>
+					<shadowcolor>black</shadowcolor>
 				<visible>!Control.HasFocus(8000)</visible>
 			</control>
 			<control type="label">
 				<description>Selected Title label</description>
-				<posx>10</posx>
-				<posy>18</posy>
-				<height>20</height>
-				<width>830</width>
+					<posx>300</posx>
+					<posy>-50</posy>
+					<height>50</height>
+					<width>680</width>
 				<label>$INFO[Container(8000).ListItem.Label]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>HomeInfoOne</textcolor>
-				<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>HomeInfoOne</textcolor>
+                    <scroll>true</scroll>
+					<shadowcolor>black</shadowcolor>
 				<visible>Control.HasFocus(8000)</visible>
 			</control>
 			<control type="panel" id="8000">
-				<posx>90</posx>
-				<posy>65</posy>
-				<width>700</width>
-				<height>380</height>
+					<posx>210</posx>
+					<posy>5</posy>
+					<width>1070</width>
+					<height>450</height>
 				<onleft>8000</onleft>
 				<onright>8000</onright>
 				<onup>20</onup>
@@ -63,78 +56,78 @@
 				<preloaditems>4</preloaditems>
 				<scrolltime>150</scrolltime>
 				<pagecontrol>-</pagecontrol>
-				<itemlayout height="190" width="140">
+					<itemlayout height="225" width="214">
 					<control type="image">
-						<posx>-2</posx>
-						<posy>3</posy>
-						<width>120</width>
-						<height>175</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
-						<visible>!IsEmpty(ListItem.Label)</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>170</width>
+								<height>220</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>IconCrossfadeTime</fadetime>
+								<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
+								<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>
 					<control type="image">
-						<posx>3</posx>
-						<posy>7</posy>
-						<width>110</width>
-						<height>164</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
-						<visible>!IsEmpty(ListItem.Label)</visible>
+								<posx>5</posx>
+								<posy>5</posy>
+								<width>160</width>
+								<height>210</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>IconCrossfadeTime</fadetime>
+								<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+								<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>
 					<control type="image">
-						<posx>-2</posx>
-						<posy>3</posy>
-						<width>120</width>
-						<height>175</height>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
-						<visible>!IsEmpty(ListItem.Label)</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>170</width>
+								<height>220</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>IconCrossfadeTime</fadetime>
+								<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
+								<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout height="190" width="140">
+					<focusedlayout height="360" width="265">
 					<control type="group">
-						<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+						<animation effect="zoom" center="85,110" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
 						<control type="image">
-							<posx>-2</posx>
-							<posy>3</posy>
-							<width>120</width>
-							<height>175</height>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
-							<visible>!IsEmpty(ListItem.Label)</visible>
+								<posx>0</posx><!-- -2 -->
+								<posy>0</posy><!-- 3 -->
+								<width>170</width><!--120-->
+								<height>220</height><!--175-->
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>IconCrossfadeTime</fadetime>
+								<texture background="true">ClearCase/EmptyCaseBorder.png</texture>
+								<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
-							<posx>3</posx>
-							<posy>7</posy>
-							<width>110</width>
-							<height>164</height>
-							<aspectratio scalediffuse="false">scale</aspectratio>
-							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
-							<visible>!IsEmpty(ListItem.Label)</visible>
+								<posx>5</posx>
+								<posy>5</posy>
+								<width>160</width>
+								<height>210</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>IconCrossfadeTime</fadetime>
+								<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.ActualIcon]</texture>
+								<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
-							<posx>-2</posx>
-							<posy>3</posy>
-							<width>120</width>
-							<height>175</height>
-							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<fadetime>IconCrossfadeTime</fadetime>
-							<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
-							<visible>!IsEmpty(ListItem.Label)</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>170</width>
+								<height>220</height>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+								<fadetime>IconCrossfadeTime</fadetime>
+								<texture background="true">ClearCase/EmptyCaseOverlay.png</texture>
+								<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 					</control>
 				</focusedlayout>
 				<include>HomeContentRecentMovies</include>	
 			</control>	
 		</control>
-		<control type="group">
 			<!-- Recently Added Movies Fanart -->
+		<control type="group">
 			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies) + Skin.HasSetting(UseFanartThumbPanel)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>205</posx>
@@ -400,31 +393,23 @@
 			<!-- Recent Music CDCases-->
 			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums) + !Skin.HasSetting(UseFanartThumbPanel)</visible>
 			<include>VisibleFadeEffect</include>
-			<posx>215</posx>
+			<posx>0</posx>
 			<posy>50</posy>
 			<control type="image">
 				<description>background</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>885</width>
-				<height>370</height>
+					<posx>300</posx>
+					<posy>-50</posy>
+					<width>680</width>
+					<height>50</height>
 				<texture border="20">ContentPanel.png</texture>
 				<colordiffuse>$INFO[Skin.String(HomePanelTrans)]</colordiffuse>
 			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>10</posy>
-				<width>850</width>
-				<height>90</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>GlassTitleBar.png</texture>
-			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>10</posx>
-				<posy>18</posy>
-				<height>20</height>
-				<width>830</width>
+					<posx>300</posx>
+					<posy>-50</posy>
+					<height>50</height>
+					<width>680</width>
 				<label>$LOCALIZE[31989]</label>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -435,23 +420,24 @@
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<posx>10</posx>
-				<posy>18</posy>
-				<height>20</height>
-				<width>830</width>
+					<posx>300</posx>
+					<posy>-50</posy>
+					<height>50</height>
+					<width>680</width>
 				<label>$INFO[Container(8002).ListItem.Label]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
+				<scrol>true</scrol>
 				<textcolor>HomeInfoOne</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Control.HasFocus(8002)</visible>
 			</control>
 			<control type="panel" id="8002">
-				<posx>25</posx>
-				<posy>70</posy>
-				<width>860</width>
-				<height>290</height>
+					<posx>210</posx>
+					<posy>5</posy>
+					<width>1070</width>
+					<height>450</height>
 				<onleft>8002</onleft>
 				<onright>8002</onright>
 				<onup>20</onup>
@@ -459,56 +445,85 @@
 				<preloaditems>4</preloaditems>
 				<scrolltime>150</scrolltime>
 				<pagecontrol>-</pagecontrol>
-				<itemlayout height="145" width="172">
+				<itemlayout height="225" width="214">
 					<control type="image">
 						<description>Cover image</description>
-						<posx>13</posx>
-						<posy>3</posy>
-						<width>130</width>
-						<height>125</height>
+						<posx>18</posx>
+						<posy>2</posy>
+						<width>180</width>130
+						<height>180</height>125
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture background="true" fallback="FallBackAlbumCover.png" diffuse="CDCase/cdcase-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 						<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>
 					<control type="image">
 						<description>CD Case</description>
-						<posx>-2</posx>
-						<posy>3</posy>
-						<width>148</width>
-						<height>125</height>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>200</width>148
+						<height>184</height>125
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<texture>CDCase/cdcase.png</texture>
 						<visible>!IsEmpty(ListItem.Label)</visible>
 					</control>	
+						<control type="label">
+							<posx>5</posx>
+							<posy>185</posy>
+							<height>20</height>
+							<width>190</width>
+							<label>$INFO[ListItem.Label]</label>
+							<align>left</align>
+							<font>font12_title</font>
+							<textcolor>HomeInfoOne</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
 				</itemlayout>
-				<focusedlayout height="145" width="172">
+				<focusedlayout height="225" width="214">
 					<control type="group">
-						<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
+					<animation effect="zoom" center="100,92" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
 						<control type="image">
 							<description>Cover image</description>
-							<posx>13</posx>
-							<posy>3</posy>
-							<width>130</width>
-							<height>125</height>
+							<posx>18</posx>
+							<posy>2</posy>
+							<width>180</width>
+							<height>180</height>
 							<aspectratio aligny="bottom">stretch</aspectratio>
 							<texture background="true" fallback="FallBackAlbumCover.png" diffuse="CDCase/cdcase-diffuse.png">$INFO[ListItem.ActualIcon]</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>
 						<control type="image">
 							<description>CD Case</description>
-							<posx>-2</posx>
-							<posy>3</posy>
-							<width>148</width>
-							<height>125</height>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>200</width>
+							<height>184</height>
 							<aspectratio aligny="bottom">stretch</aspectratio>
 							<texture>CDCase/cdcase.png</texture>
 							<visible>!IsEmpty(ListItem.Label)</visible>
 						</control>	
+						<control type="label">
+							<posx>5</posx>
+							<posy>185</posy>
+							<height>20</height>
+							<width>190</width>
+							<label>$INFO[ListItem.Label]</label>
+							<align>left</align>
+							<font>font12_title</font>
+							<textcolor>HomeInfoTwo</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<visible>!IsEmpty(ListItem.Label)</visible>
+						</control>
 					</control>
 				</focusedlayout>
 				<include>HomeContentRecentAlbums</include>	
 			</control>	
 		</control>	
+		
+		
+		
+		
+		
 		<control type="group">
 			<!-- Recently Added Albums Fanart -->
 			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums) + Skin.HasSetting(UseFanartThumbPanel)</visible>
@@ -533,25 +548,25 @@
 				<texture>GlassTitleBar.png</texture>
 			</control>
 			<control type="label">
-				<description>Latest Movies Title label</description>
+				<description>Latest Albums label</description>
 				<posx>10</posx>
 				<posy>18</posy>
 				<height>20</height>
 				<width>830</width>
-				<label>$LOCALIZE[31323]</label>
+				<label>$LOCALIZE[31989]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
 				<textcolor>HomeInfoOne</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
-			<control type="panel" id="8016">
+			<control type="panel" id="8017">
 				<posx>25</posx>
 				<posy>80</posy>
 				<width>840</width>
 				<height>330</height>
-				<onleft>8016</onleft>
-				<onright>8016</onright>
+				<onleft>8017</onleft>
+				<onright>8017</onright>
 				<onup>20</onup>
 				<ondown>607</ondown>
 				<preloaditems>4</preloaditems>

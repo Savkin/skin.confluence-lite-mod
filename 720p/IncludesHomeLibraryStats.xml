@@ -37,39 +37,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[20342]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Count)][/COLOR]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>$LOCALIZE[20342]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Count)][/COLOR]     $LOCALIZE[20343]:[COLOR StatsAmnt] $INFO[Window.Property(TVShows.Count)][/COLOR]     $LOCALIZE[20389]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Count)][/COLOR]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>245</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>180</width>
-					<label>$LOCALIZE[20343]:[COLOR StatsAmnt] $INFO[Window.Property(TVShows.Count)][/COLOR]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>436</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[20389]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Count)][/COLOR]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -99,39 +75,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[20342]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Count)][/COLOR]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>$LOCALIZE[20342]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Count)][/COLOR]     $LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.UnWatched)][/COLOR]     $LOCALIZE[16102]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Watched)][/COLOR]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>245</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>180</width>
-					<label>$LOCALIZE[16102]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.Watched)][/COLOR]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>436</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(Movies.UnWatched)][/COLOR]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -161,39 +113,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[20343]:[COLOR StatsAmnt] $INFO[Window.Property(TVShows.Count)][/COLOR]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>$LOCALIZE[20343]:[COLOR StatsAmnt] $INFO[Window.Property(TVShows.Count)][/COLOR]     $LOCALIZE[20360]:[COLOR StatsAmnt] $INFO[Window.Property(Episodes.Count)][/COLOR]     $LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(Episodes.UnWatched)][/COLOR]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>245</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>180</width>
-					<label>$LOCALIZE[20360]:[COLOR StatsAmnt] $INFO[Window.Property(Episodes.Count)][/COLOR]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>436</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(Episodes.UnWatched)][/COLOR]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -223,39 +151,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[31025]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Count)][/COLOR]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>$LOCALIZE[31025]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Count)][/COLOR]    $LOCALIZE[16102]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Watched)][/COLOR]     $LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.UnWatched)][/COLOR]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>245</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>180</width>
-					<label>$LOCALIZE[16102]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.Watched)][/COLOR]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>436</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[16101]:[COLOR StatsAmnt] $INFO[Window.Property(MusicVideos.UnWatched)][/COLOR]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -285,39 +189,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[132]:[COLOR StatsAmnt] $INFO[Window.Property(Music.AlbumsCount)][/COLOR]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>$LOCALIZE[132]:[COLOR StatsAmnt] $INFO[Window.Property(Music.AlbumsCount)][/COLOR]    $LOCALIZE[133]:[COLOR StatsAmnt] $INFO[Window.Property(Music.ArtistsCount)][/COLOR]    $LOCALIZE[134]:[COLOR StatsAmnt] $INFO[Window.Property(Music.SongsCount)][/COLOR]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>245</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>180</width>
-					<label>$LOCALIZE[133]:[COLOR StatsAmnt] $INFO[Window.Property(Music.ArtistsCount)][/COLOR]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>436</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>$LOCALIZE[134]:[COLOR StatsAmnt] $INFO[Window.Property(Music.SongsCount)][/COLOR]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -347,39 +227,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>$VAR[UsrHomePlaylistStatCount]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>$VAR[UsrHomePlaylistStatCount]     $VAR[UsrHomePlaylistUnWatched]     $VAR[UsrHomePlaylistWatched]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>245</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>180</width>
-					<label>$VAR[UsrHomePlaylistUnWatched]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>436</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>$VAR[UsrHomePlaylistWatched]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -409,39 +265,15 @@
 					<posx>45</posx>
 					<posy>7</posy>
 					<height>20</height>
-					<width>180</width>
-					<label>IP:[COLOR StatsAmnt] $INFO[Network.IPAddress][/COLOR]</label>
-					<align>left</align>
+					<width>580</width>
+					<label>IP:[COLOR StatsAmnt] $INFO[Network.IPAddress][/COLOR]    CPU:[COLOR StatsAmnt] $INFO[System.CPUUsage][/COLOR]    RAM:[COLOR StatsAmnt] $INFO[system.memory(used.percent)][/COLOR]</label>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
-				</control>
-				<control type="label">
-					<posx>270</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<align>left</align>
-					<width>220</width>
-					<label>CPU:[COLOR StatsAmnt] $INFO[System.CPUUsage][/COLOR]</label>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
-				<control type="label">
-					<posx>445</posx>
-					<posy>7</posy>
-					<height>20</height>
-					<width>180</width>
-					<label>RAM:[COLOR StatsAmnt] $INFO[system.memory(used.percent)][/COLOR]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>StatsName</textcolor>
-					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
 			<control type="group">
@@ -473,12 +305,12 @@
 					<height>20</height>
 					<width>580</width>
 					<label>$LOCALIZE[427]:[COLOR StatsAmnt] $INFO[System.DVDLabel][/COLOR]</label>
-					<align>left</align>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
 					<visible>System.HasMediaDVD</visible>
 				</control>
@@ -488,12 +320,12 @@
 					<height>20</height>
 					<width>580</width>
 					<label>$LOCALIZE[427]:[COLOR StatsAmnt] $LOCALIZE[31305][/COLOR]</label>
-					<align>left</align>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
 					<visible>!System.HasMediaDVD</visible>
 				</control>
@@ -528,12 +360,12 @@
 					<height>20</height>
 					<width>580</width>
 					<label>$LOCALIZE[143][COLOR StatsAmnt] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][/COLOR] $INFO[Window(Weather).Property(Current.Condition)]</label>
-					<align>left</align>
+					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>StatsName</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
+					<scroll>true</scroll>
 					<pauseatend>2000</pauseatend>
 				</control>
 			</control>

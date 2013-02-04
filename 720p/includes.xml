@@ -1,4 +1,4 @@
-<includes>
+﻿<includes>
 	<include file="defaults.xml" />
 	<include file="IncludesVariables.xml" />
 	<include file="ViewsVideoLibrary.xml" />
@@ -8,7 +8,7 @@
 	<include file="ViewsAddonBrowser.xml" />
 	<include file="ViewsLiveTV.xml" />
 	<include file="Viewtype_Lowlist.xml" />
-	<include file="Viewtype_Rightlist.xml" />
+	<!--include file="Viewtype_Rightlist.xml" /-->
 	<include file="Viewtype_Wallstream.xml" />
 	<include file="ViewsMovieSets.xml" />
 	<include file="ViewsTVEpisodes.xml" />
@@ -28,6 +28,7 @@
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesHomeWeatherForecast.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
+	<include file="IncludesHomeLiveCases.xml" />
 	<include file="IncludesCDWall.xml" />
 	<include file="IncludesGenreFlagging.xml" />
 	<include file="weather+\10DayForecast.xml" />
@@ -36,10 +37,8 @@
 	<include file="weather+\HourlyForecast.xml" />
 	<include file="weather+\MapsVideo.xml" />
 	<include file="Viewtype_Showcase.xml" />
-
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
-
 	<include name="BehindDialogFadeOut">
 		<control type="image">
 			<posx>0</posx>

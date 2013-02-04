@@ -138,6 +138,7 @@
 						<onclick>Dialog.Close(2117)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,AddOns)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="4">
 						<description>Weather</description>
@@ -145,6 +146,7 @@
 						<onclick>Dialog.Close(2117)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,Weather)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="5">
 						<description>Recent Movies</description>
@@ -177,6 +179,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="9">
 						<description>Suggested TVShows</description>
@@ -185,6 +188,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,SuggestedEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows) + System.HasAddon(script.watchlist)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="10">
 						<description>Random TVShows</description>
@@ -193,6 +197,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows) + System.HasAddon(script.randomitems)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="11">
 						<description>Recent Music</description>
@@ -201,6 +206,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Music)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="12">
 						<description>Suggested Music</description>
@@ -209,6 +215,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,SuggestedAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Music) + System.HasAddon(script.watchlist)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="13">
 						<description>Random Music</description>
@@ -217,6 +224,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Music) + System.HasAddon(script.randomitems)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="14">
 						<description>Recent Concerts</description>
@@ -225,6 +233,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RecentConcerts)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="15">
 						<description>Random Concerts</description>
@@ -233,6 +242,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomConcerts)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 					<item id="16">
 						<description>Random Concerts thumbs</description>
@@ -241,6 +251,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,RandomConcertThumbs)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos) + System.HasAddon(script.randomitems)</visible>
+						<visible>!Skin.HasSetting(UseLiveDisk)</visible>
 					</item>
 				</content>				
 			</control>

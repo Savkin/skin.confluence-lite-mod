@@ -28,7 +28,7 @@
 			<include>WallStreamView</include> 		<!-- view id = 722 -->
 			<!--include>WallStreamView2</include--> 	<!-- view id = 723 -->
 			<include>Lowlist</include> 				<!-- view id = 724 -->
-			<include>Rightlist</include> 			<!-- view id = 725 -->
+			<!--include>Rightlist</include--> 			<!-- view id = 725 -->
 			<include>Showcase</include> 			<!-- view id = 720 -->
 			<include>MovieSetList</include> 		<!-- view id = 737 -->
 			<include>Episode</include> 				<!-- view id = 728 -->

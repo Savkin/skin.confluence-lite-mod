@@ -503,6 +503,23 @@
 						<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 						<onclick>Dialog.Close(2114)</onclick>
                     </item>
+					<item id="27">
+                        <description>Browse Skin Streaming Files</description>
+                        <label>$LOCALIZE[31658]</label>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Label)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]PlayList)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Action)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Widget)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)]Background)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Label,$LOCALIZE[33002])</onclick>	
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Action,ActivateWindow(Video,special://skin/streaming/,return))</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Widget,None)</onclick>												
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Sub,None)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)]Stats,None)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<onclick>Skin.Reset(UsrSelectAddon)</onclick>
+						<onclick>Dialog.Close(2114)</onclick>
+                    </item>
 				</content>				
 			</control>
 			<control type="button">

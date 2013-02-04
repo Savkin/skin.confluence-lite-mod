@@ -6,7 +6,7 @@
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>Window_OpenClose_Animation</include>
-			<visible>IsEmpty(Container(9000).ListItem.Thumb) + !IsEmpty(Skin.CurrentTheme) + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109]) + + !IsEmpty(Skin.String(HomeGlobalBackground))</visible>
+			<visible>IsEmpty(Container(9000).ListItem.Thumb) + !IsEmpty(Skin.CurrentTheme) + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109]) + !IsEmpty(Skin.String(HomeGlobalBackground))</visible>
 		</control>
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
@@ -75,6 +75,15 @@
 			<visible>!Player.HasAudio |[Player.HasAudio + SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
 			<visible>!Player.HasVideo + StringCompare(ListItem.Label,..) + [Container.Content(Seasons) | Container.Content(Episodes)]</visible>
 		</control>
+		<control type="image">
+			<!-- User Defined Genre Fanart -->
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Skin.String(UsrGenreFanartDir)]$INFO[ListItem.Label,,.jpg]</texture>
+			<include>backgroundfade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(HideBackGroundFanart) + Skin.HasSetting(UsrGenreBackground) + !StringCompare(ListItem.Label,..) + Container.Content(genres)</visible>
+		</control>	
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
 			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
@@ -203,6 +212,12 @@
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8016) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
 		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[Container(8017).ListItem.Thumb]</texture>
+			<fadetime>600</fadetime>
+			<visible>Control.HasFocus(8017) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+		</control>
 	</include>
 	<include name="ContentPanelBackgrounds">
 		<control type="image">
@@ -226,6 +241,7 @@
 					<width>750</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -244,6 +260,7 @@
 					<width>640</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -258,6 +275,7 @@
 					<width>530</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>700</posx>
@@ -276,6 +294,7 @@
 					<width>840</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -290,6 +309,7 @@
 					<width>330</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>900</posx>
@@ -308,6 +328,7 @@
 					<width>1180</width>
 					<height>610</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -326,6 +347,7 @@
 					<width>640</width>
 					<height>430</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -340,6 +362,7 @@
 					<width>550</width>
 					<height>430</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>700</posx>
@@ -358,6 +381,7 @@
 					<width>1130</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>75</posx>
@@ -376,6 +400,7 @@
 					<width>490</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -390,6 +415,7 @@
 					<width>680</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>550</posx>
@@ -408,6 +434,7 @@
 					<width>400</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>50</posx>
@@ -422,6 +449,7 @@
 					<width>770</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>460</posx>
@@ -440,6 +468,7 @@
 					<width>640</width>
 					<height>430</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>30</posx>
@@ -454,6 +483,7 @@
 					<width>590</width>
 					<height>430</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>680</posx>
@@ -472,6 +502,7 @@
 					<width>1240</width>
 					<height>620</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>35</posx>
@@ -490,6 +521,7 @@
 					<width>1240</width>
 					<height>240</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>30</posx>
@@ -508,6 +540,7 @@
 					<width>885</width>
 					<height>160</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>380r</posx>
@@ -515,6 +548,7 @@
 					<width>380</width>
 					<height>415</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>25</posx>
@@ -540,6 +574,7 @@
 					<posy>40</posy>
 					<height>620</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>			
 				<control type="image">
 					<posx>400r</posx>
@@ -554,6 +589,7 @@
 					<posy>40</posy>
 					<height>620</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>40</posx>
@@ -572,6 +608,7 @@
 					<width>1220</width>
 					<height>600</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>45</posx>
@@ -590,6 +627,7 @@
 					<width>1180</width>
 					<height>620</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 					</control>
 				<control type="image">
 					<posx>50</posx>
@@ -608,6 +646,7 @@
 					<width>1215</width>
 					<height>620</height>
 					<texture border="15">ContentPanel.png</texture>
+					<colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
 				</control>
 			</control>
 		</control>
